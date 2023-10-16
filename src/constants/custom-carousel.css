@@ -1,0 +1,16 @@
+/* custom-carousel.css */
+
+/* Change the color of the active indicator */
+.carousel-indicators .active {
+  background-color: red;
+}
+
+/* Change the color of the inactive indicators */
+.carousel-indicators li {
+  background-color: red;
+}
+
+/* Change the color of the indicators' icons (optional) */
+.carousel-indicators li::before {
+  color: red;
+}

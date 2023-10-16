@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.home {
+  background: url("./assets/image.png");
+  background-size: cover;
+}
+
+.explore {
+  /* background: rgb(255, 203, 170);
+  background: radial-gradient(
+    circle,
+    rgb(255, 255, 255) 0%,
+    rgba(255, 204, 170, 1) 200%,
+    rgb(255, 204, 170) 300%
+  ); */
+}
+
+.explore-img {
+  background-image: url("./assets/layer.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.bg-img-placeholder {
+  background-image: url("https://placeholder.co/500x500");
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-map {
+  background-image: url("./assets/map.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-reviews {
+  background-image: url("./assets/bgreviews.svg");
+  background-size: cover;
+  opacity: 0.3;
+}
+
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
