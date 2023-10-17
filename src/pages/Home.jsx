@@ -56,7 +56,7 @@ function Header() {
 
         <div className="flex gap-24 font-bold text-xl text-white">
           <a href="#home">HOME</a>
-          <a href="#destinations">DESTINATIONS</a>
+          <a href="/destinations">DESTINATIONS</a>
           <a href="#services">OUR SERVICES</a>
           <a href="#gallery">GALLERY</a>
           <a href="#about">ABOUT US</a>

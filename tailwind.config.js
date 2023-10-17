@@ -7,6 +7,8 @@ export default {
         primary: "Amaranth, sans-serif",
         adanda: "Andada Pro, sans-serif",
         alfa: "Alfa Slab One, cursive",
+        recursive: "Recursive, sans-serif",
+        urbanist: "Urbanist, sans-serif",
       },
     },
   },

@@ -13,7 +13,9 @@
     "@coreui/react": "^5.0.0-alpha.3",
     "@syncfusion/ej2-react-grids": "^23.1.40",
     "react-multi-carousel": "^2.8.4",
+    "react-parallax": "^3.5.1",
     "react-responsive-carousel": "^3.2.23",
+    "react-scroll": "^1.9.0",
     "styled-components": "^6.1.0"
   },
   "devDependencies": {

@@ -52,3 +52,16 @@
   bottom: 0;
   z-index: -1;
 }
+
+.india-font {
+  font-size: 400px;
+  -webkit-text-fill-color: rgba(
+    255,
+    255,
+    255,
+    0
+  ); /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+  letter-spacing: 3rem;
+}
