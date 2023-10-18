@@ -17,7 +17,7 @@ import Newsletter from "../constants/Newsletter";
 import Footer from "../constants/Footer";
 
 import { useState } from "react";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -57,7 +57,7 @@ function Header() {
 
         <div className="flex gap-24 font-bold text-xl text-white">
           <a href="#home">HOME</a>
-          <Link to="destinations">DESTINATIONS</Link>
+          <Link to="/destinations">DESTINATIONS</Link>
           <a href="#services">OUR SERVICES</a>
           <a href="#gallery">GALLERY</a>
           <a href="#about">ABOUT US</a>
