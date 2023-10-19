@@ -36,7 +36,7 @@ function Header() {
       behavior: "smooth", // You can use 'auto' for an instant scroll
     });
   }
-  // scrollToTop();
+  scrollToTop();
 
   return (
     <div id="sticky-header" className="bg-white">
