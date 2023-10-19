@@ -2,8 +2,16 @@ import { useState } from "react";
 import logo from "../assets/logo.png";
 import line from "../assets/line.svg";
 import { Parallax } from "react-parallax";
+import { Link } from "react-router-dom";
 
 function India() {
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // You can use 'auto' for an instant scroll
+    });
+  }
+  scrollToTop();
   return (
     <>
       <Header />
@@ -68,14 +76,17 @@ function OurDestinations() {
   return (
     <div
       name="kenya"
-      className="flex flex-col items-center justify-center text-black gap-12"
+      className="my-12 flex flex-col items-center justify-center text-black gap-12"
     >
       <p className="text-6xl">Our Destinations</p>
       <p className="india-font-1 font-urbanist text-2xl">INDIA</p>
 
       <div className="grid grid-cols-2 place-items-center w-full mt-10 gap-12">
         {/* 1 */}
-        <div className="flex flex-col w-[500px] h-[500px] bg-white rounded-l-3xl drop-shadow-xl">
+        <Link
+          to="/about"
+          className="flex flex-col w-[500px] h-[500px] bg-white rounded-l-3xl drop-shadow-xl"
+        >
           <img
             src="https://placeholder.co/500x500"
             alt="placeholder"
@@ -88,7 +99,7 @@ function OurDestinations() {
             </p>
             <p className="text-black">India, South Asia</p>
           </div>
-        </div>
+        </Link>
 
         {/* 2 */}
         <div className="flex flex-col w-[500px] h-[500px] bg-white rounded-r-3xl drop-shadow-xl">

@@ -18,6 +18,7 @@ import Footer from "../constants/Footer";
 
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { Parallax } from "react-parallax";
 
 function Home() {
   return (
@@ -37,7 +38,11 @@ function Home() {
 function Header() {
   const [enquire, setEnquire] = useState(false);
   return (
-    <header className="px-12 relative py-5 flex flex-col font-primary h-screen">
+    <Parallax
+      strength={500}
+      bgImage="https://assets.codepen.io/6093409/river.mp4"
+      className="relative flex flex-col font-primary h-screen"
+    >
       <video
         id="background-video"
         autoPlay
@@ -50,7 +55,7 @@ function Header() {
           type="video/mp4"
         />
       </video>
-      <nav className="flex items-center justify-between w-full">
+      <nav className="px-12 flex items-center justify-between w-full">
         <div>
           <img src={logo} alt="Logo" />
         </div>
@@ -83,7 +88,7 @@ function Header() {
           </div>
         </div>
       </nav>
-    </header>
+    </Parallax>
   );
 }
 
