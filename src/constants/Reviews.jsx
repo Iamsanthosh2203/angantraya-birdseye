@@ -1,12 +1,22 @@
-function Reviews() {
-  return (
-    <section className="flex justify-center items-center flex-col gap-12">
-      <h4 className="text-4xl tracking-[10px]">CLIENTS REVIEW</h4>
-      <p className="text-xl font-bold font-primary">Trust our clients</p>
+import SwiperCarousel from "./SwiperCarousel";
 
-      <div className="w-full h-screen bg-reviews"></div>
-    </section>
-  );
+function Reviews() {
+  const reviews = [
+    {
+      name: "Mark Smith",
+      role: "Travel Enthusiast",
+      stars: 4,
+      imgSrc: "https://placeholder.co/500x500",
+    },
+    {
+      name: "Another Name",
+      role: "Another Role",
+      stars: 5,
+      imgSrc: "https://placeholder.co/500x500",
+    },
+  ];
+
+  return <SwiperCarousel reviews={reviews} />;
 }
 
 export default Reviews;
