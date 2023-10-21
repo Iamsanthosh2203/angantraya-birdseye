@@ -15,10 +15,14 @@ import {
 } from "react-accessible-accordion";
 
 function About() {
+  const [activePackage, setActivePackage] = useState(null);
   return (
     <>
-      <Header />
-      <Attractions />
+      <Header
+        activePackage={activePackage}
+        setActivePackage={setActivePackage}
+      />
+      <Attractions activePackage={activePackage} />
       <Overview />
       <Itinerary />
       <Included />
@@ -28,7 +32,11 @@ function About() {
   );
 }
 
-function Header() {
+function Header({ activePackage, setActivePackage }) {
+  const handleClick = (packageNumber) => {
+    setActivePackage(packageNumber);
+  };
+
   const [enquire, setEnquire] = useState(false);
   function scrollToTop() {
     window.scrollTo({
@@ -89,19 +97,39 @@ function Header() {
         </nav>
 
         <div className="flex justify-around my-4 font-arvo border-b pb-4 border-black">
-          <button className="bg-black text-white border-2 border-black p-6 tracking-[5px]">
+          <button
+            className={`${
+              activePackage === 1 ? "bg-black text-white" : "bg-white"
+            } border-2 border-black p-6 tracking-[5px]`}
+            onClick={() => handleClick(1)}
+          >
             PACKAGE 1
           </button>
 
-          <button className="bg-white text-black border-2 border-black p-6 tracking-[5px]">
+          <button
+            className={`${
+              activePackage === 2 ? "bg-black text-white" : "bg-white"
+            } text-black border-2 border-black p-6 tracking-[5px]`}
+            onClick={() => handleClick(2)}
+          >
             PACKAGE 2
           </button>
 
-          <button className="bg-white text-black border-2 border-black p-6 tracking-[5px]">
+          <button
+            className={`${
+              activePackage === 3 ? "bg-black text-white" : "bg-white"
+            } text-black border-2 border-black p-6 tracking-[5px]`}
+            onClick={() => handleClick(3)}
+          >
             PACKAGE 3
           </button>
 
-          <button className="bg-white text-black border-2 border-black p-6 tracking-[5px]">
+          <button
+            className={`${
+              activePackage === 4 ? "bg-black text-white" : "bg-white"
+            } text-black border-2 border-black p-6 tracking-[5px]`}
+            onClick={() => handleClick(4)}
+          >
             PACKAGE 4
           </button>
         </div>
@@ -163,13 +191,23 @@ function Header() {
   );
 }
 
-function Attractions() {
+function Attractions({ activePackage }) {
+  let title = "ATTRACTIONS";
+
+  if (activePackage === 2) {
+    title = "ATTRACTIONS 2";
+  } else if (activePackage === 3) {
+    title = "ATTRACTIONS 3";
+  } else if (activePackage === 4) {
+    title = "ATTRACTIONS 4";
+  }
+
   return (
     <section
       id="attractions"
       className="my-8 font-arvo tracking-[6px] text-3xl font-bold px-24"
     >
-      <h2>ATTRACTIONS</h2>
+      <h2>{title}</h2>
       <div className="flex items-center">
         <div className="basis-[65%]">
           <ol className="list-disc font-peddana font-normal tracking-normal my-12 flex flex-col justify-around h-full px-12">

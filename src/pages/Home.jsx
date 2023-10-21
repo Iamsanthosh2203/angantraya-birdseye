@@ -36,6 +36,14 @@ function Home() {
 }
 
 function Header() {
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // You can use 'auto' for an instant scroll
+    });
+  }
+  scrollToTop();
+
   const [enquire, setEnquire] = useState(false);
   return (
     <Parallax
@@ -167,7 +175,10 @@ function Destinations() {
 
       <div className="grid grid-cols-3 mx-auto gap-24">
         {/* item 1 */}
-        <div className="hover:scale-110 cursor-pointer duration-150 h-[500px] w-80 rounded-xl bg-white shadow-lg flex-col">
+        <Link
+          to="/india"
+          className="hover:scale-110 cursor-pointer duration-150 h-[500px] w-80 rounded-xl bg-white shadow-lg flex-col"
+        >
           <div className="h-[60%] w-full rounded-t-xl bg-img-placeholder" />
           <div className="flex flex-col p-12 gap-7">
             <h3 className="font-bold font-adanda text-xl">
@@ -175,7 +186,7 @@ function Destinations() {
             </h3>
             <p className="font-adanda">India, South Asia</p>
           </div>
-        </div>
+        </Link>
 
         {/* item 2 */}
         <div className="hover:scale-110 cursor-pointer duration-150 h-[500px] w-80 rounded-xl bg-white shadow-lg flex-col">

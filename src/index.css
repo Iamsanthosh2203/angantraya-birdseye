@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
 .home {
   background: url("./assets/image.png");
   background-size: cover;
@@ -88,9 +93,7 @@
 .text-with-space-1 {
   word-spacing: 5px;
 }
-html {
-  scroll-behavior: smooth;
-}
+
 /* Reviews.css */
 
 .custom-carousel .carousel-control-prev-icon,
