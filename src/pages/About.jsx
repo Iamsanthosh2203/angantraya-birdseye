@@ -32,6 +32,7 @@ function About() {
   );
 }
 
+// eslint-disable-next-line react/prop-types
 function Header({ activePackage, setActivePackage }) {
   const handleClick = (packageNumber) => {
     setActivePackage(packageNumber);
@@ -191,6 +192,7 @@ function Header({ activePackage, setActivePackage }) {
   );
 }
 
+// eslint-disable-next-line react/prop-types
 function Attractions({ activePackage }) {
   let title = "ATTRACTIONS";
 
