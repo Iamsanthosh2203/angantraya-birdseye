@@ -139,16 +139,16 @@ function OurDestinations() {
           <Link
             to={`/about`}
             key={index}
-            className={`flex flex-col w-[500px] h-[500px] bg-white rounded-${
-              index % 2 === 0 ? "l" : "r"
-            }-3xl drop-shadow-xl`}
+            className={`flex flex-col w-[500px] h-[500px] bg-white ${
+              index % 2 === 0 ? "rounded-l-3xl" : "rounded-r-3xl"
+            } drop-shadow-xl`}
           >
             <img
               src={destination.imageUrl}
               alt="placeholder"
-              className={`min-h-[70%] w-full rounded-${
-                index % 2 === 0 ? "tl" : "tr"
-              }-3xl`}
+              className={`${
+                index % 2 === 0 ? "rounded-tl-3xl" : "rounded-tr-3xl"
+              } min-h-[70%] w-full`}
             />
             <div className="p-4 flex flex-col justify-evenly h-full">
               <p className="text-black font-bold text-lg">{destination.name}</p>
