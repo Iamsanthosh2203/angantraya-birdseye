@@ -195,7 +195,7 @@ function Destinations() {
 
         {/* item 3 */}
         <div className="hover:scale-110 duration-150 cursor-pointer h-[500px] w-80 rounded-xl bg-white shadow-lg flex-col">
-          <div className="h-[60%] w-full rounded-t-xl bg-img-placeholder" />
+          <div className="h-[60%] w-full rounded-t-xl bg-img-lakshadweep" />
           <div className="flex flex-col p-12 gap-7">
             <h3 className="font-bold font-adanda text-lg">
               Discover Lakshadweep: Nature&rsquo;s Hidden Paradise

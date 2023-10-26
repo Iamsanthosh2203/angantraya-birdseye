@@ -49,6 +49,12 @@ html {
   background-size: cover;
 }
 
+.bg-img-lakshadweep {
+  background-image: url("https://cdn.britannica.com/32/1632-050-940FB0E6/Beach-resort-Bangaram-Island-India-Lakshadweep.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
 .bg-map {
   background-image: url("./assets/map.png");
   background-size: cover;
