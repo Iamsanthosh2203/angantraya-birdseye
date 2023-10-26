@@ -15,7 +15,7 @@ import {
 } from "react-accessible-accordion";
 
 function About() {
-  const [activePackage, setActivePackage] = useState(null);
+  const [activePackage, setActivePackage] = useState(1);
   return (
     <>
       <Header
@@ -27,6 +27,7 @@ function About() {
       <Itinerary />
       <Included />
       <NotIncluded />
+      <Booking />
       <Footer />
     </>
   );
@@ -469,6 +470,28 @@ function NotIncluded() {
           </li>
         ))}
       </ol>
+    </section>
+  );
+}
+
+function Booking() {
+  return (
+    <section className="px-24 py-24 bg-white flex flex-col">
+      <div>
+        <p className="text-3xl tracking-[2px] uppercase text-center leading-[2em] mb-9">
+          The packages are customizable, so please contact us directly <br />
+          for your customization and queries.
+        </p>
+      </div>
+
+      <div className="flex justify-evenly">
+        <button className="px-12 py-8 hover:bg-black hover:text-white duration-150 border border-black">
+          BOOK NOW
+        </button>
+        <button className="px-12 py-8 hover:bg-black hover:text-white duration-150 border border-black">
+          CONTACT US
+        </button>
+      </div>
     </section>
   );
 }

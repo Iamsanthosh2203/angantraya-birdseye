@@ -66,72 +66,96 @@ function Header() {
       </nav>
 
       <div className="h-[80vh] items-center justify-center font-urbanist w-full flex">
-        <h1 className="india-font">INDIA</h1>
+        <h1 className="india-font pl-24">INDIA</h1>
       </div>
     </Parallax>
   );
 }
 
 function OurDestinations() {
+  const destinations = [
+    {
+      name: "Andaman and Nicobar Tour Packages",
+      imageUrl:
+        "https://www.tripexperienceblog.com/wp-content/uploads/2018/04/Andaman-Nicobar-Islands-1.jpg",
+      location: "India, South Asia",
+    },
+    {
+      name: "Banglore Tour Packages",
+      imageUrl:
+        "https://lp-cms-production.imgix.net/2019-06/9483508eeee2b78a7356a15ed9c337a1-bengaluru-bangalore.jpg",
+      location: "India, South Asia",
+    },
+    {
+      name: "Gujarat Tour Packages",
+      imageUrl:
+        "https://cdn.britannica.com/39/124439-050-AFA5CEC6/Sun-Temple-Modhera-Gujarat-India.jpg",
+      location: "India, South Asia",
+    },
+    {
+      name: "Hyderabad Tour Packages",
+      imageUrl:
+        "https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2022/09/15144355/Untitled-design-2-4.jpg",
+      location: "India, South Asia",
+    },
+    {
+      name: "Kerala Tour Packages",
+      imageUrl:
+        "https://www.hindustantimes.com/ht-img/img/2023/03/24/1600x900/Further-down--in-Kerala--God-s-Own-Country--held-i_1679599101590_1679646049345_1679646049345.jpg",
+      location: "India, South Asia",
+    },
+    {
+      name: "Lakshadweep Tour Packages",
+      imageUrl:
+        "https://themapofindia.com/superawesome/2021/05/Lakshadweep-scaled.jpg",
+      location: "India, South Asia",
+    },
+    {
+      name: "Tamil Nadu Tour Packages",
+      imageUrl:
+        "https://cdn.britannica.com/12/100812-050-27483D5E/Mamallapuram-Shore-Temple-Chennai-India-Tamil-Nadu.jpg",
+      location: "India, South Asia",
+    },
+    {
+      name: "Uttrakhand Tour Packages",
+      imageUrl:
+        "https://img.traveltriangle.com/blog/wp-content/uploads/2020/04/Lakes-in-Uttrakhand.jpg",
+      location: "India, South Asia",
+    },
+  ];
+
   return (
     <div
       name="kenya"
       className="my-12 flex flex-col items-center justify-center text-black gap-12"
     >
-      <p className="text-6xl">Our Destinations</p>
-      <p className="india-font-1 font-urbanist text-2xl">INDIA</p>
+      <p className="text-6xl bursh-font">Our Destinations</p>
+      <p className="india-font-1 font-urbanist text-2xl text-center pl-4">
+        INDIA
+      </p>
 
       <div className="grid grid-cols-2 place-items-center w-full mt-10 gap-12">
-        {/* 1 */}
-        <Link
-          to="/about"
-          className="flex flex-col w-[500px] h-[500px] bg-white rounded-l-3xl drop-shadow-xl"
-        >
-          <img
-            src="https://placeholder.co/500x500"
-            alt="placeholder"
-            className="h-[70%] w-full rounded-tl-3xl object-cover"
-          />
-          <div className="p-4 flex flex-col justify-evenly h-full">
-            <p className="text-black font-bold text-lg">
-              Andaman and Nicobar Tour <br />
-              Packages
-            </p>
-            <p className="text-black">India, South Asia</p>
-          </div>
-        </Link>
-
-        {/* 2 */}
-        <div className="flex flex-col w-[500px] h-[500px] bg-white rounded-r-3xl drop-shadow-xl">
-          <img
-            src="https://placeholder.co/500x500"
-            alt="placeholder"
-            className="h-[70%] w-full rounded-tr-3xl object-cover"
-          />
-          <div className="p-4 flex flex-col justify-evenly h-full">
-            <p className="text-black font-bold text-lg">
-              Andaman and Nicobar Tour <br />
-              Packages
-            </p>
-            <p className="text-black">India, South Asia</p>
-          </div>
-        </div>
-
-        {/* 1 */}
-        <div className="flex flex-col w-[500px] h-[500px] bg-white rounded-l-3xl drop-shadow-xl">
-          <img
-            src="https://placeholder.co/500x500"
-            alt="placeholder"
-            className="h-[70%] w-full rounded-tl-3xl object-cover "
-          />
-          <div className="p-4 flex flex-col justify-evenly h-full">
-            <p className="text-black font-bold text-lg">
-              Andaman and Nicobar Tour <br />
-              Packages
-            </p>
-            <p className="text-black">India, South Asia</p>
-          </div>
-        </div>
+        {destinations.map((destination, index) => (
+          <Link
+            to={`/about`}
+            key={index}
+            className={`flex flex-col w-[500px] h-[500px] bg-white rounded-${
+              index % 2 === 0 ? "l" : "r"
+            }-3xl drop-shadow-xl`}
+          >
+            <img
+              src={destination.imageUrl}
+              alt="placeholder"
+              className={`min-h-[70%] w-full rounded-${
+                index % 2 === 0 ? "tl" : "tr"
+              }-3xl`}
+            />
+            <div className="p-4 flex flex-col justify-evenly h-full">
+              <p className="text-black font-bold text-lg">{destination.name}</p>
+              <p className="text-black">{destination.location}</p>
+            </div>
+          </Link>
+        ))}
       </div>
     </div>
   );

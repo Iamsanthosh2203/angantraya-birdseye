@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Brush Script MT";
+  src: url("./assets/fonts/BRUSHSCI.ttf");
+}
+
+.bursh-font {
+  font-family: "Brush Script MT";
+}
+
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -28,8 +37,8 @@ html {
   background-repeat: no-repeat;
 }
 
-.bg-img-placeholder {
-  background-image: url("https://placeholder.co/500x500");
+.bg-img-india {
+  background-image: url("./assets/tajmahal.jpg");
   background-position: center;
   background-size: cover;
 }

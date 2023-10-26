@@ -6,6 +6,8 @@ import { Link as RouterLink } from "react-router-dom";
 
 import { Parallax } from "react-parallax";
 
+import tajmahal from "../assets/tajmahal.jpg";
+
 function Destinations() {
   return (
     <>
@@ -69,7 +71,7 @@ function Header() {
           <img
             src="https://assets.cntraveller.in/photos/612f97214eaffd3ac697992a/4:3/w_4032,h_3024,c_limit/LICENSE_Karma%20Dorji_(c)%20Getty_Thimphu%20Bhutan_CNT%20UK_Karin_GettyImages-1285422736.jpg"
             alt="placeholder"
-            className="w-[400px] opacity-50 group-hover:opacity-100 h-[400px] rounded-full group-hover:scale-[1.05] duration-150"
+            className="w-[400px] opacity-50 group-hover:opacity-100 h-[400px] rounded-full group-hover:scale-[1.05] duration-150 object-cover"
           />
           <h2 className="text-center font-primary tracking-widest mt-5 text-2xl">
             BHUTAN
@@ -87,7 +89,7 @@ function Header() {
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Taj_Mahal%2C_Agra%2C_India_edit3.jpg"
             alt="placeholder"
-            className="w-[400px] opacity-50 group-hover:opacity-100 h-[400px] rounded-full group-hover:scale-[1.05] duration-150"
+            className="w-[400px] opacity-50 group-hover:opacity-100 h-[400px] rounded-full group-hover:scale-[1.05] duration-150 object-cover"
           />
           <h2 className="text-center font-primary tracking-widest mt-5 text-2xl">
             INDIA
@@ -105,7 +107,7 @@ function Header() {
           <img
             src="https://www.hindustantimes.com/ht-img/img/2023/08/24/1600x900/Kenyan_grassland_1683031559422_1692855575009.jpg"
             alt="placeholder"
-            className="w-[400px] opacity-50 group-hover:opacity-100 h-[400px] rounded-full group-hover:scale-[1.05] duration-150"
+            className="w-[400px] opacity-50 group-hover:opacity-100 h-[400px] rounded-full group-hover:scale-[1.05] duration-150 object-cover"
           />
           <h2 className="text-center font-primary tracking-widest mt-5 text-2xl">
             KENYA
@@ -121,9 +123,9 @@ function Header() {
           className="group cursor-pointer"
         >
           <img
-            src="https://static.toiimg.com/thumb/msid-100439304,width-748,height-499,resizemode=4,imgsize-107502/.jpg"
+            src="https://static.toiimg.com/photo/69789748.cms"
             alt="placeholder"
-            className="w-[400px] opacity-50 group-hover:opacity-100 h-[400px] rounded-full group-hover:scale-[1.05] duration-150"
+            className="w-[400px] opacity-50 group-hover:opacity-100 h-[400px] rounded-full group-hover:scale-[1.05] duration-150 object-cover"
           />
           <h2 className="text-center font-primary tracking-widest mt-5 text-2xl">
             NEPAL
@@ -181,8 +183,7 @@ function Bhutan() {
 }
 
 function India() {
-  const imageSource =
-    "https://upload.wikimedia.org/wikipedia/commons/b/bd/Taj_Mahal%2C_Agra%2C_India_edit3.jpg";
+  const imageSource = tajmahal;
 
   return (
     <Parallax

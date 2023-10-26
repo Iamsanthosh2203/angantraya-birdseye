@@ -59,10 +59,11 @@ function Header() {
         poster="https://assets.codepen.io/6093409/river.jpg"
       >
         <source
-          src="https://assets.codepen.io/6093409/river.mp4"
+          src="https://rr3---sn-h5576ns6.c.drive.google.com/videoplayback?expire=1698337009&ei=wWY6ZdDYLNHAp84PuOid6A0&ip=2405:201:e046:c828:cdbe:3a22:f0e1:34ff&cp=QVROWkRfVlBOSlhPOmNMM3k5Y3ZOS1ZYZm16Y0o2cGJELTcwWGp3WHdkMXVkUkV3Ujh6Nkx0d3Y&id=2b2fea16988346bb&itag=37&source=webdrive&requiressl=yes&xpc=EghotM6WJ3oBAQ==&mh=Mm&mm=32&mn=sn-h5576ns6&ms=su&mv=m&mvi=3&pl=49&ttl=transient&susc=dr&driveid=16G_5YuHbKk49E1-TRWBM7Pa6MZOa8_Ah&app=explorer&mime=video/mp4&vprv=1&prv=1&dur=39.822&lmt=1697803623298308&mt=1698325765&subapp=DRIVE_WEB_FILE_VIEWER&txp=0001224&sparams=expire,ei,ip,cp,id,itag,source,requiressl,xpc,ttl,susc,driveid,app,mime,vprv,prv,dur,lmt&sig=AGM4YrMwRgIhAN31McLL_1PdQhWbuz8GBazIJQ9vMbABEYcVaKlU9R2sAiEAlfQD37fOwDRgqiiEdb_NtsIDCmLXbmU4enpMB8IKbkM=&lsparams=mh,mm,mn,ms,mv,mvi,pl&lsig=AK1ks_kwRAIgK8E5PEH1WNmJPuH6tSjr9MIfmsHeZFlulZL3fsmam98CIGQ_DFE2Ty_5s-FKejTBGg8KnZQLsW6bbwReqQ9CMuov&cpn=21TSZGvbdSPoSGW7&c=WEB_EMBEDDED_PLAYER&cver=1.20231022.00.01"
           type="video/mp4"
         />
       </video>
+
       <nav className="px-12 flex items-center justify-between w-full">
         <div>
           <img src={logo} alt="Logo" />
@@ -179,7 +180,7 @@ function Destinations() {
           to="/india"
           className="hover:scale-110 cursor-pointer duration-150 h-[500px] w-80 rounded-xl bg-white shadow-lg flex-col"
         >
-          <div className="h-[60%] w-full rounded-t-xl bg-img-placeholder" />
+          <div className="h-[60%] w-full rounded-t-xl bg-img-india" />
           <div className="flex flex-col p-12 gap-7">
             <h3 className="font-bold font-adanda text-xl">
               Explore the Colors of Culture and Nature
