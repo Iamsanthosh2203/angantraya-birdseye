@@ -43,6 +43,12 @@ html {
   background-size: cover;
 }
 
+.bg-img-kenya {
+  background-image: url("https://static.toiimg.com/thumb/86468337/Kenya.jpg?width=1200&height=900");
+  background-position: center;
+  background-size: cover;
+}
+
 .bg-map {
   background-image: url("./assets/map.png");
   background-size: cover;
