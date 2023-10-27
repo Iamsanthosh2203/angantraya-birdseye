@@ -120,8 +120,21 @@ html {
 .text-with-space {
   word-spacing: 10px;
 }
+
+/* text with space 0 for mobile screens */
+@media (max-width: 768px) {
+  .text-with-space {
+    word-spacing: 0px;
+  }
+}
 .text-with-space-1 {
   word-spacing: 5px;
+}
+
+@media (max-width: 768px) {
+  .text-with-space-1 {
+    word-spacing: 0px;
+  }
 }
 
 /* Reviews.css */

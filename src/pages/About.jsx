@@ -208,12 +208,12 @@ function Attractions({ activePackage }) {
   return (
     <section
       id="attractions"
-      className="my-8 font-arvo tracking-[6px] text-3xl font-bold px-24"
+      className="my-8 font-arvo tracking-[6px] text-3xl font-bold md:px-24 px-8"
     >
       <h2>{title}</h2>
-      <div className="flex items-center">
+      <div className="flex items-center flex-col-reverse md:flex-row">
         <div className="basis-[65%]">
-          <ol className="list-disc font-peddana font-normal tracking-normal my-12 flex flex-col justify-around h-full px-12">
+          <ol className="list-disc font-peddana font-normal tracking-normal my-12 flex flex-col justify-around h-full px-12 gap-5 ">
             <li className="text-with-space">
               Explore the historical significance of Cellular Jail and witness
               the captivating light and sound show depicting India&apos;s
@@ -237,7 +237,7 @@ function Attractions({ activePackage }) {
             </li>
           </ol>
         </div>
-        <div className="basis-[35%]">
+        <div className="basis-[35%] py-3">
           <img src={attraction1} alt="attractions" />
         </div>
       </div>
@@ -247,7 +247,7 @@ function Attractions({ activePackage }) {
 
 function Overview() {
   return (
-    <section id="overview" className="px-24 my-8 pr-52 text-xl">
+    <section id="overview" className="px-6 md:px-24 my-8 md:pr-52 text-xl">
       <h2 className="font-arvo text-3xl tracking-[6px] font-bold">OVERVIEW</h2>
       <p className="my-5 mt-12 text-5xl font-light">
         Pristine Paradise, Andaman&apos;s Natural Majesty.
@@ -338,7 +338,7 @@ function Itinerary() {
     <section
       id="itinerary"
       style={{ background: "rgba(236, 234, 234, 0.70)" }}
-      className="px-24 py-12"
+      className="px-7 md:px-24 py-12"
     >
       <h2 className="font-arvo text-3xl tracking-[6px] font-bold capitalize pt-24 pb-12">
         ITINERARY
@@ -411,26 +411,26 @@ function Included() {
   ];
 
   return (
-    <section id="included" className="px-24">
-      <h2 className="font-arvo text-3xl tracking-[6px] font-bold capitalize pt-24 pb-12">
+    <section id="included" className="md:px-24">
+      <h2 className="font-arvo text-3xl tracking-[6px] font-bold capitalize pt-24 pb-12 text-center">
         WHAT’S INCLUDED
       </h2>
 
-      <div className="grid grid-cols-2 gap-12 mt-12">
+      <div className="grid md:grid-cols-2 gap-12 mt-12">
         {items.map((item, index) => (
           <div key={index} className="flex flex-col gap-5 items-center">
             <img
               src={item.imageSrc}
               alt="placeholder"
-              className="rounded-full h-[500px] w-[500px] object-cover"
+              className="rounded-full md:h-[500px] w-[200px] h-[200px] md:w-[500px] object-cover"
             />
             <p className="text-xl font-bold uppercase">{item.title}</p>
           </div>
         ))}
       </div>
 
-      <div className="px-24 pt-44 pb-12 text-2xl">
-        <ol className="list-disc flex-col flex items list-outside gap-8">
+      <div className="md:px-24 px-5 py-5 md:pt-44 md:pb-12 text-2xl">
+        <ol className="list-disc list-inside flex-col flex items gap-8">
           {includedItems.map((item, index) => (
             <li className="text-with-space-1" key={index}>
               {item}
@@ -457,9 +457,9 @@ function NotIncluded() {
     <section
       id="important"
       style={{ background: "rgba(236, 234, 234, 0.70)" }}
-      className="px-24 py-12"
+      className="md:px-24 px-5 py-12"
     >
-      <h2 className="font-arvo text-3xl tracking-[6px] font-bold capitalize py-12">
+      <h2 className="font-arvo text-xl md:text-3xl tracking-[6px] font-bold capitalize py-12">
         WHAT’S NOT INCLUDED
       </h2>
 
@@ -476,19 +476,19 @@ function NotIncluded() {
 
 function Booking() {
   return (
-    <section className="px-24 py-24 bg-white flex flex-col">
+    <section className="md:px-24 py-24 bg-white flex flex-col">
       <div>
-        <p className="text-3xl tracking-[2px] uppercase text-center leading-[2em] mb-9">
+        <p className="text-xl md:text-3xl tracking-[2px] uppercase text-center md:leading-[2em] mb-9">
           The packages are customizable, so please contact us directly <br />
           for your customization and queries.
         </p>
       </div>
 
       <div className="flex justify-evenly">
-        <button className="px-12 py-8 hover:bg-black hover:text-white duration-150 border border-black">
+        <button className="px-8 py-6 hover:bg-black hover:text-white duration-150 border border-black">
           BOOK NOW
         </button>
-        <button className="px-12 py-8 hover:bg-black hover:text-white duration-150 border border-black">
+        <button className="px-8 py-6 hover:bg-black hover:text-white duration-150 border border-black">
           CONTACT US
         </button>
       </div>

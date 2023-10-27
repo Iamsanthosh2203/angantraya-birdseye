@@ -22,16 +22,28 @@ function India() {
 
 function Header() {
   const [enquire, setEnquire] = useState(false);
+  const [nav, setNav] = useState(false);
+
   const imageSource =
     "https://upload.wikimedia.org/wikipedia/commons/b/bd/Taj_Mahal%2C_Agra%2C_India_edit3.jpg";
 
   return (
     <Parallax
       strength={500}
+      bgImageStyle={{
+        objectFit: "cover",
+        width: "100%",
+        height: "100vh",
+        // Apply the style only for mobile screens (max-width: 767px)
+        "@media (max-width: 767px)": {
+          objectFit: "cover",
+          height: "100vh",
+        },
+      }}
       bgImage={imageSource}
       className="relative flex flex-col font-primary min-h-screen bg-[#1B1A1A]"
     >
-      <nav className="pr-6 flex items-center justify-between w-full">
+      <nav className="hidden pr-6 md:flex items-center justify-between w-full">
         <Link to="/">
           <img src={logo} alt="Logo" />
         </Link>
@@ -65,7 +77,60 @@ function Header() {
         </div>
       </nav>
 
-      <div className="h-[80vh] items-center justify-center font-urbanist w-full flex">
+      <nav className="flex justify-between items-center md:hidden relative z-10">
+        <Link to="/">
+          <img className="w-32" src={logo} alt="Logo" />
+        </Link>
+
+        <div className="px-3">
+          <i
+            onClick={() => setNav(true)}
+            className="fa-solid fa-bars text-4xl text-white"
+          ></i>
+        </div>
+        <div
+          className={`${
+            nav ? "translate-x-0" : "translate-x-full"
+          } duration-150 absolute top-0 w-full bg-black h-screen text-white justify-center px-12 py-8`}
+        >
+          <div className="w-full flex justify-end">
+            <i
+              onClick={() => setNav(false)}
+              className="fa-solid fa-x text-xl"
+            ></i>
+          </div>
+
+          <div className="flex flex-col gap-5 items-center text-2xl py-8 h-full">
+            <Link to="/">HOME</Link>
+            <Link to="/destinations">DESTINATIONS</Link>
+            <a href="#services">OUR SERVICES</a>
+            <a href="#gallery">GALLERY</a>
+            <a href="#about">ABOUT US</a>
+
+            <div
+              onClick={() => setEnquire(!enquire)}
+              className="text-white flex gap-2 relative"
+            >
+              <button>ENQUIRE NOW</button>
+              <img src={line} alt="" />
+
+              <div
+                className={
+                  enquire
+                    ? "absolute top-16 h-f w-full bg-white text-black p-4 flex flex-col gap-3 translate-y-0 duration-200"
+                    : "absolute top-16 h-f w-full bg-white text-black p-4 hidden flex-col gap-3 -translate-y-12 duration-200 -z-10"
+                }
+              >
+                <a href="">Book Online</a>
+                <a href="">By Email</a>
+                <a href="">By Phone</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div className="md:flex hidden h-[80vh] items-center justify-center font-urbanist w-full">
         <h1 className="india-font pl-24">INDIA</h1>
       </div>
     </Parallax>
@@ -134,27 +199,49 @@ function OurDestinations() {
         INDIA
       </p>
 
-      <div className="grid grid-cols-2 place-items-center w-full mt-10 gap-12">
+      <div className="grid md:grid-cols-2 place-items-center w-full mt-10 gap-12 px-6 md:px-0">
         {destinations.map((destination, index) => (
-          <Link
-            to={`/about`}
-            key={index}
-            className={`flex flex-col w-[500px] h-[500px] bg-white ${
-              index % 2 === 0 ? "rounded-l-3xl" : "rounded-r-3xl"
-            } drop-shadow-xl`}
-          >
-            <img
-              src={destination.imageUrl}
-              alt="placeholder"
-              className={`${
-                index % 2 === 0 ? "rounded-tl-3xl" : "rounded-tr-3xl"
-              } min-h-[70%] w-full`}
-            />
-            <div className="p-4 flex flex-col justify-evenly h-full">
-              <p className="text-black font-bold text-lg">{destination.name}</p>
-              <p className="text-black">{destination.location}</p>
-            </div>
-          </Link>
+          <div key={index}>
+            <Link
+              to={`/about`}
+              key={index}
+              className={`md:flex hidden flex-col w-[500px] h-[500px] bg-white ${
+                index % 2 === 0 ? "rounded-l-3xl" : "rounded-r-3xl"
+              } drop-shadow-xl`}
+            >
+              <img
+                src={destination.imageUrl}
+                alt="placeholder"
+                className={`${
+                  index % 2 === 0 ? "rounded-tl-3xl" : "rounded-tr-3xl"
+                } min-h-[70%] w-full`}
+              />
+              <div className="p-4 flex flex-col justify-evenly h-full">
+                <p className="text-black font-bold text-lg">
+                  {destination.name}
+                </p>
+                <p className="text-black">{destination.location}</p>
+              </div>
+            </Link>
+
+            <Link
+              to={`/about`}
+              key={index}
+              className={`md:hidden flex flex-col w-full bg-white rounded-xl drop-shadow-xl`}
+            >
+              <img
+                src={destination.imageUrl}
+                alt="placeholder"
+                className={`rounded-t-xl min-h-[70%] w-full`}
+              />
+              <div className="p-4 flex flex-col justify-evenly h-full">
+                <p className="text-black font-bold text-lg">
+                  {destination.name}
+                </p>
+                <p className="text-black">{destination.location}</p>
+              </div>
+            </Link>
+          </div>
         ))}
       </div>
     </div>
