@@ -118,7 +118,7 @@ function Explore() {
         </p>
 
         <div>
-          <button className="px-6 py-4 shadow-xl bg-[#5D50C6] rounded-full mb-6 md:mb-0">
+          <button className="px-6 text-white font-bold py-4 shadow-xl bg-[#5D50C6] rounded-full mb-6 md:mb-0">
             Get Started
           </button>
         </div>
