@@ -22,15 +22,16 @@ function Destinations() {
 
 function Header() {
   const [enquire, setEnquire] = useState(false);
+  const [nav, setNav] = useState(false);
 
   return (
-    <header className="px-12 relative py-5 flex flex-col font-primary min-h-screen bg-[#1B1A1A] bg-fixed">
-      <nav className="flex items-center justify-between w-full">
+    <header className="md:px-12 relative md:py-5 flex flex-col font-primary min-h-screen bg-[#1B1A1A] bg-fixed">
+      <nav className="hidden md:flex items-center justify-between w-full">
         <RouterLink to="/">
           <img src={logo} alt="Logo" />
         </RouterLink>
 
-        <div className="flex gap-24 font-bold text-xl text-white">
+        <div className="hidden md:flex gap-24 font-bold text-xl text-white">
           <RouterLink to="/">HOME</RouterLink>
           <RouterLink to="/destinations">DESTINATIONS</RouterLink>
           <a href="#services">OUR SERVICES</a>
@@ -59,7 +60,60 @@ function Header() {
         </div>
       </nav>
 
-      <div className="grid-cols-2 w-full text-white grid mx-auto gap-8 place-items-center">
+      <nav className="flex justify-between items-center md:hidden relative z-10">
+        <Link to="/">
+          <img className="w-32" src={logo} alt="Logo" />
+        </Link>
+
+        <div className="px-3">
+          <i
+            onClick={() => setNav(true)}
+            className="fa-solid fa-bars text-4xl text-white"
+          ></i>
+        </div>
+        <div
+          className={`${
+            nav ? "translate-x-0" : "translate-x-full"
+          } duration-150 absolute top-0 w-full bg-black h-screen text-white justify-center px-12 py-8`}
+        >
+          <div className="w-full flex justify-end">
+            <i
+              onClick={() => setNav(false)}
+              className="fa-solid fa-x text-xl"
+            ></i>
+          </div>
+
+          <div className="flex flex-col gap-5 items-center text-2xl py-8 h-full">
+            <Link to="/">HOME</Link>
+            <Link to="/destinations">DESTINATIONS</Link>
+            <a href="#services">OUR SERVICES</a>
+            <a href="#gallery">GALLERY</a>
+            <a href="#about">ABOUT US</a>
+
+            <div
+              onClick={() => setEnquire(!enquire)}
+              className="text-white flex gap-2 relative"
+            >
+              <button>ENQUIRE NOW</button>
+              <img src={line} alt="" />
+
+              <div
+                className={
+                  enquire
+                    ? "absolute top-16 h-f w-full bg-white text-black p-4 flex flex-col gap-3 translate-y-0 duration-200"
+                    : "absolute top-16 h-f w-full bg-white text-black p-4 hidden flex-col gap-3 -translate-y-12 duration-200 -z-10"
+                }
+              >
+                <a href="">Book Online</a>
+                <a href="">By Email</a>
+                <a href="">By Phone</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div className="grid-cols-1 md:grid-cols-2 w-full text-white grid mx-auto gap-8 place-items-center">
         <Link
           to="bhutan"
           className="group cursor-pointer"
@@ -71,7 +125,7 @@ function Header() {
           <img
             src="https://assets.cntraveller.in/photos/612f97214eaffd3ac697992a/4:3/w_4032,h_3024,c_limit/LICENSE_Karma%20Dorji_(c)%20Getty_Thimphu%20Bhutan_CNT%20UK_Karin_GettyImages-1285422736.jpg"
             alt="placeholder"
-            className="w-[400px] opacity-50 group-hover:opacity-100 h-[400px] rounded-full group-hover:scale-[1.05] duration-150 object-cover"
+            className="md:w-[400px] opacity-50 group-hover:opacity-100 w-[200px] h-[200px] md:h-[400px] rounded-full group-hover:scale-[1.05] duration-150 object-cover"
           />
           <h2 className="text-center font-primary tracking-widest mt-5 text-2xl">
             BHUTAN
@@ -89,7 +143,7 @@ function Header() {
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Taj_Mahal%2C_Agra%2C_India_edit3.jpg"
             alt="placeholder"
-            className="w-[400px] opacity-50 group-hover:opacity-100 h-[400px] rounded-full group-hover:scale-[1.05] duration-150 object-cover"
+            className="md:w-[400px] w-[200px] opacity-50 group-hover:opacity-100 md:h-[400px] h-[200px] rounded-full group-hover:scale-[1.05] duration-150 object-cover"
           />
           <h2 className="text-center font-primary tracking-widest mt-5 text-2xl">
             INDIA
@@ -107,7 +161,7 @@ function Header() {
           <img
             src="https://www.hindustantimes.com/ht-img/img/2023/08/24/1600x900/Kenyan_grassland_1683031559422_1692855575009.jpg"
             alt="placeholder"
-            className="w-[400px] opacity-50 group-hover:opacity-100 h-[400px] rounded-full group-hover:scale-[1.05] duration-150 object-cover"
+            className="md:w-[400px] w-[200px] opacity-50 group-hover:opacity-100 md:h-[400px] h-[200px] rounded-full group-hover:scale-[1.05] duration-150 object-cover"
           />
           <h2 className="text-center font-primary tracking-widest mt-5 text-2xl">
             KENYA
@@ -125,7 +179,7 @@ function Header() {
           <img
             src="https://static.toiimg.com/photo/69789748.cms"
             alt="placeholder"
-            className="w-[400px] opacity-50 group-hover:opacity-100 h-[400px] rounded-full group-hover:scale-[1.05] duration-150 object-cover"
+            className="md:w-[400px] w-[200px] opacity-50 group-hover:opacity-100 md:h-[400px] h-[200px] rounded-full group-hover:scale-[1.05] duration-150 object-cover"
           />
           <h2 className="text-center font-primary tracking-widest mt-5 text-2xl">
             NEPAL
@@ -144,8 +198,9 @@ function Bhutan() {
     <Parallax
       id="bhutan"
       bgImage={imageSource}
+      bgImageStyle={{ objectFit: "cover", height: "100vh" }}
       strength={500} // Adjust this value to control the parallax effect strength
-      className="h-screen font-recursive flex flex-col justify-center"
+      className="min-h-screen font-recursive flex flex-col justify-center "
       renderLayer={(percentage) => (
         <Element
           name="bhutan"
@@ -157,15 +212,15 @@ function Bhutan() {
             height: "100%",
             backgroundColor: `rgba(0, 0, 0, ${0.3 * percentage})`, // Adjust the opacity (0.5) to your preference
           }}
-          className="flex flex-col pl-28 justify-center text-white gap-12 font-recursive"
+          className="flex flex-col pl-6 md:pl-28 justify-center text-white gap-12 font-recursive"
         >
           <h2
-            className="text-7xl font-bold tracking-widest"
+            className="text-2xl md:text-7xl font-bold md:tracking-widest"
             style={{ position: "relative", zIndex: 1 }}
           >
             BHUTAN
           </h2>
-          <p className="text-5xl leading-relaxed">
+          <p className="text-4xl md:text-5xl leading-relaxed">
             Explore the city <br />
             known for its rich <br />
             history and cuisine
@@ -188,9 +243,10 @@ function India() {
   return (
     <Parallax
       id="india"
+      bgImageStyle={{ objectFit: "cover", height: "100vh" }}
       bgImage={imageSource}
       strength={500} // Adjust this value to control the parallax effect strength
-      className="h-screen font-recursive flex flex-col justify-center"
+      className="min-h-screen font-recursive flex flex-col justify-center"
       renderLayer={(percentage) => (
         <Element
           name="india"
@@ -202,15 +258,15 @@ function India() {
             height: "100%",
             backgroundColor: `rgba(0, 0, 0, ${0.3 * percentage})`, // Adjust the opacity (0.5) to your preference
           }}
-          className="flex flex-col pl-28 justify-center text-white gap-12"
+          className="flex flex-col pl-6 md:pl-28 justify-center text-white gap-12"
         >
           <h2
-            className="text-7xl font-bold tracking-widest"
+            className="text-2xl md:text-7xl font-bold tracking-widest"
             style={{ position: "relative", zIndex: 1 }}
           >
             INDIA
           </h2>
-          <p className="text-5xl leading-relaxed">
+          <p className="text-4xl md:text-5xl leading-relaxed">
             Explore its diverse <br />
             cultures and enchanting <br />
             landscapes
@@ -237,9 +293,10 @@ function Kenya() {
   return (
     <Parallax
       id="kenya"
+      bgImageStyle={{ objectFit: "cover", height: "100vh" }}
       bgImage={imageSource}
       strength={500} // Adjust this value to control the parallax effect strength
-      className="h-screen font-recursive flex flex-col justify-center"
+      className="object-cover min-h-screen font-recursive flex flex-col justify-center"
       renderLayer={(percentage) => (
         <Element
           name="kenya"
@@ -251,15 +308,15 @@ function Kenya() {
             height: "100%",
             backgroundColor: `rgba(0, 0, 0, ${0.3 * percentage})`, // Adjust the opacity (0.5) to your preference
           }}
-          className="flex flex-col pl-28 justify-center text-white gap-12"
+          className="flex flex-col pl-6 md:pl-28 justify-center text-white gap-12"
         >
           <h2
-            className="text-7xl font-bold tracking-widest"
+            className="text-2xl md:text-7xl font-bold tracking-widest"
             style={{ position: "relative", zIndex: 1 }}
           >
             KENYA
           </h2>
-          <p className="text-5xl leading-relaxed">
+          <p className="text-4xl md:text-5xl leading-relaxed">
             Explore its diverse <br />
             cultures and enchanting <br />
             landscapes
@@ -283,6 +340,7 @@ function Nepal() {
     <Parallax
       id="nepal"
       bgImage={imageSource}
+      bgImageStyle={{ objectFit: "cover", height: "100vh" }}
       strength={500} // Adjust this value to control the parallax effect strength
       className="h-screen font-recursive flex flex-col justify-center"
       renderLayer={(percentage) => (
@@ -296,15 +354,15 @@ function Nepal() {
             height: "100%",
             backgroundColor: `rgba(0, 0, 0, ${0.3 * percentage})`, // Adjust the opacity (0.5) to your preference
           }}
-          className="flex flex-col pl-28 justify-center text-white gap-12"
+          className="flex flex-col pl-6 md:pl-28 justify-center text-white gap-12"
         >
           <h2
-            className="text-7xl font-bold tracking-widest"
+            className="text-2xl md:text-7xl font-bold tracking-widest"
             style={{ position: "relative", zIndex: 1 }}
           >
             NEPAL
           </h2>
-          <p className="text-5xl leading-relaxed">
+          <p className="text-4xl md:text-5xl leading-relaxed">
             Explore the Land <br />
             of the Rising Sun
           </p>

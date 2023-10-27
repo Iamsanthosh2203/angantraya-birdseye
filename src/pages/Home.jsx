@@ -45,6 +45,9 @@ function Header() {
   scrollToTop();
 
   const [enquire, setEnquire] = useState(false);
+
+  const [nav, setNav] = useState(false);
+
   return (
     <Parallax
       strength={500}
@@ -57,7 +60,7 @@ function Header() {
         />
       </video>
 
-      <nav className="md:px-12 flex items-center justify-between w-full">
+      <nav className="hidden md:px-12 md:flex items-center justify-between w-full">
         <Link to="/">
           <img className="md:w-auto w-44" src={logo} alt="Logo" />
         </Link>
@@ -87,6 +90,59 @@ function Header() {
             <a href="">Book Online</a>
             <a href="">By Email</a>
             <a href="">By Phone</a>
+          </div>
+        </div>
+      </nav>
+
+      <nav className="flex justify-between items-center md:hidden relative">
+        <Link to="/">
+          <img className="w-32" src={logo} alt="Logo" />
+        </Link>
+
+        <div className="px-3">
+          <i
+            onClick={() => setNav(true)}
+            className="fa-solid fa-bars text-4xl text-white"
+          ></i>
+        </div>
+        <div
+          className={`${
+            nav ? "translate-x-0" : "translate-x-full"
+          } duration-150 absolute top-0 w-full bg-black h-screen text-white justify-center px-12 py-8`}
+        >
+          <div className="w-full flex justify-end">
+            <i
+              onClick={() => setNav(false)}
+              className="fa-solid fa-x text-xl"
+            ></i>
+          </div>
+
+          <div className="flex flex-col gap-5 items-center text-2xl py-8 h-full">
+            <Link to="/">HOME</Link>
+            <Link to="/destinations">DESTINATIONS</Link>
+            <a href="#services">OUR SERVICES</a>
+            <a href="#gallery">GALLERY</a>
+            <a href="#about">ABOUT US</a>
+
+            <div
+              onClick={() => setEnquire(!enquire)}
+              className="text-white flex gap-2 relative"
+            >
+              <button>ENQUIRE NOW</button>
+              <img src={line} alt="" />
+
+              <div
+                className={
+                  enquire
+                    ? "absolute top-16 h-f w-full bg-white text-black p-4 flex flex-col gap-3 translate-y-0 duration-200"
+                    : "absolute top-16 h-f w-full bg-white text-black p-4 hidden flex-col gap-3 -translate-y-12 duration-200 -z-10"
+                }
+              >
+                <a href="">Book Online</a>
+                <a href="">By Email</a>
+                <a href="">By Phone</a>
+              </div>
+            </div>
           </div>
         </div>
       </nav>
