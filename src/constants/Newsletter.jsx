@@ -9,15 +9,16 @@ function Newsletter() {
         <p className="font-bold text-lg tracking-[4px]">
           SUBSCIBE TO OUR NEWS LETTER
         </p>
-        <p className="text-6xl leading-relaxed font-adanda font-bold text-center">
-          Prepare yourself & let’s explore the <br />
+        <p className="text-xl md:text-6xl md:leading-relaxed font-adanda font-bold text-center">
+          Prepare yourself & let’s explore the{" "}
+          <br className="hidden md:block" />
           beauty of the world
         </p>
 
-        <div className="relative flex w-full justify-center gap-8">
-          <div className="flex items-center gap-6 justify-center p-4 px-12 bg-white rounded-xl">
+        <div className="relative flex flex-col md:flex-row w-full justify-center gap-8">
+          <div className="flex items-center gap-6 justify-center p-4 md:px-12 bg-white rounded-xl">
             {/*generate fontawesome email icon */}
-            <img src={message} alt="message" />
+            <img src={message} alt="message" className="w-7" />
             <input
               className="placeholder:text-xl outline-none"
               placeholder="Your Email"
@@ -34,11 +35,11 @@ function Newsletter() {
           <img
             src={Graphicelements}
             alt="Graphicelements"
-            className="absolute -left-24 -top-[600%]"
+            className="hidden md:inline-block absolute -left-24 -top-[600%]"
           />
         </div>
       </div>
-      <div className="flex w-full items-end justify-end">
+      <div className="hidden md:flex w-full items-end justify-end">
         <img src={objects} alt="objects" />
       </div>
     </section>

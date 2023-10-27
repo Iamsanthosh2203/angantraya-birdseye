@@ -212,7 +212,7 @@ function Destinations() {
 function TravelPoint() {
   return (
     <section className="min-h-screen md:my-28 md:mx-28 flex bg-map bg-white flex-col md:flex-row">
-      <div className="flex flex-col md:px-24 py-20 justify-evenly">
+      <div className="flex flex-col px-6 md:px-24 py-20 justify-evenly">
         <div className="mx-auto md:mx-0 flex items-center gap-5 px-8 py-2 rounded-full bg-[#ffffff9b] w-1/2">
           {/* generate map on font awesome */}
 
@@ -223,7 +223,7 @@ function TravelPoint() {
 
         <div className="flex flex-col gap-12 md:w-[70%] text-center md:text-left">
           <p className="text-xl font-bold tracking-[4px]">TRAVEL POINT</p>
-          <h3 className="tracking-wider text-6xl font-alfa">
+          <h3 className="tracking-wider text-4xl md:text-6xl font-alfa">
             We helping you to find your dream location.
           </h3>
           <p>
@@ -234,23 +234,23 @@ function TravelPoint() {
       </div>
 
       <div className="flex justify-center items-center basis-[80%]">
-        <div className="grid gap-12 grid-cols-2">
-          <div className="p-8 bg-white rounded-3xl flex flex-col items-center shadow-xl">
+        <div className="grid gap-12 grid-cols-2 md:p-0 px-4">
+          <div className="p-4 md:p-8 bg-white rounded-3xl flex flex-col items-center shadow-xl text-center">
             <p className="text-[#FF5722] text-4xl font-bold mb-4">800+</p>
             <p className="text-xl">Holiday Package</p>
           </div>
 
-          <div className="p-8 bg-white rounded-3xl flex flex-col items-center shadow-xl">
+          <div className="p-4 md:p-8 bg-white rounded-3xl flex flex-col items-center shadow-xl text-center">
             <p className="text-[#FF5722] text-4xl font-bold mb-4">100</p>
             <p className="text-xl">Luxury Hotels</p>
           </div>
 
-          <div className="p-8 bg-white rounded-3xl flex flex-col items-center shadow-xl">
+          <div className="p-4 md:p-8 bg-white rounded-3xl flex flex-col items-center shadow-xl text-center">
             <p className="text-[#FF5722] text-4xl font-bold mb-4">7</p>
             <p className="text-xl">Permium Airlines</p>
           </div>
 
-          <div className="p-8 bg-white rounded-3xl flex flex-col items-center shadow-xl">
+          <div className="p-4 md:p-8 bg-white rounded-3xl flex flex-col items-center shadow-xl text-center">
             <p className="text-[#FF5722] text-4xl font-bold mb-4">2k+</p>
             <p className="text-xl">Happy Customers</p>
           </div>
@@ -262,9 +262,9 @@ function TravelPoint() {
 
 function Services() {
   return (
-    <section className="px-20 min-h-[70vh] flex justify-between items-center ">
-      <div className="flex gap-7">
-        <img src={uparrow} alt="uparrow" />
+    <section className="px-4 md:px-20 min-h-[70vh] flex flex-col md:flex-row mt-12 md:mt-0 justify-between items-center ">
+      <div className="text-center md:text-left flex gap-7">
+        <img className="hidden md:inline-block" src={uparrow} alt="uparrow" />
         <div className="flex flex-col justify-around">
           <h4 className="tracking-widest uppercase text-xl text-[#F85E9F] font-bold">
             Services
@@ -277,33 +277,36 @@ function Services() {
 
       <div className="h-[70vh] basis-[70%]  flex items-center">
         <div className="flex flex-col items-center justify-evenly px-6 h-full">
-          <div className="grid grid-cols-3 gap-12 h-[70%]">
-            <div className="flex flex-col bg-white drop-shadow-2xl hover:scale-110 duration-200 items-center p-12 rounded-3xl justify-evenly">
+          <div className="grid mt-12 md:mt-0 md:grid-cols-3 gap-12 min-h-[70%]">
+            <div className="flex flex-col bg-white drop-shadow-2xl hover:scale-110 duration-200 items-center p-6 md:p-12 rounded-3xl justify-evenly text-center">
               <div className="mb-12">
                 <img src={destination} alt="destination" />
               </div>
-              <h6 className="font-bold text-3xl">Best Tour Guide</h6>
+              <h6 className="font-bold text-3xl mb-3">Best Tour Guide</h6>
               <p className="text-center text-xl">
-                What looked like a small <br /> patch of purple grass, <br />
+                What looked like a small <br className="md:block hidden" />{" "}
+                patch of purple grass, <br className="md:block hidden" />
                 above five feet.
               </p>
             </div>
 
-            <div className="flex flex-col bg-white drop-shadow-2xl items-center p-12 rounded-3xl hover:scale-110 duration-200 justify-evenly">
+            <div className="flex flex-col bg-white drop-shadow-2xl hover:scale-110 duration-200 items-center p-6 md:p-12 rounded-3xl justify-evenly text-center">
               <div className="mb-12">
                 <img src={booking} alt="booking" />
               </div>
-              <h6 className="font-bold text-3xl">Easy Booking</h6>
+              <h6 className="font-bold text-3xl mb-3 md:mb-0">Easy Booking</h6>
               <p className="text-center text-xl">
                 Square, was moving across the sand in their direction.
               </p>
             </div>
 
-            <div className="flex flex-col bg-white drop-shadow-2xl items-center p-12 rounded-3xl hover:scale-110 duration-200 justify-evenly">
+            <div className="flex flex-col bg-white drop-shadow-2xl hover:scale-110 duration-200 items-center p-6 md:p-12 rounded-3xl justify-evenly text-center">
               <div className="mb-12">
                 <img src={cloudy} alt="cloudy" />
               </div>
-              <h6 className="font-bold text-3xl">Weather Forecast</h6>
+              <h6 className="font-bold text-3xl mb-3 md:mb-0">
+                Weather Forecast
+              </h6>
               <p className="text-center text-xl">
                 What looked like a small patch of purple grass, above five feet.
               </p>
