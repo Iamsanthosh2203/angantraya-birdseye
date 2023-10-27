@@ -65,9 +65,9 @@ function Header({ activePackage, setActivePackage }) {
         className="flex flex-col font-primary text-black top-0 sticky z-50 w-full"
       >
         <nav className="pr-6 flex items-center justify-between w-full border-b-[1px] border-black ">
-          <div>
+          <Link to="/">
             <img src={logo} alt="Logo" />
-          </div>
+          </Link>
 
           <div className="flex gap-24 font-bold text-xl">
             <Link to="/">HOME</Link>

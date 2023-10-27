@@ -50,20 +50,20 @@ function Header() {
       strength={500}
       className="relative flex flex-col font-primary h-screen"
     >
-      <video id="background-video" autoPlay loop muted>
+      <video id="background-video" className="object-cover" autoPlay loop muted>
         <source
-          src="https://rr3---sn-h5576ns6.c.drive.google.com/videoplayback?expire=1698345047&ei=J4Y6ZYiaFsP-p84P9NK3uAs&ip=2405:201:e046:c828:cdbe:3a22:f0e1:34ff&cp=QVROWkRfVFBSSFhPOjN4OTNSM1hqTUpiajhKRXROQ01ROEZvTmNkcXZpTnplX1lTUDREUzdKUDA&id=2b2fea16988346bb&itag=37&source=webdrive&requiressl=yes&xpc=EghotM6WJ3oBAQ==&mh=Mm&mm=32&mn=sn-h5576ns6&ms=su&mv=m&mvi=3&pl=49&ttl=transient&susc=dr&driveid=16G_5YuHbKk49E1-TRWBM7Pa6MZOa8_Ah&app=explorer&mime=video/mp4&vprv=1&prv=1&dur=39.822&lmt=1697803623298308&mt=1698333917&subapp=DRIVE_WEB_FILE_VIEWER&txp=0001224&sparams=expire,ei,ip,cp,id,itag,source,requiressl,xpc,ttl,susc,driveid,app,mime,vprv,prv,dur,lmt&sig=AGM4YrMwRQIhAODrD0s4q1dKgoBrWYBhAO4BsX7EBaWr9C5PyZ32xBShAiAWSMmhTEFdEy1X1MpGWWNQzcMaTzB76SQfgdO6Rjjm1w==&lsparams=mh,mm,mn,ms,mv,mvi,pl&lsig=AK1ks_kwRgIhAO9TZPhiTPTFsqdPb5al88I1s11Cv5nrklJTEpyvi1KVAiEAz0UekxV-Uv8ZDRedKaOVoCzgytPNsZUFvkwUxw8wis4=&cpn=-egRgzOz4Rkw-ae7&c=WEB_EMBEDDED_PLAYER&cver=1.20231022.00.01"
+          src="//cdn-cf-east.streamable.com/video/mp4/jpklri.mp4?Expires=1698594360&Signature=iNbwPTmuuV2~xT6C66wB9QZg07GdxAy0GFlLN9jGzOQV9yXhgjTjDpMYP4fgB0ebCge7ejfaLaaqQjDEWMer25TsPQeR6TAehTNEZW5YsrwVLrc3PaMkco4uSQbuZwgXKxAh-WSMxA3Efj~iwLx3samz~9u1GYI0yWrZ-8CxE0jXoOQw0eDqX4HHVi2wkw6IVvVkkpfqUj7RDhnIQXYCYPvVSGfmKVFkGe-VoEd9mSWy6SlzlOHdMKInXALoZwNGyM~VpdV6frrmyn3qTU8A4RJ~cRhzjXVyjdFjQqJb45iXmgAc7TttVaUIbgjnwCXovjFbVbA7qRjo2VxOWMo0ww__&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ"
           type="video/mp4"
         />
       </video>
 
-      <nav className="px-12 flex items-center justify-between w-full">
-        <div>
-          <img src={logo} alt="Logo" />
-        </div>
+      <nav className="md:px-12 flex items-center justify-between w-full">
+        <Link to="/">
+          <img className="md:w-auto w-44" src={logo} alt="Logo" />
+        </Link>
 
-        <div className="flex gap-24 font-bold text-xl text-white">
-          <a href="#home">HOME</a>
+        <div className="hidden md:flex gap-24 font-bold text-xl text-white">
+          <Link to="/">HOME</Link>
           <Link to="/destinations">DESTINATIONS</Link>
           <a href="#services">OUR SERVICES</a>
           <a href="#gallery">GALLERY</a>
@@ -96,9 +96,9 @@ function Header() {
 
 function Explore() {
   return (
-    <section className="min-h-screen py-10 explore flex items-center min-w-[70%] mx-auto justify-around">
+    <section className="min-h-screen py-10 explore flex items-center flex-col md:flex-row md:text-left text-center w-auto md:min-w-[70%] mx-auto justify-around">
       <div className="flex flex-col gap-14">
-        <div>
+        <div className="mx-auto md:mx-0">
           <button className="p-4 px-7 font-bold rounded-full bg-white shadow-xl flex gap-4">
             Explore the world!
             <img src={work} alt="" />
@@ -112,17 +112,18 @@ function Explore() {
         </h2>
 
         <p className="text-xl">
-          We always make our customer happy by providing <br />
+          We always make our customer happy by providing{" "}
+          <br className="hidden md:block" />
           as many choices as possible
         </p>
 
         <div>
-          <button className="px-6 py-4 shadow-xl bg-[#5D50C6] rounded-full">
+          <button className="px-6 py-4 shadow-xl bg-[#5D50C6] rounded-full mb-6 md:mb-0">
             Get Started
           </button>
         </div>
       </div>
-      <div className="flex items-center gap-8 explore-img">
+      <div className="hidden md:flex items-center gap-8 explore-img">
         <div className="flex flex-col gap-8">
           <img className="hover:scale-105 duration-300" src={img2} alt={img2} />
           <img className="hover:scale-105 duration-300" src={img3} alt={img3} />
@@ -145,10 +146,10 @@ function Explore() {
 
 function Destinations() {
   return (
-    <section className="flex flex-col h-screen bg-[#b9b3b324] px-20 py-24 justify-around">
+    <section className="flex flex-col min-h-screen bg-[#b9b3b324] md:px-20 py-24 justify-around">
       <div className="flex justify-around">
         <div className="flex gap-12">
-          <div>
+          <div className="hidden md:block">
             <img src={dots} alt="stars" />
           </div>
           <div className="flex flex-col gap-6">
@@ -167,11 +168,11 @@ function Destinations() {
         </div>
       </div>
 
-      <div className="grid grid-cols-3 mx-auto gap-24">
+      <div className="my-6 grid grid-cols-1 md:grid-cols-3 mx-auto gap-24">
         {/* item 1 */}
         <Link
           to="/india"
-          className="hover:scale-110 cursor-pointer duration-150 h-[500px] w-80 rounded-xl bg-white shadow-lg flex-col"
+          className="md:hover:scale-110 cursor-pointer duration-150 h-[500px] w-80 rounded-xl bg-white shadow-lg flex-col"
         >
           <div className="h-[60%] w-full rounded-t-xl bg-img-india" />
           <div className="flex flex-col p-12 gap-7">
@@ -183,7 +184,7 @@ function Destinations() {
         </Link>
 
         {/* item 2 */}
-        <div className="hover:scale-110 cursor-pointer duration-150 h-[500px] w-80 rounded-xl bg-white shadow-lg flex-col">
+        <div className="md:hover:scale-110 cursor-pointer duration-150 h-[500px] w-80 rounded-xl bg-white shadow-lg flex-col">
           <div className="h-[60%] w-full rounded-t-xl bg-img-kenya" />
           <div className="flex flex-col p-12 gap-7">
             <h3 className="font-bold font-adanda text-xl">
@@ -194,7 +195,7 @@ function Destinations() {
         </div>
 
         {/* item 3 */}
-        <div className="hover:scale-110 duration-150 cursor-pointer h-[500px] w-80 rounded-xl bg-white shadow-lg flex-col">
+        <div className="md:hover:scale-110 duration-150 cursor-pointer h-[500px] w-80 rounded-xl bg-white shadow-lg flex-col">
           <div className="h-[60%] w-full rounded-t-xl bg-img-lakshadweep" />
           <div className="flex flex-col p-12 gap-7">
             <h3 className="font-bold font-adanda text-lg">
@@ -210,9 +211,9 @@ function Destinations() {
 
 function TravelPoint() {
   return (
-    <section className="h-screen my-28 mx-28 flex bg-map bg-white">
-      <div className="flex flex-col px-24 py-20 justify-evenly">
-        <div className="flex items-center gap-5 px-8 py-2 rounded-full bg-[#ffffff9b] w-1/2">
+    <section className="min-h-screen md:my-28 md:mx-28 flex bg-map bg-white flex-col md:flex-row">
+      <div className="flex flex-col md:px-24 py-20 justify-evenly">
+        <div className="mx-auto md:mx-0 flex items-center gap-5 px-8 py-2 rounded-full bg-[#ffffff9b] w-1/2">
           {/* generate map on font awesome */}
 
           <img src={maplogo} alt="" />
@@ -220,7 +221,7 @@ function TravelPoint() {
           <p className="tracking-widest font-primary">Paradise on Earth</p>
         </div>
 
-        <div className="flex flex-col gap-12 w-[70%]">
+        <div className="flex flex-col gap-12 md:w-[70%] text-center md:text-left">
           <p className="text-xl font-bold tracking-[4px]">TRAVEL POINT</p>
           <h3 className="tracking-wider text-6xl font-alfa">
             We helping you to find your dream location.

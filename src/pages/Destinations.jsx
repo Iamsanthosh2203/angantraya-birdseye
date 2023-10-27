@@ -26,13 +26,13 @@ function Header() {
   return (
     <header className="px-12 relative py-5 flex flex-col font-primary min-h-screen bg-[#1B1A1A] bg-fixed">
       <nav className="flex items-center justify-between w-full">
-        <div>
+        <RouterLink to="/">
           <img src={logo} alt="Logo" />
-        </div>
+        </RouterLink>
 
         <div className="flex gap-24 font-bold text-xl text-white">
-          <a href="/">HOME</a>
-          <a href="/destinations">DESTINATIONS</a>
+          <RouterLink to="/">HOME</RouterLink>
+          <RouterLink to="/destinations">DESTINATIONS</RouterLink>
           <a href="#services">OUR SERVICES</a>
           <a href="#gallery">GALLERY</a>
           <a href="#about">ABOUT US</a>

@@ -32,13 +32,13 @@ function Header() {
       className="relative flex flex-col font-primary min-h-screen bg-[#1B1A1A]"
     >
       <nav className="pr-6 flex items-center justify-between w-full">
-        <div>
+        <Link to="/">
           <img src={logo} alt="Logo" />
-        </div>
+        </Link>
 
         <div className="flex gap-24 font-bold text-xl text-white">
-          <a href="/">HOME</a>
-          <a href="/destinations">DESTINATIONS</a>
+          <Link to="/">HOME</Link>
+          <Link to="/destinations">DESTINATIONS</Link>
           <a href="#services">OUR SERVICES</a>
           <a href="#gallery">GALLERY</a>
           <a href="#about">ABOUT US</a>
