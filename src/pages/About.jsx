@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import logo from "../assets/logo.png";
 import line1 from "../assets/line1.svg";
+
 import { Parallax } from "react-parallax";
 import { Link } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
@@ -18,6 +19,7 @@ function About() {
   const [activePackage, setActivePackage] = useState(1);
   return (
     <>
+      <ScrollToTopButton />
       <Header
         activePackage={activePackage}
         setActivePackage={setActivePackage}
@@ -32,7 +34,42 @@ function About() {
     </>
   );
 }
+function ScrollToTopButton() {
+  const [isMobile, setIsMobile] = useState(false);
 
+  // Function to scroll to the top of the page
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  // Check if the screen width is less than a certain threshold (e.g., 768px) to determine if it's a mobile screen
+  const checkIsMobile = () => {
+    setIsMobile(window.innerWidth < 768); // Adjust the threshold as needed
+  };
+
+  // Listen for window resize events to update the isMobile state
+  useEffect(() => {
+    checkIsMobile(); // Initial check
+    window.addEventListener("resize", checkIsMobile);
+
+    return () => {
+      // Clean up the event listener on component unmount
+      window.removeEventListener("resize", checkIsMobile);
+    };
+  }, []);
+
+  return (
+    <button
+      className={`scroll-to-top-button ${isMobile ? "visible" : "hidden"}`}
+      onClick={scrollToTop}
+    >
+      Scroll to Top
+    </button>
+  );
+}
 // eslint-disable-next-line react/prop-types
 function Header({ activePackage, setActivePackage }) {
   const handleClick = (packageNumber) => {
@@ -64,7 +101,7 @@ function Header({ activePackage, setActivePackage }) {
         strength={500}
         className="flex flex-col font-primary text-black top-0 sticky z-50 w-full"
       >
-        <nav className="pr-6 flex items-center justify-between w-full border-b-[1px] border-black ">
+        <nav className="pr-6 hidden md:flex items-center justify-between w-full border-b-[1px] border-black ">
           <Link to="/">
             <img src={logo} alt="Logo" />
           </Link>
@@ -98,11 +135,26 @@ function Header({ activePackage, setActivePackage }) {
           </div>
         </nav>
 
-        <div className="flex justify-around my-4 font-arvo border-b pb-4 border-black">
+        <nav className="flex justify-between items-center md:hidden relative z-10 bg-black">
+          <Link to="/">
+            <img className="w-32" src={logo} alt="Logo" />
+          </Link>
+
+          <div className="px-3">
+            <button
+              onClick={() => window.history.back()}
+              className="px-6 py-4 text-black bg-white"
+            >
+              Go Back
+            </button>
+          </div>
+        </nav>
+
+        <div className="px-4 md:px-0 flex gap-4 md:justify-around my-4 font-arvo border-b pb-4 border-black overflow-x-auto">
           <button
             className={`${
               activePackage === 1 ? "bg-black text-white" : "bg-white"
-            } border-2 border-black p-6 tracking-[5px]`}
+            } border-2 border-black p-3 md:p-6 tracking-[5px]`}
             onClick={() => handleClick(1)}
           >
             PACKAGE 1
@@ -111,7 +163,7 @@ function Header({ activePackage, setActivePackage }) {
           <button
             className={`${
               activePackage === 2 ? "bg-black text-white" : "bg-white"
-            } text-black border-2 border-black p-6 tracking-[5px]`}
+            } text-black border-2 border-black p-3 md:p-6 tracking-[5px]`}
             onClick={() => handleClick(2)}
           >
             PACKAGE 2
@@ -120,7 +172,7 @@ function Header({ activePackage, setActivePackage }) {
           <button
             className={`${
               activePackage === 3 ? "bg-black text-white" : "bg-white"
-            } text-black border-2 border-black p-6 tracking-[5px]`}
+            } text-black border-2 border-black p-3 md:p-6 tracking-[5px]`}
             onClick={() => handleClick(3)}
           >
             PACKAGE 3
@@ -129,14 +181,14 @@ function Header({ activePackage, setActivePackage }) {
           <button
             className={`${
               activePackage === 4 ? "bg-black text-white" : "bg-white"
-            } text-black border-2 border-black p-6 tracking-[5px]`}
+            } text-black border-2 border-black p-3 md:p-6 tracking-[5px]`}
             onClick={() => handleClick(4)}
           >
             PACKAGE 4
           </button>
         </div>
 
-        <div className="flex justify-around font-amethysta text-xl border-b pb-4 border-black">
+        <div className="flex overflow-x-auto items-center gap-6 md:justify-around font-amethysta text-xl border-b pb-4 border-black">
           <ScrollLink
             to="attractions"
             className="group cursor-pointer"
@@ -412,7 +464,7 @@ function Included() {
 
   return (
     <section id="included" className="md:px-24">
-      <h2 className="font-arvo text-3xl tracking-[6px] font-bold capitalize pt-24 pb-12 text-center">
+      <h2 className="font-arvo text-xl md:text-3xl tracking-[6px] font-bold capitalize pt-24 pb-12 text-center">
         WHAT’S INCLUDED
       </h2>
 
@@ -430,7 +482,7 @@ function Included() {
       </div>
 
       <div className="md:px-24 px-5 py-5 md:pt-44 md:pb-12 text-2xl">
-        <ol className="list-disc list-inside flex-col flex items gap-8">
+        <ol className="list-disc list-inside flex-col flex items gap-8 text-xl">
           {includedItems.map((item, index) => (
             <li className="text-with-space-1" key={index}>
               {item}
@@ -463,7 +515,7 @@ function NotIncluded() {
         WHAT’S NOT INCLUDED
       </h2>
 
-      <ol className="list-disc flex flex-col gap-4 px-12 text-2xl">
+      <ol className="list-disc flex flex-col gap-4 px-12 text-xl md:text-2xl">
         {notIncludedItems.map((item, index) => (
           <li className="text-with-space-1 uppercase" key={index}>
             {item}
@@ -485,9 +537,12 @@ function Booking() {
       </div>
 
       <div className="flex justify-evenly">
-        <button className="px-8 py-6 hover:bg-black hover:text-white duration-150 border border-black">
+        <Link
+          to="/forms"
+          className="px-8 py-6 hover:bg-black hover:text-white duration-150 border border-black"
+        >
           BOOK NOW
-        </button>
+        </Link>
         <button className="px-8 py-6 hover:bg-black hover:text-white duration-150 border border-black">
           CONTACT US
         </button>
