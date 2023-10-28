@@ -13,6 +13,7 @@ export default {
         amethysta: "Amethysta, serif",
         peddana: "Peddana, serif",
         noticia: "Noticia Text, serif",
+        encodesans: "Encode Sans, sans-serif",
       },
     },
   },
