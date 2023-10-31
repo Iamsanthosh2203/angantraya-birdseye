@@ -21,6 +21,20 @@ function Destinations() {
 }
 
 function Header() {
+  const handleCallClick = () => {
+    // Use the `window.location` to initiate a phone call to the mobile number
+    window.location.href = "tel:+1234567890"; // Replace with the desired mobile number
+  };
+
+  const handleEmailClick = () => {
+    // Use the `window.location` to open the default email client
+    window.location.href = "mailto:example@example.com"; // Replace with the desired email address
+  };
+
+  const handleDestinationsClick = () => {
+    // Use the `window.location` to open the default email client
+    window.location.href = "/destinations"; // Replace with the desired email address
+  };
   const [enquire, setEnquire] = useState(false);
   const [nav, setNav] = useState(false);
 
@@ -53,9 +67,9 @@ function Header() {
                 : "absolute top-16 h-f w-full bg-white text-black p-4 flex flex-col gap-3 -translate-y-12 duration-200 -z-10"
             }
           >
-            <a href="">Book Online</a>
-            <a href="">By Email</a>
-            <a href="">By Phone</a>
+            <button onClick={handleDestinationsClick}>Book Online</button>
+            <button onClick={handleEmailClick}>By Email</button>
+            <button onClick={handleCallClick}>By Phone</button>
           </div>
         </div>
       </nav>
@@ -104,9 +118,9 @@ function Header() {
                     : "absolute top-16 h-f w-full bg-white text-black p-4 hidden flex-col gap-3 -translate-y-12 duration-200 -z-10"
                 }
               >
-                <a href="">Book Online</a>
-                <a href="">By Email</a>
-                <a href="">By Phone</a>
+                <button onClick={handleDestinationsClick}>Book Online</button>
+                <button onClick={handleEmailClick}>By Email</button>
+                <button onClick={handleCallClick}>By Phone</button>
               </div>
             </div>
           </div>

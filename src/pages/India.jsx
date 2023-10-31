@@ -21,6 +21,20 @@ function India() {
 }
 
 function Header() {
+  const handleCallClick = () => {
+    // Use the `window.location` to initiate a phone call to the mobile number
+    window.location.href = "tel:+1234567890"; // Replace with the desired mobile number
+  };
+
+  const handleEmailClick = () => {
+    // Use the `window.location` to open the default email client
+    window.location.href = "mailto:example@example.com"; // Replace with the desired email address
+  };
+
+  const handleDestinationsClick = () => {
+    // Use the `window.location` to open the default email client
+    window.location.href = "/destinations"; // Replace with the desired email address
+  };
   const [enquire, setEnquire] = useState(false);
   const [nav, setNav] = useState(false);
 
@@ -70,9 +84,9 @@ function Header() {
                 : "absolute flex top-16 h-f w-full bg-white text-black p-4 flex-col gap-3 -translate-y-12 duration-200 -z-10"
             }
           >
-            <a href="">Book Online</a>
-            <a href="">By Email</a>
-            <a href="">By Phone</a>
+            <button onClick={handleDestinationsClick}>Book Online</button>
+            <button onClick={handleEmailClick}>By Email</button>
+            <button onClick={handleCallClick}>By Phone</button>
           </div>
         </div>
       </nav>
@@ -144,48 +158,56 @@ function OurDestinations() {
       imageUrl:
         "https://www.tripexperienceblog.com/wp-content/uploads/2018/04/Andaman-Nicobar-Islands-1.jpg",
       location: "India, South Asia",
+      url: "/andaman",
     },
     {
       name: "Banglore Tour Packages",
       imageUrl:
         "https://lp-cms-production.imgix.net/2019-06/9483508eeee2b78a7356a15ed9c337a1-bengaluru-bangalore.jpg",
       location: "India, South Asia",
+      url: "/banglore",
     },
     {
       name: "Gujarat Tour Packages",
       imageUrl:
         "https://cdn.britannica.com/39/124439-050-AFA5CEC6/Sun-Temple-Modhera-Gujarat-India.jpg",
       location: "India, South Asia",
+      url: "/andaman",
     },
     {
       name: "Hyderabad Tour Packages",
       imageUrl:
         "https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2022/09/15144355/Untitled-design-2-4.jpg",
       location: "India, South Asia",
+      url: "/andaman",
     },
     {
       name: "Kerala Tour Packages",
       imageUrl:
         "https://www.hindustantimes.com/ht-img/img/2023/03/24/1600x900/Further-down--in-Kerala--God-s-Own-Country--held-i_1679599101590_1679646049345_1679646049345.jpg",
       location: "India, South Asia",
+      url: "/kerala",
     },
     {
       name: "Lakshadweep Tour Packages",
       imageUrl:
         "https://themapofindia.com/superawesome/2021/05/Lakshadweep-scaled.jpg",
       location: "India, South Asia",
+      url: "/andaman",
     },
     {
       name: "Tamil Nadu Tour Packages",
       imageUrl:
         "https://cdn.britannica.com/12/100812-050-27483D5E/Mamallapuram-Shore-Temple-Chennai-India-Tamil-Nadu.jpg",
       location: "India, South Asia",
+      url: "/andaman",
     },
     {
       name: "Uttrakhand Tour Packages",
       imageUrl:
         "https://img.traveltriangle.com/blog/wp-content/uploads/2020/04/Lakes-in-Uttrakhand.jpg",
       location: "India, South Asia",
+      url: "/andaman",
     },
   ];
 
@@ -203,7 +225,7 @@ function OurDestinations() {
         {destinations.map((destination, index) => (
           <div key={index}>
             <Link
-              to={`/about`}
+              to={destination.url}
               key={index}
               className={`md:flex hidden flex-col w-[500px] h-[500px] bg-white ${
                 index % 2 === 0 ? "rounded-l-3xl" : "rounded-r-3xl"

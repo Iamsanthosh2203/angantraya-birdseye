@@ -43,6 +43,20 @@ function Header() {
     });
   }
   scrollToTop();
+  const handleCallClick = () => {
+    // Use the `window.location` to initiate a phone call to the mobile number
+    window.location.href = "tel:+1234567890"; // Replace with the desired mobile number
+  };
+
+  const handleEmailClick = () => {
+    // Use the `window.location` to open the default email client
+    window.location.href = "mailto:example@example.com"; // Replace with the desired email address
+  };
+
+  const handleDestinationsClick = () => {
+    // Use the `window.location` to open the default email client
+    window.location.href = "/destinations"; // Replace with the desired email address
+  };
 
   const [enquire, setEnquire] = useState(false);
 
@@ -55,7 +69,7 @@ function Header() {
     >
       <video id="background-video" className="object-cover" autoPlay loop muted>
         <source
-          src="//cdn-cf-east.streamable.com/video/mp4/jpklri.mp4?Expires=1698594360&Signature=iNbwPTmuuV2~xT6C66wB9QZg07GdxAy0GFlLN9jGzOQV9yXhgjTjDpMYP4fgB0ebCge7ejfaLaaqQjDEWMer25TsPQeR6TAehTNEZW5YsrwVLrc3PaMkco4uSQbuZwgXKxAh-WSMxA3Efj~iwLx3samz~9u1GYI0yWrZ-8CxE0jXoOQw0eDqX4HHVi2wkw6IVvVkkpfqUj7RDhnIQXYCYPvVSGfmKVFkGe-VoEd9mSWy6SlzlOHdMKInXALoZwNGyM~VpdV6frrmyn3qTU8A4RJ~cRhzjXVyjdFjQqJb45iXmgAc7TttVaUIbgjnwCXovjFbVbA7qRjo2VxOWMo0ww__&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ"
+          src="http://cdn-cf-east.streamable.com/video/mp4/jpklri.mp4?Expires=1699024980&Signature=mUbonn0fd02hxNg8lPJVzMB3IPxaahqWuL-vU1~GUu9c~ZBfW5FX2FouWkse4NvkALno~ggYY719APIVKjmXyi57D6c-7afviq9y1~NGBHQmcK1IuWGI-4XEZ~tKl89ixKBFsY1hu~QrfEgJe~qR9GAsIawcCWdbd8KsgOyIisbRyUoqxSI8N7jtc0x58N2uPXTjEvWpIMEWkQqLaLpSbE3Wvy97~3~LKwrOM3yb0SYBUjAstZgtNiOdwHcEU3XWZLdZ1oxdWBu5DoenIZxHRu1kAh3lE3nB9vnNw~4-OQtqTg6OmbsOjTBtW22kE8ktcE-1isjO9MqLaFvQ6A9RDQ__&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ"
           type="video/mp4"
         />
       </video>
@@ -87,9 +101,9 @@ function Header() {
                 : "absolute top-16 h-f w-full bg-white text-black p-4 flex flex-col gap-3 -translate-y-12 duration-200 -z-10"
             }
           >
-            <a href="">Book Online</a>
-            <a href="">By Email</a>
-            <a href="">By Phone</a>
+            <button onClick={handleDestinationsClick}>Book Online</button>
+            <button onClick={handleEmailClick}>By Email</button>
+            <button onClick={handleCallClick}>By Phone</button>
           </div>
         </div>
       </nav>
@@ -138,9 +152,9 @@ function Header() {
                     : "absolute top-16 h-f w-full bg-white text-black p-4 hidden flex-col gap-3 -translate-y-12 duration-200 -z-10"
                 }
               >
-                <a href="">Book Online</a>
-                <a href="">By Email</a>
-                <a href="">By Phone</a>
+                <button onClick={handleDestinationsClick}>Book Online</button>
+                <button onClick={handleEmailClick}>By Email</button>
+                <button onClick={handleCallClick}>By Phone</button>
               </div>
             </div>
           </div>
