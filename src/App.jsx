@@ -19,7 +19,7 @@ export default function App() {
     // Simulate a loading delay, replace with actual loading logic
     setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
+    }, 3000);
   }, []);
   return (
     <BrowserRouter>

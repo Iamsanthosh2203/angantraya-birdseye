@@ -2,7 +2,7 @@ function Loading() {
   return (
     <div className="h-screen w-screen flex justify-center items-center bg-black">
       <svg
-        className="h-20 w-20"
+        className="pl-8 h-20 w-20"
         version="1.1"
         id="L5"
         xmlns="http://www.w3.org/2000/svg"

@@ -98,8 +98,8 @@ function Header() {
           </div>
 
           <div className="flex flex-col gap-5 items-center text-2xl py-8 h-full">
-            <Link to="/">HOME</Link>
-            <Link to="/destinations">DESTINATIONS</Link>
+            <RouterLink to="/">HOME</RouterLink>
+            <RouterLink to="/destinations">DESTINATIONS</RouterLink>
             <a href="#services">OUR SERVICES</a>
             <a href="#gallery">GALLERY</a>
             <a href="#about">ABOUT US</a>
