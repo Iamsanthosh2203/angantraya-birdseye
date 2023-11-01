@@ -17,7 +17,7 @@ import {
 
 import attraction1 from "../assets/attraction1.png";
 
-function BangloreAbout() {
+function Tamilnadu() {
   const [activePackage, setActivePackage] = useState(1);
   return (
     <>
@@ -252,12 +252,12 @@ function Header({ activePackage, setActivePackage }) {
 }
 
 function Attractions({ activePackage }) {
-  let title = "Bangalore to Coorg Tour";
+  let title = "Tamilnadu Package";
 
   if (activePackage === 2) {
-    title = "Bangalore to Mysore Tour (2 Days)";
+    title = "Chennai To Yelagiri Tour Package";
   } else if (activePackage === 3) {
-    title = " Mysore Coorg Tour";
+    title = "Honeymoon Package Overview";
   }
 
   return (
@@ -273,14 +273,14 @@ function Attractions({ activePackage }) {
 
 function Overview({ activePackage }) {
   let description =
-    "Coorg, also known as Kodagu, is a picturesque destination with its misty valleys, coffee plantations, and a rich cultural heritage. This 2-3 day tour from Bangalore offers an opportunity to explore Coorg's natural beauty, historical sites, and unique experiences. From the mesmerizing Abbey Falls to the tranquil Dubare Elephant Camp and the intricate Tibetan architecture at Namdroling Monastery, this package is packed with diverse attractions. You'll also visit the Madikeri Fort and Museum, offering insights into Coorg's history and culture.";
+    "Escape to the serene hill stations of Ooty and Kodaikanal, where nature's beauty and tranquility await. These two destinations, known as the Queen of Hill Stations and the Princess of Hill Stations, respectively, offer picturesque landscapes, pristine lakes, lush gardens, and a rich cultural experience. Immerse yourself in the natural beauty of Ooty and Kodaikanal while creating lifelong memories. Book your Ooty and Kodaikanal tour package now.";
 
   if (activePackage === 2) {
     description =
-      "Mysore, a city steeped in history and grandeur, promises a blend of the regal past and modern comfort. This 2-day tour from Bangalore offers an opportunity to explore the best of both worlds. From the opulent palaces to lush green sandalwood forests and architectural marvels, Mysore has something for every traveler. Experience the deep-rooted history and architectural wonders, while also enjoying the serene surroundings and modern amenities.";
+      "Escape to the tranquil hill station of Yelagiri, nestled amidst the lush green valleys, rose gardens, and orchards of Tamil Nadu. This 3-day tour from Chennai offers a complete package that immerses you in the beauty of nature. Explore gushing waterfalls, ancient temples, and picturesque lakes, making it a perfect getaway for those seeking serenity and rejuvenation.";
   } else if (activePackage === 3) {
     description =
-      "This 4-day tour takes you through the enchanting cities of Mysore and Coorg, offering a blend of cultural exploration and natural beauty. Mysore, known as the 'City of Palaces,' boasts magnificent royal residences and gardens. Coorg, on the other hand, is renowned for its scenic landscapes, coffee plantations, and serene waterfalls. This tour package allows you to experience the best of both worlds in Karnataka, India.";
+      "Escape the hustle and bustle of daily life and embark on a romantic and enchanting journey with our Ooty Kodaikanal Munnar Honeymoon Package. These three hill stations offer the perfect backdrop for your romantic getaway. In Ooty, witness the breathtaking sunset at Doddabetta Peak, explore the vibrant Botanical Garden, and stroll through the fragrant Rose Garden. In Kodaikanal, enjoy a romantic boat ride on the tranquil Kodaikanal Lake, walk hand in hand on Coaker's Walk, and immerse yourself in the beauty of colorful flowers at Bryant Park. Finally, in Munnar, relish boating at the serene Mattupetty Dam, take in the panoramic views from Dolphin's Nose viewpoint, and create timeless memories at Echo Point. This honeymoon package promises an unforgettable experience surrounded by the natural beauty of these hill stations, allowing you to cherish these moments forever.";
   }
 
   return (
@@ -320,38 +320,70 @@ function Itinerary({ activePackage }) {
   // Define an array of itinerary items
   let itineraryItems = [
     {
-      day: "Day 1",
-      title: "Arrival in Coorg",
+      day: "Day 1: Arrival in Ooty | ",
+      title: "Welcome to The Princess of Hill Stations",
       content: [
-        "Depart from Bangalore and enjoy an overnight journey.",
-        "Pick-up from select points in Bangalore.",
-        "Arrive in Coorg.",
+        "Start your journey from Bangalore to Ooty, a scenic 5-6 hour drive.",
+        "Check in at your chosen hotel or resort in Ooty and enjoy some leisure time.",
+        "Explore the charming hill station of Ooty at your own pace.",
+        "Overnight stay in Ooty.",
       ],
     },
     {
-      day: "Day 2",
-      title: "Coorg Sightseeing",
+      day: "Day 2: Ooty Sightseeing | ",
+      title: "Relax by the Beautiful Ooty Lake ",
       content: [
-        "Explore Dubare Elephant Camp and interact with elephants.",
-        "Visit Chiklihole Reservoir and Nisargadhama Deer Park.",
-        "Optional lunch (at your expense).",
-        "Discover Bylakuppe and the Tibetan Flea Market.",
-        "Explore Harangi Dam or Harangi Backwaters.",
-        "Return to the hotel for dinner and an overnight stay in Coorg.",
+        "Breakfast at your hotel.",
+        "Visit Doddabetta Peak for breathtaking panoramic views of the Nilgiri range.",
+        "Explore the Botanical Gardens with its diverse plant species.",
+        "Enjoy boating at Ooty Lake, surrounded by hills and eucalyptus trees.",
+        "Discover the largest rose garden in India at Rose Garden.",
+        "Overnight stay in Ooty.",
       ],
     },
     {
-      day: "Day 3",
-      title: "More Coorg Sightseeing and Departure",
+      day: "Day 3: Coonoor Excursion | ",
+      title: "A Visit to the Beautiful Sim's Park",
       content: [
-        "Visit Raja's Seat viewpoint for panoramic views.",
-        "Explore Madikeri Fort and Museum.",
-        "Discover Omkareshwara Temple.",
-        "Enjoy the beauty of Abbey Falls.",
-        "Optional lunch (at your expense).",
-        "Explore Mercara Gold Estate Coffee Plantation.",
-        "Visit local markets for souvenirs.",
-        "Return to Bangalore.",
+        "Breakfast at your Ooty hotel.",
+        "Head to Coonoor, a picturesque hill station, for a day's excursion.",
+        "Explore Sim's Park, known for its diverse collection of trees and flowers.",
+        "Visit Dolphin's Nose for panoramic views of hills and tea plantations.",
+        "Continue to Lamb's Rock for scenic views.",
+        "Return to Ooty for an evening at leisure.",
+        "Overnight stay in Ooty.",
+      ],
+    },
+    {
+      day: "Day 4: Transfer from Ooty to Kodaikanal | ",
+      title: "Welcome to the Princess of Hill Stations",
+      content: [
+        "Breakfast at your Ooty hotel.",
+        "Journey to Kodaikanal, a 6-7 hour drive.",
+        "Check in at your hotel in Kodaikanal.",
+        "Spend the evening at leisure, taking in the town's beauty and tranquility.",
+        "Overnight stay in Kodaikanal.",
+      ],
+    },
+    {
+      day: "Day 5: Kodaikanal Sightseeing | ",
+      title: "Visit the Fascinating Pillar Rocks",
+      content: [
+        "Breakfast at your Kodaikanal hotel.",
+        "Explore Kodaikanal, starting with Kodaikanal Lake, offering boating and fishing activities.",
+        "Visit Bryant Park, a botanical garden featuring rare plant species.",
+        "Stroll along Coakers Walk for panoramic views of hills and valleys.",
+        "Admire the Pillar Rocks, three giant rock pillars with spectacular views.",
+        "Return to your Kodaikanal hotel for the night.",
+      ],
+    },
+    {
+      day: "Day 6: Departure | ",
+      title: "Take a Bagful of Happy Memories",
+      content: [
+        "Enjoy breakfast at your Kodaikanal hotel and complete check-out.",
+        "A representative will accompany you on an 8-9 hour drive back to Bangalore.",
+        "Arrive in Bangalore in the evening and return home with cherished memories.",
       ],
     },
   ];
@@ -359,74 +391,123 @@ function Itinerary({ activePackage }) {
   if (activePackage === 2) {
     itineraryItems = [
       {
-        day: "Day 1",
-        title: "Bangalore: Welcome to the Silicon City of India",
+        day: "Day 1 ",
+        title: "Hogenakkal Waterfalls & Yelagiri Arrival",
         content: [
-          "Arrival at Bangalore airport or railway station.",
-          "Visit Bangalore Palace, ISKON Temple, and Lalbagh Botanical Garden.",
-          "Check-in at your hotel in Bangalore.",
+          "Start your journey with a pick-up from Chennai airport or railway station.",
+          "Proceed to Hogenakkal Waterfalls, often referred to as the 'Niagara of India.' Enjoy boating and swimming in the majestic waterfall.",
+          "Arrive in Yelagiri and check into your hotel.",
+          "Evening at leisure; explore nearby places or embark on a short hike in the hills.",
+          "Overnight stay at the hotel in Yelagiri.",
         ],
       },
       {
-        day: "Day 2",
-        title: "Bangalore to Mysore: Wander at the City of Palaces",
+        day: "Day 2 ",
+        title: "Yelagiri Local Sightseeing",
         content: [
-          "Breakfast at the hotel.",
-          "Drive to Mysore, visiting Chamundeshwari Temple en-route.",
-          "Explore Mysore Palace, St. Philomena's Cathedral, and Vrindavan Gardens.",
-          "Check-in at your hotel in Mysore.",
+          "Begin your day with a hearty breakfast.",
+          "Explore Yelagiri's popular tourist attractions:",
+          "Nilavoor Lake, an artificial lake surrounded by picturesque gardens.",
+          "Devi Temple and Thambiran Lotus Pond within the same vicinity.",
+          "Velavan Temple, dedicated to Lord Murugan, known for its unique statue of Lord Murugan and Valli.",
+          "Punganoor Lake, an artificial lake with a central fountain offering row boating and scenic walks.",
+          "Nature Park, featuring a children's park, musical fountain, aquarium, seasonal garden, bamboo house, and poly house.",
+          "Return to the hotel for a relaxing overnight stay.",
         ],
       },
       {
-        day: "Day 3",
-        title: "Departure from Mysore: Time to Say Goodbye",
+        day: "Day 3 ",
+        title: "Departure",
         content: [
-          "Breakfast at the hotel.",
-          "Check-out from the hotel and drive back to Bangalore.",
-          "Drop-off at the airport or railway station for your journey back home.",
+          "Enjoy a delicious breakfast at the hotel.",
+          "Check out from the hotel and begin your journey back to Chennai.",
+          "En route, visit Jalagamparai Waterfalls, renowned for its reputed healing properties and ability to cure skin infections.",
+          "Conclude your Chennai to Yelagiri tour by getting dropped off at your preferred location in Chennai.",
         ],
       },
-      // Add more items for other packages as needed
     ];
   }
 
   if (activePackage === 3) {
     itineraryItems = [
       {
-        day: "Day 1 - ",
-        title: "Transfer from Bangalore to Mysore",
+        day: "Day 1: Transfer from Bangalore to Ooty",
+        title: "Welcome to The Queen of Hill Stations",
         content: [
-          "Arrive in Bangalore, and embark on a scenic journey to Mysore.",
-          "Explore Mysore Palace, Chamundi Hills, and Brindavan Gardens.",
-          "Check in to your Mysore hotel for an overnight stay.",
+          "A representative will meet you in Bangalore and escort you on a scenic journey to Ooty, offering stunning views of the Nilgiri Mountains.",
+          "Check in to your Ooty hotel upon arrival and unwind.",
+          "Explore Ooty at your own pace, taking in its colonial architecture, bustling markets, and vibrant culture.",
+          "Overnight stay in Ooty.",
         ],
       },
       {
-        day: "Day 2 - ",
-        title: "Coorg Sightseeing",
+        day: "Day 2: Ooty Sightseeing",
+        title: "A Visit to The Famous Rose Garden",
         content: [
-          "Breakfast at your Mysore hotel.",
-          "Transfer to Coorg and check in to your Coorg hotel.",
-          "Visit Dubare Elephant Camp, Abbey Falls, and Raja's Seat.",
-          "Return to your Coorg hotel for an overnight stay.",
+          "Begin your day with breakfast at your hotel.",
+          "Explore Doddabetta Peak, the highest point in the Nilgiri Mountains, offering panoramic views.",
+          "Visit the Rose Garden, a picturesque park with a vast variety of roses.",
+          "Enjoy a romantic boat ride on Ooty Lake during the enchanting sunset.",
+          "Overnight stay in Ooty.",
         ],
       },
       {
-        day: "Day 3 - ",
-        title: "Explore Coorg",
+        day: "Day 3: Connor Excursion",
+        title: "Enjoy The Iconic Toy Train Ride",
         content: [
-          "Breakfast at your Coorg hotel.",
-          "Tour a coffee plantation and visit Talacauvery and Bhagamandala.",
-          "Return to your Coorg hotel for an overnight stay.",
+          "Start your day with breakfast.",
+          "Explore Sim's Park, known for its diverse botanical wonders.",
+          "Visit Lamb's Rock for breathtaking views of the Coimbatore Plains and surrounding tea estates.",
+          "Head to Dolphin's Nose viewpoint for panoramic vistas.",
+          "Embark on a scenic toy train ride in the Nilgiri Mountains.",
+          "Return to Ooty for an overnight stay.",
         ],
       },
       {
-        day: "Day 4 - ",
-        title: "Departure from Mysore",
+        day: "Day 4: Transfer from Ooty to Kodaikanal",
+        title: "Welcome to The Princess of Hill Stations",
         content: [
-          "Breakfast at your Coorg hotel.",
-          "Visit Bylakuppe and Namdroling Monastery.",
-          "Depart for Bangalore with cherished memories.",
+          "After breakfast, journey to Kodaikanal, taking in the Western Ghats' scenic beauty.",
+          "Upon arrival, spend the day at leisure, exploring the town or relaxing in its serene surroundings.",
+          "Overnight stay in Kodaikanal.",
+        ],
+      },
+      {
+        day: "Day 5: Kodaikanal Sightseeing",
+        title: "Take in The Scenic Views From The Coaker's Walk",
+        content: [
+          "Begin your day with breakfast.",
+          "Visit Kodaikanal Lake for boating, fishing, or a leisurely walk.",
+          "Explore Bryant Park's exotic flora.",
+          "Discover Coaker's Walk for stunning panoramic views.",
+          "Overnight stay in Kodaikanal.",
+        ],
+      },
+      {
+        day: "Day 6: Exploring Kodaikanal ",
+        title: "Relax By The Berijam Lake",
+        content: [
+          "Enjoy breakfast.",
+          "Visit Berijam Lake for breathtaking views.",
+          "Explore the serene Pine Forest.",
+          "Overnight stay in Kodaikanal.",
+        ],
+      },
+      {
+        day: "Day 7: Transfer from Kodaikanal to Munnar",
+        title: "Welcome to The Kashmir of South India",
+        content: [
+          "After breakfast, head to Munnar, enjoying the scenic drive.",
+          "Visit Mattupetty Dam for boating and Echo Point for stunning natural echoes.",
+          "Overnight stay in Munnar.",
+        ],
+      },
+      {
+        day: "Day 8: Departure and Sightseeing",
+        title: "A Visit to Top Station",
+        content: [
+          "After breakfast and check-out, visit Top Station for panoramic views.",
+          "Return for your onward journey to Cochin.",
         ],
       },
       // Add more items for other packages as needed
@@ -543,32 +624,40 @@ function Itinerary({ activePackage }) {
 
 function Included({ activePackage }) {
   let includedItems = [
-    "Accommodation in Coorg on a double/triple sharing basis",
-    "Breakfast and dinner",
-    "Transportation in a sedan/SUV/TT based on group size",
-    "Permits, tolls, fuel charges, parking charges, and driver allowances",
-    "Highly experienced driver",
-    "Knowledgeable guide",
-    "Sightseeing of various attractions",
+    "Accommodation in Hotels on Double/Triple Sharing",
+    "Breakfast from Day 2 to Day 6",
+    "Private Vehicle Transportation (Sedan/SUV/Hatchback)",
+    "Permits",
+    "Parking Charges",
+    "Toll Fees",
+    "Fuel",
+    "Experienced Driver cum Guide",
+    "Sightseeing as per Itinerary",
   ];
 
   if (activePackage === 2) {
     includedItems = [
-      "Accommodation in Bangalore and Mysore",
-      "Breakfast",
-      "Transportation between Bangalore and Mysore",
-      "Sightseeing of various attractions",
-      "Comfortable vehicle with a knowledgeable driver",
+      "Accommodation on a double or triple sharing basis",
+      "Breakfast on Day 2 and Day 3",
+      "Guided sightseeing as per the itinerary",
+      "Comfortable and hygienic vehicle (Sedan/SUV) for all sightseeing activities",
+      "Professional English-speaking driver-cum-guide",
+      "AC vehicle transfers from Chennai",
     ];
   }
 
   if (activePackage === 3) {
     includedItems = [
-      "Accommodation for 1 night in Mysore and 2 nights in Coorg",
-      "Breakfast from day 2 to day 4",
-      "Transportation in an SUV or hatchback based on group size",
-      "Permits, tolls, fuel charges, parking charges",
-      "Highly experienced driver cum guide",
+      "Accommodation in Hotels on Double/Triple Sharing",
+      "Meals: Breakfast from Day 2 to Day 8",
+      "Transportation: Private Vehicle (Sedan/SUV/Hatchback/TT, based on group size)",
+      "Permits",
+      "Parking Charges",
+      "Toll Fees",
+      "Fuel",
+      "Experienced Driver cum Guide",
+      "Scenic Road Journey from Bangalore to Ooty",
+      "Sightseeing as per the Itinerary",
     ];
   }
 
@@ -607,21 +696,30 @@ function Included({ activePackage }) {
 
 function NotIncluded({ activePackage }) {
   let notIncludedItems = [
-    "Lunch (unless specified)",
-    "Optional activities at Harangi Dam",
-    "Souvenirs and personal expenses",
+    "Flights or transportation to Bangalore (Start/End Point)",
+    "Lunch and Dinner",
+    "Boating and fishing costs at Ooty and Kodaikanal Lakes",
+    "Personal expenses and tips",
   ];
 
   if (activePackage === 2) {
     notIncludedItems = [
-      "Lunch and dinner",
-      "Entrance fees to attractions (unless specified)",
-      "Personal expenses",
+      "Flights or train tickets to and from Chennai",
+      "Lunch and dinner expenses",
+      "Personal expenses, tips, and gratuities",
+      "Any additional activities or services not mentioned in the itinerary",
     ];
   }
 
   if (activePackage === 3) {
-    notIncludedItems = ["Lunch and dinner", "Personal expenses"];
+    notIncludedItems = [
+      "Airfare or Train Tickets",
+      "Lunch and Dinner",
+      "Entry Fees (if any) to tourist attractions not mentioned in the itinerary",
+      "Personal Expenses",
+      "Travel Insurance",
+      "Any additional activities or services not specified in the itinerary",
+    ];
   }
 
   if (activePackage === 4) {
@@ -680,4 +778,4 @@ function Booking() {
   );
 }
 
-export default BangloreAbout;
+export default Tamilnadu;

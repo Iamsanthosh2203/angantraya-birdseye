@@ -1,13 +1,15 @@
-import { useState } from "react";
-function scrollToTop() {
-  window.scrollTo({
-    top: 0,
-    behavior: "instant", // You can use 'auto' for an instant scroll
-  });
-}
-scrollToTop();
+import { useEffect, useState } from "react";
 
 function Forms() {
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "instant", // You can use 'auto' for an instant scroll
+    });
+  }
+  useEffect(() => {
+    scrollToTop();
+  }, []);
   const [departure, setDeparture] = useState("null");
   const [book, setBook] = useState("null");
   const [packageType, setPackageType] = useState("null");

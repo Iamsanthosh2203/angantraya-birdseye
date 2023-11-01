@@ -172,14 +172,14 @@ function OurDestinations() {
       imageUrl:
         "https://cdn.britannica.com/39/124439-050-AFA5CEC6/Sun-Temple-Modhera-Gujarat-India.jpg",
       location: "India, South Asia",
-      url: "/andaman",
+      url: "/gujarat",
     },
     {
       name: "Hyderabad Tour Packages",
       imageUrl:
         "https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2022/09/15144355/Untitled-design-2-4.jpg",
       location: "India, South Asia",
-      url: "/andaman",
+      url: "/hyderabad",
     },
     {
       name: "Kerala Tour Packages",
@@ -193,21 +193,21 @@ function OurDestinations() {
       imageUrl:
         "https://themapofindia.com/superawesome/2021/05/Lakshadweep-scaled.jpg",
       location: "India, South Asia",
-      url: "/andaman",
+      url: "/lakshadweep",
     },
     {
       name: "Tamil Nadu Tour Packages",
       imageUrl:
         "https://cdn.britannica.com/12/100812-050-27483D5E/Mamallapuram-Shore-Temple-Chennai-India-Tamil-Nadu.jpg",
       location: "India, South Asia",
-      url: "/andaman",
+      url: "/tamilnadu",
     },
     {
       name: "Uttrakhand Tour Packages",
       imageUrl:
         "https://img.traveltriangle.com/blog/wp-content/uploads/2020/04/Lakes-in-Uttrakhand.jpg",
       location: "India, South Asia",
-      url: "/andaman",
+      url: "/uttrakhand",
     },
   ];
 
