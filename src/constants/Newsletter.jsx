@@ -28,7 +28,7 @@ function Newsletter() {
             />
           </div>
 
-          <button className="font-semibold text-white p-5 bg-[#5D50C6] rounded-3xl">
+          <button className="font-semibold text-white p-5 bg-[#2596be] rounded-3xl">
             Subscribe
           </button>
 

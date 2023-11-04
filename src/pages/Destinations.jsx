@@ -306,6 +306,7 @@ function Kenya() {
 
   return (
     <Parallax
+      to="/about"
       id="kenya"
       bgImageStyle={{ objectFit: "cover", height: "100vh" }}
       bgImage={imageSource}
@@ -337,9 +338,12 @@ function Kenya() {
           </p>
           <div>
             {" "}
-            <button className="px-12 py-5 rounded-3xl bg-white text-black">
+            <RouterLink
+              to="/banglore"
+              className="px-12 py-5 rounded-3xl bg-white text-black"
+            >
               Explore
-            </button>
+            </RouterLink>
           </div>
         </Element>
       )}
