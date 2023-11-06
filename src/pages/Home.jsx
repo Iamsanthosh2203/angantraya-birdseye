@@ -55,7 +55,7 @@ function Header() {
 
   const handleDestinationsClick = () => {
     // Use the `window.location` to open the default email client
-    window.location.href = "/destinations"; // Replace with the desired email address
+    window.location.href = "/forms"; // Replace with the desired email address
   };
 
   const [enquire, setEnquire] = useState(false);
@@ -254,7 +254,10 @@ function Destinations() {
         </Link>
 
         {/* item 2 */}
-        <div className="md:hover:scale-110 cursor-pointer duration-150 h-[500px] w-80 rounded-xl bg-white shadow-lg flex-col">
+        <Link
+          to="kenya"
+          className="md:hover:scale-110 cursor-pointer duration-150 h-[500px] w-80 rounded-xl bg-white shadow-lg flex-col"
+        >
           <div className="h-[60%] w-full rounded-t-xl bg-img-kenya" />
           <div className="flex flex-col p-12 gap-7">
             <h3 className="font-bold font-adanda text-xl">
@@ -262,18 +265,21 @@ function Destinations() {
             </h3>
             <p className="font-adanda">Kenya, East Africa</p>
           </div>
-        </div>
+        </Link>
 
         {/* item 3 */}
-        <div className="md:hover:scale-110 duration-150 cursor-pointer h-[500px] w-80 rounded-xl bg-white shadow-lg flex-col">
+        <Link
+          to="/nepal"
+          className="md:hover:scale-110 duration-150 cursor-pointer h-[500px] w-80 rounded-xl bg-white shadow-lg flex-col"
+        >
           <div className="h-[60%] w-full rounded-t-xl bg-img-lakshadweep" />
           <div className="flex flex-col p-12 gap-7">
             <h3 className="font-bold font-adanda text-lg">
-              Discover Lakshadweep: Nature&rsquo;s Hidden Paradise
+              Discover Nepal&rsquo;s: Nature&rsquo;s Hidden Paradise
             </h3>
-            <p className="font-adanda">Lakshadweep, South Asia</p>
+            <p className="font-adanda">Nepal</p>
           </div>
-        </div>
+        </Link>
       </div>
     </section>
   );
