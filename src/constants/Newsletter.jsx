@@ -10,8 +10,8 @@ function Newsletter() {
 
         <div className="flex w-full">
           <div className="h-[200px]  basis-[50%]">
-            <h5 className="text-2xl font-semibold">Coimbatore</h5>
-            <address className="pl-5 pt-6">
+            <h5 className="text-4xl font-semibold">Coimbatore</h5>
+            <address className="text-xl pl-5 pt-6">
               3/200 Sample Address,
               <br />
               Coimbatore
@@ -24,7 +24,7 @@ function Newsletter() {
             </address>
           </div>
           <div className="h-[200px] border-l border-black  basis-[50%]">
-            <h5 className="pl-6 text-2xl font-semibold">Coimbatore</h5>
+            <h5 className="pl-6 text-4xl font-semibold">Coimbatore</h5>
             <address className="pl-12 pt-6">
               3/200 Sample Address,
               <br />
@@ -43,8 +43,8 @@ function Newsletter() {
 
         <div className="flex w-full">
           <div className="h-[200px] basis-[25%]">
-            <h5 className="text-2xl font-semibold">Coimbatore</h5>
-            <address className="pl-5 pt-6">
+            <h5 className="text-4xl font-semibold">Coimbatore</h5>
+            <address className="text-xl pl-5 pt-6">
               3/200 Sample Address,
               <br />
               Coimbatore
@@ -57,7 +57,7 @@ function Newsletter() {
             </address>
           </div>
           <div className="border-l border-black h-[200px]  basis-[25%]">
-            <h5 className="pl-6 text-2xl font-semibold">Coimbatore</h5>
+            <h5 className="pl-6 text-4xl font-semibold">Coimbatore</h5>
             <address className="pl-12 pt-6">
               3/200 Sample Address,
               <br />
@@ -71,7 +71,7 @@ function Newsletter() {
             </address>
           </div>
           <div className="border-l border-black h-[200px]  basis-[25%]">
-            <h5 className="pl-6 text-2xl font-semibold">Coimbatore</h5>
+            <h5 className="pl-6 text-4xl font-semibold">Coimbatore</h5>
             <address className="pl-12 pt-6">
               3/200 Sample Address,
               <br />
@@ -85,7 +85,7 @@ function Newsletter() {
             </address>
           </div>
           <div className="border-l border-black h-[200px]  basis-[25%]">
-            <h5 className="pl-6 text-2xl font-semibold">Coimbatore</h5>
+            <h5 className="pl-6 text-4xl font-semibold">Coimbatore</h5>
             <address className="pl-12 pt-6">
               3/200 Sample Address,
               <br />
