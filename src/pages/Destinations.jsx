@@ -241,9 +241,12 @@ function Bhutan() {
           </p>
           <div>
             {" "}
-            <button className="px-12 py-5 rounded-3xl bg-white text-black">
+            <RouterLink
+              to="/bhutan"
+              className="px-12 py-5 rounded-3xl bg-white text-black"
+            >
               Explore
-            </button>
+            </RouterLink>
           </div>
         </Element>
       )}
@@ -339,7 +342,7 @@ function Kenya() {
           <div>
             {" "}
             <RouterLink
-              to="/banglore"
+              to="/kenya"
               className="px-12 py-5 rounded-3xl bg-white text-black"
             >
               Explore
@@ -386,9 +389,12 @@ function Nepal() {
           </p>
           <div>
             {" "}
-            <button className="px-12 py-5 rounded-3xl bg-white text-black">
+            <RouterLink
+              to="/nepal"
+              className="px-12 py-5 rounded-3xl bg-white text-black"
+            >
               Explore
-            </button>
+            </RouterLink>
           </div>
         </Element>
       )}
