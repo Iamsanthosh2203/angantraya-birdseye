@@ -32,7 +32,8 @@ function Forms() {
       </ol>
 
       <form
-        onSubmit={(e) => e.preventDefault()}
+        action="https://formspree.io/f/moqolkeo"
+        method="POST"
         className="my-8 md:w-[60%] mx-auto"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -86,30 +87,30 @@ function Forms() {
         </p>
 
         <div className="grid md:grid-cols-3 font-encodesans text-[#A7A7A7] md:gap-20 gap-5">
-          <button
+          <div
             onClick={() => setDeparture("fixed")}
             className={`p-4 border rounded-xl ${
               departure === "fixed" ? "bg-black text-white" : ""
             }`}
           >
             Fixed
-          </button>
-          <button
+          </div>
+          <div
             onClick={() => setDeparture("flexible")}
             className={`p-4 border rounded-xl ${
               departure === "flexible" ? "bg-black text-white" : ""
             }`}
           >
             Flexible
-          </button>
-          <button
+          </div>
+          <div
             onClick={() => setDeparture("anytime")}
             className={`p-4 border rounded-xl ${
               departure === "anytime" ? "bg-black text-white" : ""
             }`}
           >
             Anytime
-          </button>
+          </div>
         </div>
 
         <p className="text-left font-encodesans text-lg my-6">
@@ -195,47 +196,47 @@ function Forms() {
         <p className="text-left font-encodesans text-lg my-6">I Will Book</p>
 
         <div className="grid md:grid-cols-3 gap-8">
-          <button
+          <div
             onClick={() => setBook("1")}
             className={`p-4 border rounded-xl ${
               book === "1" ? "bg-black text-white" : ""
             }`}
           >
             In Next 2-3 Days
-          </button>
-          <button
+          </div>
+          <div
             onClick={() => setBook("2")}
             className={`p-4 border rounded-xl ${
               book === "2" ? "bg-black text-white" : ""
             }`}
           >
             In This Week
-          </button>
-          <button
+          </div>
+          <div
             onClick={() => setBook("3")}
             className={`p-4 border rounded-xl ${
               book === "3" ? "bg-black text-white" : ""
             }`}
           >
             In This Month
-          </button>
-          <button
+          </div>
+          <div
             onClick={() => setBook("4")}
             className={`p-4 border rounded-xl ${
               book === "4" ? "bg-black text-white" : ""
             }`}
           >
             Later Sometime
-          </button>
+          </div>
 
-          <button
+          <div
             onClick={() => setBook("5")}
             className={`p-4 border rounded-xl ${
               book === "5" ? "bg-black text-white" : ""
             }`}
           >
             Just Checking Prices
-          </button>
+          </div>
         </div>
         <div className="my-12 flex-col md:flex-row flex gap-4 md:gap-12 text-xl">
           <p>Cab for local sight seeing?</p>
@@ -251,22 +252,22 @@ function Forms() {
           Which type of package would you prefer?
         </p>
         <div className="grid grid-cols-2 gap-6">
-          <button
+          <div
             onClick={() => setPackageType("1")}
             className={`p-4 border rounded-xl ${
               packageType === "1" ? "bg-black text-white" : ""
             }`}
           >
             Customizable Package
-          </button>
-          <button
+          </div>
+          <div
             onClick={() => setPackageType("2")}
             className={`p-4 border rounded-xl ${
               packageType === "2" ? "bg-black text-white" : ""
             }`}
           >
             Bestselling Standard Package
-          </button>
+          </div>
         </div>
 
         <div className="w-full mx-0 text-left">
