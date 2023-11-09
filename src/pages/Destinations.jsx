@@ -48,9 +48,9 @@ function Header() {
         <div className="hidden md:flex gap-24 font-bold text-xl text-white">
           <RouterLink to="/">HOME</RouterLink>
           <RouterLink to="/destinations">DESTINATIONS</RouterLink>
-          <a href="#services">OUR SERVICES</a>
-          <a href="#gallery">GALLERY</a>
-          <a href="#about">ABOUT US</a>
+          <a href="/services">OUR SERVICES</a>
+          <a href="/gallery">GALLERY</a>
+          <a href="/about">ABOUT US</a>
         </div>
 
         <div
@@ -100,9 +100,9 @@ function Header() {
           <div className="flex flex-col gap-5 items-center text-2xl py-8 h-full">
             <RouterLink to="/">HOME</RouterLink>
             <RouterLink to="/destinations">DESTINATIONS</RouterLink>
-            <a href="#services">OUR SERVICES</a>
-            <a href="#gallery">GALLERY</a>
-            <a href="#about">ABOUT US</a>
+            <a href="/services">OUR SERVICES</a>
+            <a href="/gallery">GALLERY</a>
+            <a href="/about">ABOUT US</a>
 
             <div
               onClick={() => setEnquire(!enquire)}
