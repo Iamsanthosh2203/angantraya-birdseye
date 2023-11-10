@@ -6,7 +6,7 @@ import Loading from "./pages/Loading";
 import Home from "./pages/Home";
 import Destinations from "./pages/Destinations";
 import India from "./pages/India";
-import About from "./pages/About";
+import Andaman from "./pages/Andaman";
 import Forms from "./pages/Forms";
 import Kerala from "./pages/Kerala";
 import Banglore from "./pages/Banglore";
@@ -35,7 +35,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/destinations" element={<Destinations />} />
           <Route path="/india" element={<India />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/andaman" element={<Andaman />} />
           <Route path="/forms" element={<Forms />} />
           <Route path="/kerala" element={<Kerala />} />
           <Route path="/banglore" element={<Banglore />} />
