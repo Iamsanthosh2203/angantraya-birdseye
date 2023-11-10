@@ -14,6 +14,7 @@ export default {
         peddana: "Peddana, serif",
         noticia: "Noticia Text, serif",
         encodesans: "Encode Sans, sans-serif",
+        arbtus: "Arbutus, cursive",
       },
     },
   },

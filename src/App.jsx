@@ -16,6 +16,7 @@ import Kenya from "./pages/Kenya";
 import Nepal from "./pages/Nepal";
 import Services from "./pages/Services";
 import Gallery from "./pages/Gallery";
+import About from "./pages/About";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -45,6 +46,7 @@ export default function App() {
           <Route path="/nepal" element={<Nepal />} />
           <Route path="/services" element={<Services />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       )}
     </BrowserRouter>
