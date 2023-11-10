@@ -6,40 +6,40 @@ import { Link } from "react-router-dom";
 
 const destinationsData = [
   {
-    title: "Title 1",
+    title: "Transportation",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores reiciendis saepe dignissimos cupiditate aliquam quos quaerat, enim est ex fugiat dolorem perspiciatis nemo necessitatibus distinctio nobis tempore nihil labore architecto.",
-    imageUrl: "https://placeholder.co/900x500",
+      "Angantraya Birdseye offers a wide range of transportation options for tourists, from budget-friendly to luxury. We have a fleet of well-maintained vehicles, including cars, vans, buses, and coaches, to suit your needs and budget. Our experienced drivers will ensure that you get to your destination safely and on time.",
+    imageUrl:
+      "https://images.unsplash.com/photo-1622006578764-55f941807e09?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
-    title: "Title 2",
+    title: "Cultural Packages",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores reiciendis saepe dignissimos cupiditate aliquam quos quaerat, enim est ex fugiat dolorem perspiciatis nemo necessitatibus distinctio nobis tempore nihil labore architecto.",
-    imageUrl: "https://placeholder.co/900x500",
+      "Angantraya Birdseye offers a wide range of cultural packages to help you experience the rich and diverse cultures of India and other parts of the world. We specialize in creating itineraries that are tailored to your interests and budget, and we work with experienced local guides to ensure that you have an authentic and enriching experience. Our cultural packages include visits to historical sites, temples, mosques, churches, and other religious landmarks. We also offer experiences that allow you to immerse yourself in the local culture, such as cooking classes, dance lessons, and visits to traditional villages.",
+    imageUrl:
+      "https://images.unsplash.com/photo-1690814033781-f369d45a8277?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
-    title: "Title 3",
+    title: "Corporate Packages",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores reiciendis saepe dignissimos cupiditate aliquam quos quaerat, enim est ex fugiat dolorem perspiciatis nemo necessitatibus distinctio nobis tempore nihil labore architecto.",
-    imageUrl: "https://placeholder.co/900x500",
+      "Angantraya Birdseye, a leading destination management company and B2B tour company, offers a range of corporate packages tailored to the needs of businesses of all sizes. Our packages are designed to help your team achieve their goals, whether you're looking to boost productivity, foster teamwork, or reward top performers. Contact us today to learn more about our corporate packages and how we can help you create a memorable and impactful experience for your team.",
+    imageUrl:
+      "https://images.unsplash.com/photo-1536607961765-592e80bcc19e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
-    title: "Title 4",
+    title: "Adventure Packages",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores reiciendis saepe dignissimos cupiditate aliquam quos quaerat, enim est ex fugiat dolorem perspiciatis nemo necessitatibus distinctio nobis tempore nihil labore architecto.",
-    imageUrl: "https://placeholder.co/900x500",
+      "Angantraya Birdseye, a leading destination management company and B2B tour company, offers a variety of adventure packages for thrill-seekers of all levels of experience. Our packages are designed to showcase the best of India's natural wonders and cultural experiences, while offering a healthy dose of adrenaline. From trekking in the Himalayas to whitewater rafting in the Ganges to scuba diving in the Andaman Islands, we have an adventure package for everyone. Our team of experienced and knowledgeable guides will ensure that you have a safe and unforgettable experience. Contact us today to learn more about our adventure packages and to book your next trip!",
+    imageUrl:
+      "https://plus.unsplash.com/premium_photo-1667516408599-67d72068eaa9?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
-    title: "Title 5",
+    title: "Honeymoon Packages",
+    tittle2: "",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores reiciendis saepe dignissimos cupiditate aliquam quos quaerat, enim est ex fugiat dolorem perspiciatis nemo necessitatibus distinctio nobis tempore nihil labore architecto.",
-    imageUrl: "https://placeholder.co/900x500",
-  },
-  {
-    title: "Title 6",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores reiciendis saepe dignissimos cupiditate aliquam quos quaerat, enim est ex fugiat dolorem perspiciatis nemo necessitatibus distinctio nobis tempore nihil labore architecto.",
-    imageUrl: "https://placeholder.co/900x500",
+      "Angantraya Birdseye packages are designed to create unforgettable experiences, whether you're looking for a romantic getaway on a secluded beach, a luxurious stay in a heritage palace, or an adventure-filled honeymoon exploring India's natural wonders. From the snow-capped peaks of the Himalayas to the pristine beaches of Goa to the lush backwaters of Kerala, we have a honeymoon package that's perfect for you. Our team of experienced travel planners will work with you to create a customized package that meets all of your requirements and ensures that you have a truly unforgettable honeymoon. Contact us today to learn more about our honeymoon packages and to start planning your dream honeymoon!",
+    imageUrl:
+      "https://images.unsplash.com/photo-1535913989690-f90e1c2d4cfa?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 ];
 
@@ -160,9 +160,9 @@ function Header() {
                     : "absolute top-16 h-f w-full bg-white text-black p-4 hidden flex-col gap-3 -translate-y-12 duration-200 -z-10"
                 }
               >
-                <a onClick={handleDestinationsClick}>Book Online</a>
-                <a onClick={handleEmailClick}>By Email</a>
-                <a onClick={handleCallClick}>By Phone</a>
+                <a href="">Book Online</a>
+                <a href="">By Email</a>
+                <a href="">By Phone</a>
               </div>
             </div>
           </div>
@@ -178,7 +178,7 @@ function OurDestinations() {
       name="kenya"
       className="my-12 flex flex-col items-center justify-center text-black gap-12"
     >
-      <p className="text-6xl bursh-font">Services</p>
+      <p className="text-6xl bursh-font">Our Services</p>
 
       {destinationsData.map((item, index) => (
         <div

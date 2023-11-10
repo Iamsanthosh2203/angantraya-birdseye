@@ -233,25 +233,44 @@ function OurGroups() {
 function Reviews() {
   const [activePackage, setActivePackage] = useState(1);
 
-  let title = [
-    "The name says it all, ‘One Above Destination Management Services’; we are not just a travel company or tour operator selling packages or an Event Management Company pairing the passion for social events and business or a MICE Operator facilitating specialized tours for corporates; we are an all-inclusive global Destination Management Company handling all the above verticals with ease, expertise and efficiency.",
-  ];
+  let title = {
+    para: [
+      "The name says it all, ‘One Above Destination Management Services’; we are not just a travel company or tour operator selling packages or an Event Management Company pairing the passion for social events and business or a MICE Operator facilitating specialized tours for corporates; we are an all-inclusive global Destination Management Company handling all the above verticals with ease, expertise and efficiency.     ",
+    ],
+    sub: [],
+    last: [],
+  };
 
   if (activePackage === 2) {
-    title = [
-      "Our DMCs who closely work with the B2B market are proficient and have local expertise, huge bed bank, owned vehicles, in-house professional guides and fully-trained staff who make sure that every business is carried out effectually.",
-      "Headquartered in the Indian Financial Capital, Mumbai and having a strong market presence already, One Above is creating a niche for itself with its Global DMCs having an extensive sales strength which makes it seamless for us to connect to our Indian B2B Travel Partners. The company’s motto is “your trust, our success”.",
-      "Our goals: We aim to increase profit levels marginally and provide a stress-free working environment to our B2B business partners.",
-    ];
+    title = {
+      para: [
+        "At Angantraya Birdseye LLP, we specialize in creating memorable travel experiences for both leisure and corporate clients. Our services encompass a wide range of offerings, including:",
+      ],
+      sub: [
+        "Cultural Packages: Immerse yourself in uplifting cultural, artistic, and spiritual travel experiences.",
+        "Corporate Packages: Tailored travel solutions for Meetings, Incentives, Conventions, and Events (MICE).",
+        "Honeymoon Packages: Romantic getaways designed for newlyweds seeking unforgettable moments.",
+      ],
+      last: [
+        "Our commitment is to deliver exceptional travel management services, ensuring satisfaction and creating lasting memories for our clients.",
+      ],
+    };
   }
 
   if (activePackage === 3) {
-    title = [
-      "Other than the co-founders one above is a team of young professionals with passion, outstanding imagination and creative skills that help us deliver the quirkiest holidays & event concepts. Bright, trustworthy and committed we intend to turn your idea into a great success. The rare combination of experience & enthusiasm of the one above team makes us the best in what we do.",
-      "Other than the co-founders one above is a team of young professionals with passion, outstanding imagination and creative skills that help us deliver the quirkiest holidays & event concepts. Bright, trustworthy and committed we intend to turn your idea into a great success. The rare combination of experience & enthusiasm of the one above team makes us the best in what we do.",
-      "Other than the co-founders one above is a team of young professionals with passion, outstanding imagination and creative skills that help us deliver the quirkiest holidays & event concepts. Bright, trustworthy and committed we intend to turn your idea into a great success. The rare combination of experience & enthusiasm of the one above team makes us the best in what we do.",
-      "Other than the co-founders one above is a team of young professionals with passion, outstanding imagination and creative skills that help us deliver the quirkiest holidays & event concepts. Bright, trustworthy and committed we intend to turn your idea into a great success. The rare combination of experience & enthusiasm of the one above team makes us the best in what we do.",
-    ];
+    title = {
+      para: [
+        "Our team at Angantraya Birdseye LLP consists of passionate and experienced professionals who are dedicated to providing the highest level of service. From destination management experts and travel consultants to corporate advisors and industry specialists, our team collaborates seamlessly to bring your travel dreams to life.",
+      ],
+      sub: [
+        "[Founder's Name]: The visionary leader who laid the foundation of Angantraya Birdseye LLP, bringing a wealth of experience and passion for the travel industry.",
+        "[Key Team Members]: A group of dynamic individuals with expertise in various facets of travel, corporate consultancy, and business management.",
+        "[Support Staff]: Our dedicated support staff ensures smooth operations and excellent customer service.",
+      ],
+      last: [
+        "Together, we form a cohesive unit committed to making every travel experience with Angantraya Birdseye LLP exceptional, seamless, and unforgettable.",
+      ],
+    };
   }
 
   return (
@@ -286,11 +305,29 @@ function Reviews() {
       </div>
 
       <div className="py-6">
-        {title.map((paragraph, index) => (
-          <p key={index} className="font-amethysta font-normal text-xl my-8">
-            {paragraph}
-          </p>
-        ))}
+        {title && title.sub && (
+          <div className="font-amethysta font-normal text-xl my-8">
+            {title.para.map((item, index) => (
+              <p key={index} className="my-6">
+                {item}
+              </p>
+            ))}
+            <ol>
+              {title.sub.map((item, index) => (
+                <p key={index} className="my-6">
+                  {activePackage === 2 && `${index + 1}.`}
+                  {activePackage === 3 && `•`}
+                  {item}
+                </p>
+              ))}
+            </ol>
+            {title.last.map((item, index) => (
+              <p key={index} className="my-6">
+                {item}
+              </p>
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );
