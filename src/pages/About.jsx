@@ -69,9 +69,9 @@ function Header() {
         <div className="flex gap-24 font-bold text-xl text-white">
           <Link to="/">HOME</Link>
           <Link to="/destinations">DESTINATIONS</Link>
-          <a href="#services">OUR SERVICES</a>
-          <a href="#gallery">GALLERY</a>
-          <a href="#about">ABOUT US</a>
+          <a href="/services">OUR SERVICES</a>
+          <a href="/gallery">GALLERY</a>
+          <a href="/about">ABOUT US</a>
         </div>
 
         <div

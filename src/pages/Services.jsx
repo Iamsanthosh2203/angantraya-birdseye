@@ -160,9 +160,9 @@ function Header() {
                     : "absolute top-16 h-f w-full bg-white text-black p-4 hidden flex-col gap-3 -translate-y-12 duration-200 -z-10"
                 }
               >
-                <a href="">Book Online</a>
-                <a href="">By Email</a>
-                <a href="">By Phone</a>
+                <a onClick={handleDestinationsClick}>Book Online</a>
+                <a onClick={handleEmailClick}>By Email</a>
+                <a onClick={handleCallClick}>By Phone</a>
               </div>
             </div>
           </div>
