@@ -176,8 +176,8 @@ function Explore() {
         </div>
 
         <h2 className="text-6xl  font-adanda font-bold">
-          Travel <span className="text-[#5A8090]">top</span> <br />{" "}
-          <span className="text-[#5A8090]">destination</span> <br />
+          Travel <span className="text-[#2596BE]">top</span> <br />{" "}
+          <span className="text-[#2596BE]">destination</span> <br />
           of the world
         </h2>
 
@@ -188,7 +188,7 @@ function Explore() {
         </p>
 
         <div>
-          <button className="px-6 text-white font-bold py-4 shadow-xl bg-black rounded-full mb-6 md:mb-0">
+          <button className="px-6 text-white font-bold py-4 shadow-xl bg-black rounded-full mb-6 md:mb-0">  
             Get Started
           </button>
         </div>
@@ -205,7 +205,7 @@ function Explore() {
             Top Places
           </button>
 
-          <button className="h-12 w-12 bg-[#5A8090] rounded-full translate-x-[200%]">
+          <button className="h-12 w-12 bg-[#2596BE] rounded-full translate-x-[200%]">
             <i className="fa-solid fa-user-plus text-white"></i>
           </button>
         </div>
@@ -223,7 +223,7 @@ function Destinations() {
             <img src={dots} alt="stars" />
           </div>
           <div className="flex flex-col gap-6">
-            <p className="text-lg text-[#5A8090] font-bold tracking-[5px]">
+            <p className="text-lg text-[#2596BE] font-bold tracking-[5px]">
               TOP DESTINATIONS
             </p>
             <h2 className="text-xl font-bold">Explore top destination</h2>
@@ -232,7 +232,7 @@ function Destinations() {
 
         <div>
           {/* generate left arrow in fontawesome */}
-          <div className="cursor-pointer h-12 w-12 bg-[#5A8090] rounded-full flex items-center justify-center shadow-xl">
+          <div className="cursor-pointer h-12 w-12 bg-[#2596BE] rounded-full flex items-center justify-center shadow-xl">
             <i className="fa-solid fa-chevron-right text-white"></i>
           </div>
         </div>
@@ -312,22 +312,22 @@ function TravelPoint() {
       <div className="flex justify-center items-center basis-[80%]">
         <div className="grid gap-12 grid-cols-2 md:p-0 px-4">
           <div className="p-4 md:p-8 bg-white rounded-3xl flex flex-col items-center shadow-xl text-center">
-            <p className="text-[#5A8090] text-4xl font-bold mb-4">800+</p>
+            <p className="text-[#2596BE] text-4xl font-bold mb-4">800+</p>
             <p className="text-xl">Holiday Package</p>
           </div>
 
           <div className="p-4 md:p-8 bg-white rounded-3xl flex flex-col items-center shadow-xl text-center">
-            <p className="text-[#5A8090] text-4xl font-bold mb-4">100</p>
+            <p className="text-[#2596BE] text-4xl font-bold mb-4">100</p>
             <p className="text-xl">Luxury Hotels</p>
           </div>
 
           <div className="p-4 md:p-8 bg-white rounded-3xl flex flex-col items-center shadow-xl text-center">
-            <p className="text-[#5A8090] text-4xl font-bold mb-4">7</p>
+            <p className="text-[#2596BE] text-4xl font-bold mb-4">7</p>
             <p className="text-xl">Permium Airlines</p>
           </div>
 
           <div className="p-4 md:p-8 bg-white rounded-3xl flex flex-col items-center shadow-xl text-center">
-            <p className="text-[#5A8090] text-4xl font-bold mb-4">2k+</p>
+            <p className="text-[#2596BE] text-4xl font-bold mb-4">2k+</p>
             <p className="text-xl">Happy Customers</p>
           </div>
         </div>
@@ -342,7 +342,7 @@ function Services() {
       <div className="text-center md:text-left flex gap-7">
         <img className="hidden md:inline-block" src={uparrow} alt="uparrow" />
         <div className="flex flex-col justify-around">
-          <h4 className="tracking-widest uppercase text-xl text-[#5A8090] font-bold">
+          <h4 className="tracking-widest uppercase text-xl text-[#2596BE] font-bold">
             Services
           </h4>
           <p className="text-5xl font-bold">

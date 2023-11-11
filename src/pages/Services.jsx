@@ -8,21 +8,21 @@ const destinationsData = [
   {
     title: "Transportation",
     description:
-      "Angantraya Birdseye offers a wide range of transportation options for tourists, from budget-friendly to luxury. We have a fleet of well-maintained vehicles, including cars, vans, buses, and coaches, to suit your needs and budget. Our experienced drivers will ensure that you get to your destination safely and on time.",
+      "Angantraya Birdseye offers a wide range of transportation options for tourists, from budget-friendly to luxury. We have fleets of well-maintained and well experienced drivers, including cars, vans, buses, and coaches, to suit your needs and budget. Our experienced drivers will ensure that you get to your destination safely, on time to explore your dream.",
     imageUrl:
       "https://images.unsplash.com/photo-1622006578764-55f941807e09?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     title: "Cultural Packages",
     description:
-      "Angantraya Birdseye offers a wide range of cultural packages to help you experience the rich and diverse cultures of India and other parts of the world. We specialize in creating itineraries that are tailored to your interests and budget, and we work with experienced local guides to ensure that you have an authentic and enriching experience. Our cultural packages include visits to historical sites, temples, mosques, churches, and other religious landmarks. We also offer experiences that allow you to immerse yourself in the local culture, such as cooking classes, dance lessons, and visits to traditional villages.",
+      "Angantraya Birdseye offers a wide range of cultural packages to help you experience the rich and diverse cultures of India and other parts of the world. We specialize in creating itineraries that are tailored to your interests and budget, and we work with experience in house local guides to ensure that you have an authentic and enriching experience. Our cultural packages include visits to historical sites, temples, mosques, churches, and other religious landmarks. We also offer experiences that allow you to immerse yourself in the local culture, such as cooking, dance, visits to traditional villages and etc...",
     imageUrl:
-      "https://images.unsplash.com/photo-1690814033781-f369d45a8277?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://media.istockphoto.com/id/941858854/photo/herbs-and-spices-for-cooking-on-dark-background.jpg?s=612x612&w=0&k=20&c=-quRLbD1Hkd2-i_I-uqJltiA516alqGNojlobB6nZ7A=",
   },
   {
     title: "Corporate Packages",
     description:
-      "Angantraya Birdseye, a leading destination management company and B2B tour company, offers a range of corporate packages tailored to the needs of businesses of all sizes. Our packages are designed to help your team achieve their goals, whether you're looking to boost productivity, foster teamwork, or reward top performers. Contact us today to learn more about our corporate packages and how we can help you create a memorable and impactful experience for your team.",
+      "Angantraya Birdseye, a leading Destination Management Company and B2B tour company, offers a range of corporate tailor made packages(M.I.C.E) to the needs of businesses of all sizes. Our packages are designed to help your team achieve their goals, whether you're looking to boost productivity, foster teamwork, or reward top performers. Contact us today to learn more about our corporate packages and how we can help you create a memorable and impactful experience for your team.",
     imageUrl:
       "https://images.unsplash.com/photo-1536607961765-592e80bcc19e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
@@ -160,9 +160,9 @@ function Header() {
                     : "absolute top-16 h-f w-full bg-white text-black p-4 hidden flex-col gap-3 -translate-y-12 duration-200 -z-10"
                 }
               >
-                <a href="">Book Online</a>
-                <a href="">By Email</a>
-                <a href="">By Phone</a>
+                <a onClick={handleDestinationsClick}>Book Online</a>
+                <a onClick={handleEmailClick}>By Email</a>
+                <a onClick={handleCallClick}>By Phone</a>
               </div>
             </div>
           </div>

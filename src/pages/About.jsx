@@ -235,7 +235,7 @@ function Reviews() {
 
   let title = {
     para: [
-      "The name says it all, ‘One Above Destination Management Services’; we are not just a travel company or tour operator selling packages or an Event Management Company pairing the passion for social events and business or a MICE Operator facilitating specialized tours for corporates; we are an all-inclusive global Destination Management Company handling all the above verticals with ease, expertise and efficiency.     ",
+      "The name says it all, ‘One Above Destination Management Services’; we are not just a travel company or tour operator selling packages or an Event Management Company pairing the passion for social events and business or a MICE Operator facilitating specialized tours for corporates; we are an all-inclusive global Destination Management Company handling all the above verticals with ease, expertise and efficiency.         ",
     ],
     sub: [],
     last: [],
@@ -250,6 +250,9 @@ function Reviews() {
         "Cultural Packages: Immerse yourself in uplifting cultural, artistic, and spiritual travel experiences.",
         "Corporate Packages: Tailored travel solutions for Meetings, Incentives, Conventions, and Events (MICE).",
         "Honeymoon Packages: Romantic getaways designed for newlyweds seeking unforgettable moments.",
+        "Adventure Packages: Thrilling and exciting adventure travel experiences for the adventurous soul.",
+        "Corporate Auto Consultancy: Expert consultancy for Light Motor Vehicle (LMV) and Heavy Motor Vehicle (HMV) procurement.",
+        
       ],
       last: [
         "Our commitment is to deliver exceptional travel management services, ensuring satisfaction and creating lasting memories for our clients.",
