@@ -32,7 +32,7 @@ function Footer() {
         <div className="flex flex-col gap-6">
           <h6 className="font-bold text-xl">Contact</h6>
           <div className="flex flex-col text-lg gap-3">
-            <a href="">Partner with us</a>
+            <a href="/partner">Partner with us</a>
             <a href="">FAQ&rsquo;s</a>
             <a href="">Blog</a>
           </div>

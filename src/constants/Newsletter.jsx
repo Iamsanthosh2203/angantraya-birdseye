@@ -8,8 +8,8 @@ function Newsletter() {
           corporate office{" "}
         </p>
 
-        <div className="flex md:flex-row flex-col w-full">
-          <div className="h-[200px] border-black pb-3 md:border-0 border-b  basis-[50%]">
+        <div className="flex md:flex-row flex-col w-full justify-center">
+          <div className="h-[200px] border-black pb-3 md:border-0 border-b  basis-[30%]">
             <h5 className="text-4xl font-semibold">Coimbatore</h5>
             <address className="pl-5 pt-6">
               3/200 Sample Address,
@@ -23,9 +23,23 @@ function Newsletter() {
               641001
             </address>
           </div>
-          <div className="h-[200px] py-3 border-b md:border-l md:border-b-0 border-black  basis-[50%]">
+          <div className="h-[200px] py-3 border-b md:border-l md:border-b-0 border-black  basis-[30%]">
             <h5 className="md:pl-6 text-4xl font-semibold">Coimbatore</h5>
             <address className="pl-5 md:pl-12 pt-6">
+              3/200 Sample Address,
+              <br />
+              Coimbatore
+              <br />
+              Tamilnadu
+              <br />
+              India
+              <br />
+              641001
+            </address>
+          </div>
+          <div className="md:border-l py-3 border-black h-[200px]  basis-[30%]">
+            <h5 className="md:pl-6 text-4xl font-semibold">Coimbatore</h5>
+            <address className="pl-6 md:pl-12 pt-6">
               3/200 Sample Address,
               <br />
               Coimbatore
@@ -41,8 +55,8 @@ function Newsletter() {
 
         <hr className="w-full md:block hidden h-[1px] border-t border-black" />
 
-        <div className="flex md:flex-row flex-col w-full">
-          <div className="h-[200px] basis-[25%] border-b border-black md:border-0 py-3">
+        <div className="flex md:flex-row flex-col w-full justify-center">
+          <div className="h-[200px] basis-[30%] border-b border-black md:border-0 py-3">
             <h5 className="text-4xl font-semibold">Coimbatore</h5>
             <address className="pl-5 pt-6">
               3/200 Sample Address,
@@ -56,7 +70,7 @@ function Newsletter() {
               641001
             </address>
           </div>
-          <div className="md:border-l py-3 border-b md:border-b-0 border-black h-[200px]  basis-[25%]">
+          <div className="md:border-l py-3 border-b md:border-b-0 border-black h-[200px]  basis-[30%]">
             <h5 className="md:pl-6 text-4xl font-semibold">Coimbatore</h5>
             <address className="pl-6 md:pl-12 pt-6">
               3/200 Sample Address,
@@ -70,21 +84,7 @@ function Newsletter() {
               641001
             </address>
           </div>
-          <div className="md:border-l border-b md:border-b-0 py-3 border-black h-[200px]  basis-[25%]">
-            <h5 className="md:pl-6 text-4xl font-semibold">Coimbatore</h5>
-            <address className="pl-6 md:pl-12 pt-6">
-              3/200 Sample Address,
-              <br />
-              Coimbatore
-              <br />
-              Tamilnadu
-              <br />
-              India
-              <br />
-              641001
-            </address>
-          </div>
-          <div className="md:border-l py-3 border-black h-[200px]  basis-[25%]">
+          <div className="md:border-l border-b md:border-b-0 py-3 border-black h-[200px]  basis-[30%]">
             <h5 className="md:pl-6 text-4xl font-semibold">Coimbatore</h5>
             <address className="pl-6 md:pl-12 pt-6">
               3/200 Sample Address,

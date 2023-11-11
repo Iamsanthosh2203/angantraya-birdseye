@@ -202,9 +202,12 @@ function Explore() {
         </p>
 
         <div>
-          <button className="px-6 text-white font-bold py-4 shadow-xl bg-[#2596BE] rounded-full mb-6 md:mb-0">
+          <Link
+            to="/destinations"
+            className="px-6 text-white font-bold py-4 shadow-xl bg-[#2596BE] rounded-full mb-6 md:mb-0"
+          >
             Get Started
-          </button>
+          </Link>
         </div>
       </div>
       <div className="hidden md:flex items-center gap-8 explore-img">
@@ -258,15 +261,15 @@ function Destinations() {
       <div className="my-6 grid grid-cols-1 md:grid-cols-3 mx-auto gap-24">
         {/* item 1 */}
         <Link
-          to="/india"
+          to="/andaman"
           className="md:hover:scale-110 cursor-pointer duration-150 h-[500px] w-80 rounded-xl bg-white shadow-lg flex-col"
         >
-          <div className="h-[60%] w-full rounded-t-xl bg-img-india" />
+          <div className="h-[60%] w-full rounded-t-xl bg-img-andaman" />
           <div className="flex flex-col p-12 gap-7">
             <h3 className="font-bold font-adanda text-xl">
-              Explore the Colors of Culture and Nature
+              Island paradise with rich biodiversity awaits.
             </h3>
-            <p className="font-adanda">India, South Asia</p>
+            <p className="font-adanda">Andaman, South Asia</p>
           </div>
         </Link>
 
@@ -292,9 +295,9 @@ function Destinations() {
           <div className="h-[60%] w-full rounded-t-xl bg-img-lakshadweep" />
           <div className="flex flex-col p-12 gap-7">
             <h3 className="font-bold font-adanda text-lg">
-              Discover Nepal&rsquo;s: Nature&rsquo;s Hidden Paradise
+              Discover Lakshwadeep&rsquo;s: Nature&rsquo;s Hidden Paradise
             </h3>
-            <p className="font-adanda">Nepal</p>
+            <p className="font-adanda">Lakshwadeep, South Asia</p>
           </div>
         </Link>
       </div>

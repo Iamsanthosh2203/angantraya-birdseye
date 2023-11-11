@@ -6,6 +6,10 @@ import { Link } from "react-router-dom";
 import aboutbg from "../assets/aboutbg.jpg";
 import Footer from "../constants/Footer";
 import gridabout from "../assets/gridabout.png";
+import service1 from "../assets/service1.jpg";
+import service2 from "../assets/service2.png";
+import service3 from "../assets/service3.jpg";
+import service5 from "../assets/service5.jpg";
 
 function About() {
   function scrollToTop() {
@@ -154,7 +158,7 @@ function Header() {
 function Section1() {
   return (
     <section className="py-8 about1">
-      <h4 className="font-arbtus text-2xl md:text-5xl text-center">
+      <h4 className="font-alfa text-2xl md:text-5xl text-center">
         We are Angantraya Birdseye
       </h4>
       <div className="flex md:flex-row flex-col gap-4 justify-around py-12">
@@ -228,24 +232,48 @@ function Section2() {
 
 function OurGroups() {
   return (
-    <section className="py-12 px-6 flex flex-col justify-center about1">
-      <h4 className="font-arbtus text-5xl text-center uppercase">Our Groups</h4>
+    <section className="py-12 px-6 flex flex-col justify-center">
+      <h4 className="font-alfa text-5xl text-center uppercase">Our Groups</h4>
       <div className="flex md:flex-row flex-col justify-around font-bold">
         <div className="flex flex-col items-center py-12 gap-7">
-          <img src={gridabout} alt="gridabout" className="w-[250px]" />
-          <p className="text-2xl font-noticia tracking-[3px]">AMAZONAWS</p>
+          <img src={service1} alt="service1" className="w-[250px] h-[250px]" />
+          <p className="text-2xl font-noticia tracking-[3px]">BROGIBRO</p>
         </div>
         <div className="flex flex-col items-center py-12 gap-7">
-          <img src={gridabout} alt="gridabout" className="w-[250px]" />
-          <p className="text-2xl font-noticia tracking-[3px]">AMAZONAWS</p>
+          <img src={service2} alt="service2" className="w-[250px] h-[250px]" />
+          <p className="text-2xl font-noticia tracking-[3px] text-center">
+            APOORVA <br />
+            TOURS AND TRAVELS
+          </p>
         </div>
         <div className="flex flex-col items-center py-12 gap-7">
-          <img src={gridabout} alt="gridabout" className="w-[250px]" />
-          <p className="text-2xl font-noticia tracking-[3px]">AMAZONAWS</p>
+          <img
+            src={service3}
+            alt="service3"
+            className="w-[250px] h-[250px] object-cover"
+          />
+          <p className="text-2xl font-noticia tracking-[3px] text-center">
+            ANGANTRAYA <br />
+            TRANSPORTATION
+          </p>
         </div>
         <div className="flex flex-col items-center py-12 gap-7">
-          <img src={gridabout} alt="gridabout" className="w-[250px]" />
-          <p className="text-2xl font-noticia tracking-[3px]">AMAZONAWS</p>
+          <img src={service5} alt="service5" className="w-[250px] h-[250px]" />
+          <p className="text-2xl font-noticia tracking-[3px] text-center">
+            MIDLEAD <br />
+            TECHNOVATIONS
+          </p>
+        </div>
+        <div className="flex flex-col items-center py-12 gap-7">
+          <img
+            src={gridabout}
+            alt="gridabout"
+            className="w-[250px] h-[250px]"
+          />
+          <p className="text-2xl font-noticia tracking-[3px] text-center">
+            YUVARAJ <br />
+            TRAVELS
+          </p>
         </div>
       </div>
     </section>

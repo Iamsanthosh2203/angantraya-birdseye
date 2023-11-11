@@ -1,6 +1,6 @@
 import { useState } from "react";
 import logo from "../assets/logo.png";
-import line from "../assets/line.svg";
+import line1 from "../assets/line1.png";
 import { Parallax } from "react-parallax";
 import { Link } from "react-router-dom";
 
@@ -80,14 +80,14 @@ function Header() {
   return (
     <Parallax
       strength={500}
-      className="relative flex flex-col font-primary bg-[#1B1A1A]"
+      className="relative flex flex-col font-primary bg-white "
     >
       <nav className="hidden pr-6 md:flex items-center justify-between w-full">
         <Link to="/">
           <img src={logo} alt="Logo" />
         </Link>
 
-        <div className="flex gap-24 font-bold text-xl text-white">
+        <div className="flex gap-24 font-bold text-xl text-black ">
           <Link to="/">HOME</Link>
           <Link to="/destinations">DESTINATIONS</Link>
           <a href="/services">OUR SERVICES</a>
@@ -97,16 +97,18 @@ function Header() {
 
         <div
           onClick={() => setEnquire(!enquire)}
-          className="text-white flex gap-2 relative"
+          className="text-black  flex gap-2 relative"
         >
           <button>ENQUIRE NOW</button>
-          <img src={line} alt="" />
+          <div className="flex items-center">
+            <img src={line1} alt="line1" />
+          </div>
 
           <div
             className={
               enquire
-                ? "absolute top-16 h-f w-full bg-white text-black p-4 flex flex-col gap-3 translate-y-0 duration-200"
-                : "absolute flex top-16 h-f w-full bg-white text-black p-4 flex-col gap-3 -translate-y-12 duration-200 -z-10"
+                ? "absolute top-16 h-f w-full bg-black text-white p-4 flex flex-col gap-3 translate-y-0 duration-200 z-20"
+                : "absolute flex top-16 h-f w-full bg-white text-white p-4 flex-col gap-3 -translate-y-12 duration-200 -z-10"
             }
           >
             <button onClick={handleDestinationsClick}>Book Online</button>
@@ -124,7 +126,7 @@ function Header() {
         <div className="px-3">
           <i
             onClick={() => setNav(true)}
-            className="fa-solid fa-bars text-4xl text-white"
+            className="fa-solid fa-bars text-4xl md:text-white"
           ></i>
         </div>
         <div
@@ -151,7 +153,7 @@ function Header() {
               className="text-white flex gap-2 relative"
             >
               <button>ENQUIRE NOW</button>
-              <img src={line} alt="" />
+              <img src={line1} alt="line1" />
 
               <div
                 className={
@@ -176,15 +178,17 @@ function OurDestinations() {
   return (
     <div
       name="kenya"
-      className="my-12 flex flex-col items-center justify-center text-black gap-12"
+      className="my-12 flex flex-col items-center justify-center text-black gap-12 z-0"
     >
       <p className="text-6xl bursh-font">Our Services</p>
 
       {destinationsData.map((item, index) => (
         <div
           key={index}
-          className={`flex flex-col md:flex-row justify-around md:px-24 w-full px-6 ${
-            index % 2 === 1 ? "flex-row-reverse" : ""
+          className={`flex justify-around md:px-24 w-full px-6 ${
+            index % 2 === 1
+              ? "md:flex-row-reverse flex-col"
+              : "md:flex-row flex-col"
           }`}
         >
           <div className="basis-[40%]">

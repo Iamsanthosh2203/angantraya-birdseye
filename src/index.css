@@ -39,7 +39,13 @@ html {
 }
 
 .bg-img-india {
-  background-image: url("./assets/tajmahal.jpg");
+  background-image: url("./assets/india.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-img-andaman {
+  background-image: url("./assets/andaman.avif");
   background-position: center;
   background-size: cover;
 }
@@ -189,7 +195,7 @@ input[type="number"]::-webkit-outer-spin-button {
 .about2 {
   position: relative;
   background-image: url("./assets/aboutsection2.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   z-index: 0;
