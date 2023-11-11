@@ -21,6 +21,14 @@ function Destinations() {
 }
 
 function Header() {
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // You can use 'auto' for an instant scroll
+    });
+  }
+  scrollToTop();
+
   const handleCallClick = () => {
     // Use the `window.location` to initiate a phone call to the mobile number
     window.location.href = "tel:+1234567890"; // Replace with the desired mobile number

@@ -63,104 +63,120 @@ function Header() {
   const [nav, setNav] = useState(false);
 
   return (
-    <Parallax
-      strength={500}
-      className="relative flex flex-col font-primary h-screen"
-    >
-      <video id="background-video" className="object-cover" autoPlay loop muted>
-        <source
-          src="https://github.com/santhoshkumar-dev/hosting/raw/main/Dashboard_2.mp4"
-          type="video/mp4"
-        />
-      </video>
-
-      <nav className="hidden md:px-12 md:flex items-center justify-between w-full">
-        <Link to="/">
-          <img className="md:w-auto w-44" src={logo} alt="Logo" />
-        </Link>
-
-        <div className="hidden md:flex gap-24 font-bold text-xl text-white">
-          <Link to="/">HOME</Link>
-          <Link to="/destinations">DESTINATIONS</Link>
-          <a href="/services">OUR SERVICES</a>
-          <a href="/gallery">GALLERY</a>
-          <a href="/about">ABOUT US</a>
-        </div>
-
-        <div
-          onClick={() => setEnquire(!enquire)}
-          className="text-white flex gap-2 relative"
+    <div className="h-screen relative">
+      <Parallax
+        strength={500}
+        className="relative flex flex-col font-primary h-screen"
+      >
+        <video
+          poster="https://www.telegraph.co.uk/content/dam/travel/2022/05/25/TELEMMGLPICT000297198535_trans_NvBQzQNjv4BqRo0U4xU-30oDveS4pXV-Vv4Xpit_DMGvdp2n7FDd82k.jpeg"
+          id="background-video"
+          className="object-cover"
+          autoPlay
+          loop
+          muted
         >
-          <button>ENQUIRE NOW</button>
-          <img src={line} alt="" />
+          <source
+            src="https://drive.google.com/uc?export=download&id=1z6O_uidxYE-S65Vpu0T9NEyVy9LCVH0z"
+            type="video/mp4"
+          />
+        </video>
 
-          <div
-            className={
-              enquire
-                ? "absolute top-16 h-f w-full bg-white text-black p-4 flex flex-col gap-3 translate-y-0 duration-200"
-                : "absolute top-16 h-f w-full bg-white text-black p-4 flex flex-col gap-3 -translate-y-12 duration-200 -z-10"
-            }
-          >
-            <button onClick={handleDestinationsClick}>Book Online</button>
-            <button onClick={handleEmailClick}>By Email</button>
-            <button onClick={handleCallClick}>By Phone</button>
-          </div>
-        </div>
-      </nav>
+        <nav className="hidden md:px-12 md:flex items-center justify-between w-full ">
+          <Link to="/">
+            <img className="md:w-auto w-44" src={logo} alt="Logo" />
+          </Link>
 
-      <nav className="flex justify-between items-center md:hidden relative">
-        <Link to="/">
-          <img className="w-32" src={logo} alt="Logo" />
-        </Link>
-
-        <div className="px-3">
-          <i
-            onClick={() => setNav(true)}
-            className="fa-solid fa-bars text-4xl text-white"
-          ></i>
-        </div>
-        <div
-          className={`${
-            nav ? "translate-x-0" : "translate-x-full"
-          } duration-150 absolute top-0 w-full bg-black h-screen text-white justify-center px-12 py-8`}
-        >
-          <div className="w-full flex justify-end">
-            <i
-              onClick={() => setNav(false)}
-              className="fa-solid fa-x text-xl"
-            ></i>
-          </div>
-
-          <div className="flex flex-col gap-5 items-center text-2xl py-8 h-full">
+          <div className="hidden md:flex gap-24 font-bold text-xl text-white">
             <Link to="/">HOME</Link>
             <Link to="/destinations">DESTINATIONS</Link>
             <a href="/services">OUR SERVICES</a>
             <a href="/gallery">GALLERY</a>
             <a href="/about">ABOUT US</a>
+          </div>
+
+          <div
+            onClick={() => setEnquire(!enquire)}
+            className="text-white flex gap-2 relative"
+          >
+            <button>ENQUIRE NOW</button>
+            <img src={line} alt="" />
 
             <div
-              onClick={() => setEnquire(!enquire)}
-              className="text-white flex gap-2 relative"
+              className={
+                enquire
+                  ? "absolute top-16 h-f w-full bg-white text-black p-4 flex flex-col gap-3 translate-y-0 duration-200"
+                  : "absolute top-16 h-f w-full bg-white text-black p-4 flex flex-col gap-3 -translate-y-12 duration-200 -z-10"
+              }
             >
-              <button>ENQUIRE NOW</button>
-              <img src={line} alt="" />
+              <button onClick={handleDestinationsClick}>Book Online</button>
+              <button onClick={handleEmailClick}>By Email</button>
+              <button onClick={handleCallClick}>By Phone</button>
+            </div>
+          </div>
+        </nav>
+
+        <nav className="flex justify-between items-center md:hidden relative">
+          <Link to="/">
+            <img className="w-32" src={logo} alt="Logo" />
+          </Link>
+
+          <div className="px-3">
+            <i
+              onClick={() => setNav(true)}
+              className="fa-solid fa-bars text-4xl text-white"
+            ></i>
+          </div>
+          <div
+            className={`${
+              nav ? "translate-x-0" : "translate-x-full"
+            } duration-150 absolute top-0 w-full bg-black h-screen text-white justify-center px-12 py-8`}
+          >
+            <div className="w-full flex justify-end">
+              <i
+                onClick={() => setNav(false)}
+                className="fa-solid fa-x text-xl"
+              ></i>
+            </div>
+
+            <div className="flex flex-col gap-5 items-center text-2xl py-8 h-full">
+              <Link to="/">HOME</Link>
+              <Link to="/destinations">DESTINATIONS</Link>
+              <a href="/services">OUR SERVICES</a>
+              <a href="/gallery">GALLERY</a>
+              <a href="/about">ABOUT US</a>
 
               <div
-                className={
-                  enquire
-                    ? "absolute top-16 h-f w-full bg-white text-black p-4 flex flex-col gap-3 translate-y-0 duration-200"
-                    : "absolute top-16 h-f w-full bg-white text-black p-4 hidden flex-col gap-3 -translate-y-12 duration-200 -z-10"
-                }
+                onClick={() => setEnquire(!enquire)}
+                className="text-white flex gap-2 relative"
               >
-                <button onClick={handleDestinationsClick}>Book Online</button>
-                <button onClick={handleEmailClick}>By Email</button>
-                <button onClick={handleCallClick}>By Phone</button>
+                <button>ENQUIRE NOW</button>
+                <img src={line} alt="" />
+
+                <div
+                  className={
+                    enquire
+                      ? "absolute top-16 h-f w-full bg-white text-black p-4 flex flex-col gap-3 translate-y-0 duration-200"
+                      : "absolute top-16 h-f w-full bg-white text-black p-4 hidden flex-col gap-3 -translate-y-12 duration-200 -z-10"
+                  }
+                >
+                  <button onClick={handleDestinationsClick}>Book Online</button>
+                  <button onClick={handleEmailClick}>By Email</button>
+                  <button onClick={handleCallClick}>By Phone</button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </nav>
-    </Parallax>
+        </nav>
+      </Parallax>
+
+      <div
+        className="absolute inset-0 bg-[#4c4c4c] opacity-50"
+        style={{ zIndex: -1 }}
+      >
+        1
+      </div>
+    </div>
   );
 }
 
@@ -188,7 +204,7 @@ function Explore() {
         </p>
 
         <div>
-          <button className="px-6 text-white font-bold py-4 shadow-xl bg-black rounded-full mb-6 md:mb-0">  
+          <button className="px-6 text-white font-bold py-4 shadow-xl bg-[#2596BE] rounded-full mb-6 md:mb-0">
             Get Started
           </button>
         </div>
@@ -232,9 +248,12 @@ function Destinations() {
 
         <div>
           {/* generate left arrow in fontawesome */}
-          <div className="cursor-pointer h-12 w-12 bg-[#2596BE] rounded-full flex items-center justify-center shadow-xl">
+          <Link
+            to="/destinations"
+            className="cursor-pointer h-12 w-12 bg-[#2596BE] rounded-full flex items-center justify-center shadow-xl"
+          >
             <i className="fa-solid fa-chevron-right text-white"></i>
-          </div>
+          </Link>
         </div>
       </div>
 
@@ -303,8 +322,8 @@ function TravelPoint() {
             We helping you to find your dream location.
           </h3>
           <p>
-            Contrary to popular belief, Lorem Ipsum is not simply random text.
-            It has roots in a piece of classical Latin literature from 45 BC.
+            Discover your ideal destination with our expert assistance, guiding
+            you to uncover the perfect place that feels like home.
           </p>
         </div>
       </div>
@@ -312,12 +331,12 @@ function TravelPoint() {
       <div className="flex justify-center items-center basis-[80%]">
         <div className="grid gap-12 grid-cols-2 md:p-0 px-4">
           <div className="p-4 md:p-8 bg-white rounded-3xl flex flex-col items-center shadow-xl text-center">
-            <p className="text-[#2596BE] text-4xl font-bold mb-4">800+</p>
+            <p className="text-[#2596BE] text-4xl font-bold mb-4">200+</p>
             <p className="text-xl">Holiday Package</p>
           </div>
 
           <div className="p-4 md:p-8 bg-white rounded-3xl flex flex-col items-center shadow-xl text-center">
-            <p className="text-[#2596BE] text-4xl font-bold mb-4">100</p>
+            <p className="text-[#2596BE] text-4xl font-bold mb-4">80+</p>
             <p className="text-xl">Luxury Hotels</p>
           </div>
 
@@ -327,7 +346,7 @@ function TravelPoint() {
           </div>
 
           <div className="p-4 md:p-8 bg-white rounded-3xl flex flex-col items-center shadow-xl text-center">
-            <p className="text-[#2596BE] text-4xl font-bold mb-4">2k+</p>
+            <p className="text-[#2596BE] text-4xl font-bold mb-4">10k+</p>
             <p className="text-xl">Happy Customers</p>
           </div>
         </div>
@@ -342,10 +361,18 @@ function Services() {
       <div className="text-center md:text-left flex gap-7">
         <img className="hidden md:inline-block" src={uparrow} alt="uparrow" />
         <div className="flex flex-col justify-around">
-          <h4 className="tracking-widest uppercase text-xl text-[#2596BE] font-bold">
-            Services
-          </h4>
-          <p className="text-5xl font-bold">
+          <div className="flex justify-evenly items-center gap-20">
+            <h4 className="tracking-widest uppercase text-4xl text-[#2596BE] font-bold">
+              Services
+            </h4>
+            <Link
+              to="/services"
+              className="cursor-pointer h-12 w-12 bg-[#2596BE] rounded-full flex items-center justify-center shadow-xl"
+            >
+              <i className="fa-solid fa-chevron-right text-white"></i>
+            </Link>
+          </div>
+          <p className="text-3xl font-bold">
             Our top value <br /> categories for you
           </p>
         </div>

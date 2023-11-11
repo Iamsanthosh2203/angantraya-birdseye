@@ -3,6 +3,7 @@ import logo from "../assets/logo.png";
 import line from "../assets/line.svg";
 import { Parallax } from "react-parallax";
 import { Link } from "react-router-dom";
+import indiabg from "../assets/indiabg.avif";
 
 function India() {
   function scrollToTop() {
@@ -38,9 +39,6 @@ function Header() {
   const [enquire, setEnquire] = useState(false);
   const [nav, setNav] = useState(false);
 
-  const imageSource =
-    "https://images.unsplash.com/photo-1624554305378-0f440dd3a8c1?auto=format&fit=crop&q=80&w=2025&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
-
   return (
     <Parallax
       strength={500}
@@ -54,7 +52,7 @@ function Header() {
           height: "100vh",
         },
       }}
-      bgImage={imageSource}
+      bgImage={indiabg}
       className="relative flex flex-col font-primary min-h-screen bg-[#1B1A1A]"
     >
       <nav className="hidden pr-6 md:flex items-center justify-between w-full">
