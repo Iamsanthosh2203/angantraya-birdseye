@@ -183,18 +183,18 @@ function OurDestinations() {
       {destinationsData.map((item, index) => (
         <div
           key={index}
-          className={`flex justify-around px-24 w-full ${
+          className={`flex flex-col md:flex-row justify-around md:px-24 w-full px-6 ${
             index % 2 === 1 ? "flex-row-reverse" : ""
           }`}
         >
           <div className="basis-[40%]">
             <img src={item.imageUrl} alt="placeholder" />
           </div>
-          <div className="flex flex-col justify-evenly basis-[40%]">
+          <div className="flex flex-col justify-evenly basis-[40%] my-4">
             <h4 className="font-primary text-4xl font-bold">{item.title}</h4>
-            <p>{item.description}</p>
+            <p className="my-4">{item.description}</p>
             <div className="flex justify-center w-full">
-              <button className="py-4 px-8 font-adanda bg-black text-white">
+              <button className="py-4 px-8 font-adanda bg-black text-white my-4">
                 See More
               </button>
             </div>

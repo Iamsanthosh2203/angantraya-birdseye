@@ -141,7 +141,7 @@ function OurDestinations() {
     >
       <p className="text-6xl bursh-font">Gallery</p>
 
-      <div className="grid grid-cols-2 gap-12 my-12">
+      <div className="grid md:grid-cols-2 px-6 gap-12 my-12">
         <img src="https://placeholder.co/700x400" alt="placeholder" />
         <img src="https://placeholder.co/700x400" alt="placeholder" />
         <img src="https://placeholder.co/700x400" alt="placeholder" />

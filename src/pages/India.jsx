@@ -247,7 +247,7 @@ function OurDestinations() {
             </Link>
 
             <Link
-              to={`/about`}
+              to={destination.url}
               key={index}
               className={`md:hidden flex flex-col w-full bg-white rounded-xl drop-shadow-xl`}
             >

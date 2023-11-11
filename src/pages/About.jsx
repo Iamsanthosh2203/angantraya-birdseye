@@ -154,10 +154,10 @@ function Header() {
 function Section1() {
   return (
     <section className="py-8 about1">
-      <h4 className="font-arbtus text-5xl text-center">
+      <h4 className="font-arbtus text-2xl md:text-5xl text-center">
         We are Angantraya Birdseye
       </h4>
-      <div className="flex justify-around py-12">
+      <div className="flex md:flex-row flex-col gap-4 justify-around py-12">
         <div className="flex flex-col items-center">
           <p className="text-4xl font-adanda">12000+</p>
           <p className="font-noticia tracking-[3px]">ACTIVITES</p>
@@ -182,7 +182,7 @@ function Section1() {
 function Section2() {
   return (
     <section className="min-h-[60vh] about2 py-12 flex items-end text-white">
-      <div className="flex w-full justify-center gap-4 z-10">
+      <div className="md:flex hidden w-full justify-center gap-4 z-10">
         <p className="text-2xl font-noticia tracking-[3px]">ANDAMAN</p>
         <p className="text-2xl font-noticia tracking-[3px] px-4 border-x border-white">
           BHUTAN
@@ -200,6 +200,28 @@ function Section2() {
           KENYA
         </p>
       </div>
+
+      <div className="flex md:hidden flex-col items-center w-full justify-center gap-4 z-10">
+        <p
+          className="text-2xl font-noticia tracking-[3px]
+        border-b"
+        >
+          ANDAMAN
+        </p>
+        <p className="text-2xl font-noticia tracking-[3px] px-4 border-b">
+          BHUTAN
+        </p>
+        <p className="text-2xl font-noticia tracking-[3px] px-4 border-b">
+          NEPAL
+        </p>
+        <p className="text-2xl font-noticia tracking-[3px] px-4">INDIA</p>
+        <p className="text-2xl font-noticia tracking-[3px] px-4 border-b">
+          LAKSHADWEEP
+        </p>
+        <p className="text-2xl font-noticia tracking-[3px] px-4 border-b">
+          KENYA
+        </p>
+      </div>
     </section>
   );
 }
@@ -208,7 +230,7 @@ function OurGroups() {
   return (
     <section className="py-12 px-6 flex flex-col justify-center about1">
       <h4 className="font-arbtus text-5xl text-center uppercase">Our Groups</h4>
-      <div className="flex justify-around font-bold">
+      <div className="flex md:flex-row flex-col justify-around font-bold">
         <div className="flex flex-col items-center py-12 gap-7">
           <img src={gridabout} alt="gridabout" className="w-[250px]" />
           <p className="text-2xl font-noticia tracking-[3px]">AMAZONAWS</p>
@@ -252,7 +274,6 @@ function Reviews() {
         "Honeymoon Packages: Romantic getaways designed for newlyweds seeking unforgettable moments.",
         "Adventure Packages: Thrilling and exciting adventure travel experiences for the adventurous soul.",
         "Corporate Auto Consultancy: Expert consultancy for Light Motor Vehicle (LMV) and Heavy Motor Vehicle (HMV) procurement.",
-        
       ],
       last: [
         "Our commitment is to deliver exceptional travel management services, ensuring satisfaction and creating lasting memories for our clients.",
@@ -277,30 +298,30 @@ function Reviews() {
   }
 
   return (
-    <section className="p-12 flex flex-col">
-      <div className="flex gap-12 ">
+    <section className="md:p-12 p-5 flex flex-col">
+      <div className="px-4 md:px-0 flex gap-4 md:justify-around my-4 font-arvo border-b pb-4 border-black overflow-x-auto text-sm">
         <button
           className={`${
             activePackage === 1 ? "bg-black text-white" : "bg-white"
-          } border-2 border-black p-3 px-6 font-bold font-adanda uppercase`}
+          } border-2 border-black p-3 md:p-6 tracking-[5px]`}
           onClick={() => setActivePackage(1)}
         >
-          Who We Are ?
+          WHO WE ARE ?
         </button>
 
         <button
           className={`${
             activePackage === 2 ? "bg-black text-white" : "bg-white"
-          } border-2 border-black p-3 px-6 font-bold font-adanda uppercase`}
+          } text-black border-2 border-black p-3 md:p-6 tracking-[5px]`}
           onClick={() => setActivePackage(2)}
         >
-          What We DO ?
+          WHAT WE DO ?
         </button>
 
         <button
           className={`${
             activePackage === 3 ? "bg-black text-white" : "bg-white"
-          } border-2 border-black p-3 px-6 font-bold font-adanda uppercase`}
+          } text-black border-2 border-black p-3 md:p-6 tracking-[5px]`}
           onClick={() => setActivePackage(3)}
         >
           TEAM
