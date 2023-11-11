@@ -192,6 +192,66 @@ function Header() {
           feedback.
         </li>
       </ol>
+
+      <form>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-[70%] mx-auto my-12">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name"
+            className="p-4 border drop-shadow-xl focus:drop-shadow-2xl  rounded-lg"
+          />
+          <input
+            type="text"
+            name="cname"
+            id="cname"
+            placeholder="Company Name"
+            className="p-4 border drop-shadow-xl focus:drop-shadow-2xl rounded-lg"
+          />
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-[70%] mx-auto my-12">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email ID"
+            className="p-4 border drop-shadow-xl focus:drop-shadow-2xl  rounded-lg"
+          />
+          <input
+            type="number"
+            name="phone"
+            id="phone"
+            placeholder="Phone Number"
+            className="p-4 border drop-shadow-xl focus:drop-shadow-2xl rounded-lg"
+          />
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-[70%] mx-auto my-12">
+          <input
+            type="text"
+            name="address"
+            id="address"
+            placeholder="Address"
+            className="p-4 border drop-shadow-xl focus:drop-shadow-2xl  rounded-lg"
+          />
+          <input
+            type="text"
+            name="gst"
+            id="gst"
+            placeholder="GST Number"
+            className="p-4 border drop-shadow-xl focus:drop-shadow-2xl rounded-lg"
+          />
+        </div>
+
+        <div className="flex justify-center">
+          <button
+            type="submit"
+            className="px-6 py-4 bg-[#B99674] text-white text-xl"
+          >
+            Send Message
+          </button>
+        </div>
+      </form>
     </Parallax>
   );
 }
