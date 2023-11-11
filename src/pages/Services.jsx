@@ -1,8 +1,10 @@
 import { useState } from "react";
 import logo from "../assets/logo.png";
 import line1 from "../assets/line1.png";
+import line from "../assets/line.svg";
 import { Parallax } from "react-parallax";
 import { Link } from "react-router-dom";
+import Footer from "../constants/Footer";
 
 const destinationsData = [
   {
@@ -54,7 +56,7 @@ function Services() {
   return (
     <>
       <Header />
-      <OurDestinations />
+      <Footer />
     </>
   );
 }
@@ -153,7 +155,7 @@ function Header() {
               className="text-white flex gap-2 relative"
             >
               <button>ENQUIRE NOW</button>
-              <img src={line1} alt="line1" />
+              <img src={line} alt="line" />
 
               <div
                 className={
@@ -170,6 +172,8 @@ function Header() {
           </div>
         </div>
       </nav>
+
+      <OurDestinations />
     </Parallax>
   );
 }

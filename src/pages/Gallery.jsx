@@ -1,6 +1,7 @@
 import { useState } from "react";
 import logo from "../assets/logo.png";
 import line from "../assets/line.svg";
+import line1 from "../assets/line1.png";
 import { Parallax } from "react-parallax";
 import { Link } from "react-router-dom";
 
@@ -15,7 +16,6 @@ function Gallery() {
   return (
     <>
       <Header />
-      <OurDestinations />
     </>
   );
 }
@@ -41,14 +41,14 @@ function Header() {
   return (
     <Parallax
       strength={500}
-      className="relative flex flex-col font-primary bg-[#1B1A1A]"
+      className="relative flex flex-col font-primary bg-white text-black"
     >
       <nav className="hidden pr-6 md:flex items-center justify-between w-full">
         <Link to="/">
           <img src={logo} alt="Logo" />
         </Link>
 
-        <div className="flex gap-24 font-bold text-xl text-white">
+        <div className="flex gap-24 font-bold text-xl text-black">
           <Link to="/">HOME</Link>
           <Link to="/destinations">DESTINATIONS</Link>
           <a href="/services">OUR SERVICES</a>
@@ -58,15 +58,17 @@ function Header() {
 
         <div
           onClick={() => setEnquire(!enquire)}
-          className="text-white flex gap-2 relative"
+          className="text-black flex gap-2 relative"
         >
           <button>ENQUIRE NOW</button>
-          <img src={line} alt="" />
+          <div className="flex items-center">
+            <img src={line1} alt="" />
+          </div>
 
           <div
             className={
               enquire
-                ? "absolute top-16 h-f w-full bg-white text-black p-4 flex flex-col gap-3 translate-y-0 duration-200"
+                ? "absolute top-16 h-f w-full bg-black text-white p-4 flex flex-col gap-3 translate-y-0 duration-200"
                 : "absolute flex top-16 h-f w-full bg-white text-black p-4 flex-col gap-3 -translate-y-12 duration-200 -z-10"
             }
           >
@@ -85,7 +87,7 @@ function Header() {
         <div className="px-3">
           <i
             onClick={() => setNav(true)}
-            className="fa-solid fa-bars text-4xl text-white"
+            className="fa-solid fa-bars text-4xl text-black"
           ></i>
         </div>
         <div
@@ -129,6 +131,7 @@ function Header() {
           </div>
         </div>
       </nav>
+      <OurDestinations />
     </Parallax>
   );
 }
