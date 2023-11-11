@@ -171,11 +171,9 @@ function Header() {
       </Parallax>
 
       <div
-        className="absolute inset-0 bg-[#4c4c4c] opacity-50"
+        className="absolute inset-0 bg-[#0000004e]"
         style={{ zIndex: -1 }}
-      >
-        1
-      </div>
+      ></div>
     </div>
   );
 }
