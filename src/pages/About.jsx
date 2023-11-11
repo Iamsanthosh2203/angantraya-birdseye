@@ -1,14 +1,14 @@
 import { useState } from "react";
 import logo from "../assets/logo.png";
+import line1 from "../assets/line1.png";
 import line from "../assets/line.svg";
 import { Parallax } from "react-parallax";
 import { Link } from "react-router-dom";
-import aboutbg from "../assets/aboutbg.jpg";
 import Footer from "../constants/Footer";
 import gridabout from "../assets/gridabout.png";
 import service1 from "../assets/service1.jpg";
 import service2 from "../assets/service2.png";
-import service3 from "../assets/service3.jpg";
+import service3 from "../assets/service3.png";
 import service5 from "../assets/service5.jpg";
 
 function About() {
@@ -50,114 +50,123 @@ function Header() {
   const [nav, setNav] = useState(false);
 
   return (
-    <Parallax
-      strength={500}
-      bgImageStyle={{
-        objectFit: "cover",
-        width: "100%",
-        height: "100vh",
-        // Apply the style only for mobile screens (max-width: 767px)
-        "@media (max-width: 767px)": {
+    <div className="h-screen relative">
+      <Parallax
+        strength={500}
+        bgImageStyle={{
           objectFit: "cover",
+          width: "100%",
           height: "100vh",
-        },
-      }}
-      bgImage={aboutbg}
-      className="relative flex flex-col font-primary min-h-screen bg-[#1B1A1A]"
-    >
-      <nav className="hidden pr-6 md:flex items-center justify-between w-full">
-        <Link to="/">
-          <img src={logo} alt="Logo" />
-        </Link>
+          // Apply the style only for mobile screens (max-width: 767px)
+          "@media (max-width: 767px)": {
+            objectFit: "cover",
+            height: "100vh",
+          },
+        }}
+        bgImage="https://images.unsplash.com/photo-1596295357308-b9ff1d2fe788?q=80&w=2060&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        className="relative flex flex-col font-primary min-h-screen bg-[#1B1A1A]"
+      >
+        <nav className="hidden pr-6 md:flex items-center justify-between w-full text-black ">
+          <Link to="/">
+            <img src={logo} alt="Logo" className="relative z-10" />
+          </Link>
 
-        <div className="flex gap-24 font-bold text-xl text-white">
-          <Link to="/">HOME</Link>
-          <Link to="/destinations">DESTINATIONS</Link>
-          <a href="/services">OUR SERVICES</a>
-          <a href="/gallery">GALLERY</a>
-          <a href="/about">ABOUT US</a>
-        </div>
-
-        <div
-          onClick={() => setEnquire(!enquire)}
-          className="text-white flex gap-2 relative"
-        >
-          <button>ENQUIRE NOW</button>
-          <img src={line} alt="" />
-
-          <div
-            className={
-              enquire
-                ? "absolute top-16 h-f w-full bg-white text-black p-4 flex flex-col gap-3 translate-y-0 duration-200"
-                : "absolute flex top-16 h-f w-full bg-white text-black p-4 flex-col gap-3 -translate-y-12 duration-200 -z-10"
-            }
-          >
-            <button onClick={handleDestinationsClick}>Book Online</button>
-            <button onClick={handleEmailClick}>By Email</button>
-            <button onClick={handleCallClick}>By Phone</button>
-          </div>
-        </div>
-      </nav>
-
-      <nav className="flex justify-between items-center md:hidden relative z-10">
-        <Link to="/">
-          <img className="w-32" src={logo} alt="Logo" />
-        </Link>
-
-        <div className="px-3">
-          <i
-            onClick={() => setNav(true)}
-            className="fa-solid fa-bars text-4xl text-white"
-          ></i>
-        </div>
-        <div
-          className={`${
-            nav ? "translate-x-0" : "translate-x-full"
-          } duration-150 absolute top-0 w-full bg-black h-screen text-white justify-center px-12 py-8`}
-        >
-          <div className="w-full flex justify-end">
-            <i
-              onClick={() => setNav(false)}
-              className="fa-solid fa-x text-xl"
-            ></i>
-          </div>
-
-          <div className="flex flex-col gap-5 items-center text-2xl py-8 h-full">
+          <div className="flex gap-24 font-bold text-xl text-black relative z-10">
             <Link to="/">HOME</Link>
             <Link to="/destinations">DESTINATIONS</Link>
             <a href="/services">OUR SERVICES</a>
             <a href="/gallery">GALLERY</a>
             <a href="/about">ABOUT US</a>
+          </div>
+
+          <div
+            onClick={() => setEnquire(!enquire)}
+            className="text-black flex gap-2 relative z-10"
+          >
+            <button>ENQUIRE NOW</button>
+            <div className="flex items-center">
+              <img src={line1} alt="line1" />
+            </div>
 
             <div
-              onClick={() => setEnquire(!enquire)}
-              className="text-white flex gap-2 relative"
+              className={
+                enquire
+                  ? "absolute top-16 h-f w-full bg-white text-black p-4 flex flex-col gap-3 translate-y-0 duration-200"
+                  : "absolute top-16 h-f w-full hidden text-black p-4 flex-col gap-3 -translate-y-12 duration-200 -z-10"
+              }
             >
-              <button>ENQUIRE NOW</button>
-              <img src={line} alt="" />
+              <button onClick={handleDestinationsClick}>Book Online</button>
+              <button onClick={handleEmailClick}>By Email</button>
+              <button onClick={handleCallClick}>By Phone</button>
+            </div>
+          </div>
+        </nav>
+
+        <nav className="flex justify-between items-center md:hidden relative z-10">
+          <Link to="/">
+            <img className="w-32" src={logo} alt="Logo" />
+          </Link>
+
+          <div className="px-3">
+            <i
+              onClick={() => setNav(true)}
+              className="fa-solid fa-bars text-4xl text-white"
+            ></i>
+          </div>
+          <div
+            className={`${
+              nav ? "translate-x-0" : "translate-x-full"
+            } duration-150 absolute top-0 w-full bg-black h-screen text-white justify-center px-12 py-8`}
+          >
+            <div className="w-full flex justify-end">
+              <i
+                onClick={() => setNav(false)}
+                className="fa-solid fa-x text-xl"
+              ></i>
+            </div>
+
+            <div className="flex flex-col gap-5 items-center text-2xl py-8 h-full">
+              <Link to="/">HOME</Link>
+              <Link to="/destinations">DESTINATIONS</Link>
+              <a href="/services">OUR SERVICES</a>
+              <a href="/gallery">GALLERY</a>
+              <a href="/about">ABOUT US</a>
 
               <div
-                className={
-                  enquire
-                    ? "absolute top-16 h-f w-full bg-white text-black p-4 flex flex-col gap-3 translate-y-0 duration-200"
-                    : "absolute top-16 h-f w-full bg-white text-black p-4 hidden flex-col gap-3 -translate-y-12 duration-200 -z-10"
-                }
+                onClick={() => setEnquire(!enquire)}
+                className="text-white flex gap-2 relative"
               >
-                <a href="">Book Online</a>
-                <a href="">By Email</a>
-                <a href="">By Phone</a>
+                <button>ENQUIRE NOW</button>
+                <img src={line} alt="" />
+
+                <div
+                  className={
+                    enquire
+                      ? "absolute top-16 h-f w-full bg-white text-black p-4 flex flex-col gap-3 translate-y-0 duration-200"
+                      : "absolute top-16 h-f w-full bg-white text-black p-4 hidden flex-col gap-3 -translate-y-12 duration-200 -z-10"
+                  }
+                >
+                  <a href="">Book Online</a>
+                  <a href="">By Email</a>
+                  <a href="">By Phone</a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </nav>
-    </Parallax>
+        </nav>
+      </Parallax>
+
+      <div
+        className="absolute inset-0 bg-[#00000032]"
+        style={{ zIndex: 0 }}
+      ></div>
+    </div>
   );
 }
 
 function Section1() {
   return (
-    <section className="py-8 about1">
+    <section className="py-16 bg-white">
       <h4 className="font-alfa text-2xl md:text-5xl text-center">
         We are Angantraya Birdseye
       </h4>
@@ -250,7 +259,7 @@ function OurGroups() {
           <img
             src={service3}
             alt="service3"
-            className="w-[250px] h-[250px] object-cover"
+            className="w-[250px] h-[250px] object-contain"
           />
           <p className="text-2xl font-noticia tracking-[3px] text-center">
             ANGANTRAYA <br />

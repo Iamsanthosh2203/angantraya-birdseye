@@ -672,9 +672,12 @@ function Booking() {
         >
           BOOK NOW
         </Link>
-        <button className="px-8 py-6 hover:bg-black hover:text-white duration-150 border border-black">
+        <Link
+          to="/forms"
+          className="px-8 py-6 hover:bg-black hover:text-white duration-150 border border-black"
+        >
           CONTACT US
-        </button>
+        </Link>
       </div>
     </section>
   );

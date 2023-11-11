@@ -1,43 +1,47 @@
 import logoai from "../assets/logoai.png";
-import facebook from "../assets/facebook.png";
-import twitter from "../assets/twitter.png";
-import instagram from "../assets/instagram.png";
 
 function Footer() {
   return (
-    <footer className="flex flex-col md:flex-row text-center my-11 gap-6 md:gap-24">
-      <img src={logoai} alt="logo" />
-      <div className="flex flex-col justify-between basis-[20%]">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
-        <div className="flex gap-5 justify-center md:justify-normal mt-5 md:mt-0">
-          <img src={facebook} alt="facebook" />
-          <img src={twitter} alt="twitter" />
-          <img src={instagram} alt="instagram" />
-        </div>
-      </div>
-      <div className="grid grid-cols-2 md:grid-cols-3">
-        <div className="flex flex-col gap-6">
-          <h6 className="font-bold text-xl">Company</h6>
-          <div className="flex flex-col text-lg gap-3">
-            <a href="">About</a>
-            <a href="">Carrer</a>
+    <div>
+      {" "}
+      <footer className="flex flex-col md:flex-row text-center mt-11 gap-6 md:gap-24">
+        <img src={logoai} alt="logo" />
+        <div className="flex flex-col justify-between basis-[20%]">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <div className="flex gap-5 justify-center md:justify-normal items-center mt-5 md:mt-0">
+            <i className="fa-brands fa-linkedin-in p-3 bg-[#2596BE] rounded-full text-white"></i>
+            <i className="fa-brands fa-instagram p-3 bg-[#2596BE] rounded-full text-white"></i>
           </div>
         </div>
+        <div className="grid grid-cols-2 md:grid-cols-3">
+          <div className="flex flex-col gap-6">
+            <h6 className="font-bold text-xl">Company</h6>
+            <div className="flex flex-col text-lg gap-3">
+              <a href="/about">About Us</a>
+            </div>
+          </div>
 
-        <div className="flex flex-col gap-6">
-          <h6 className="font-bold text-xl">Contact</h6>
-          <div className="flex flex-col text-lg gap-3">
-            <a href="/partner">Partner with us</a>
-            <a href="">FAQ&rsquo;s</a>
-            <a href="">Blog</a>
+          <div className="flex flex-col gap-6">
+            <h6 className="font-bold text-xl">Contact</h6>
+            <div className="flex flex-col text-lg gap-3">
+              <a href="/partner">Partner with us</a>
+            </div>
+          </div>
+          <div className="hidden md:flex flex-col gap-6">
+            <h6 className="font-bold text-xl">Meet Us</h6>
+            <div className="flex flex-col text-lg gap-3">
+              <a href="">+00 92 1234 56789</a>
+              <a href="">info@gmail.com</a>
+              <p>205. R Street, California</p>
+            </div>
           </div>
         </div>
-        <div className="hidden md:flex flex-col gap-6">
+        <div className="md:hidden flex flex-col gap-6">
           <h6 className="font-bold text-xl">Meet Us</h6>
           <div className="flex flex-col text-lg gap-3">
             <a href="">+00 92 1234 56789</a>
@@ -45,16 +49,16 @@ function Footer() {
             <p>205. R Street, California</p>
           </div>
         </div>
+      </footer>
+      <div className="text-center font-recursive py-2">
+        <p>
+          Design And Developed By{" "}
+          <a href="https://midlead.com" className="text-[#2596BE]">
+            MidLead
+          </a>
+        </p>
       </div>
-      <div className="md:hidden flex flex-col gap-6">
-        <h6 className="font-bold text-xl">Meet Us</h6>
-        <div className="flex flex-col text-lg gap-3">
-          <a href="">+00 92 1234 56789</a>
-          <a href="">info@gmail.com</a>
-          <p>205. R Street, California</p>
-        </div>
-      </div>
-    </footer>
+    </div>
   );
 }
 

@@ -38,6 +38,36 @@ function Header() {
   };
   const [enquire, setEnquire] = useState(false);
   const [nav, setNav] = useState(false);
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(event.target);
+    const formDataObject = {};
+    formData.forEach((value, key) => {
+      formDataObject[key] = value;
+    });
+
+    try {
+      const response = await fetch("https://formspree.io/f/xaygzwlw", {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (response.ok) {
+        console.log("Form submitted successfully!");
+        alert("Form submitted successfully!");
+        console.log(formDataObject);
+        window.location.href = "/";
+      } else {
+        console.error("Form submission failed.");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
+  };
 
   return (
     <Parallax
@@ -193,10 +223,15 @@ function Header() {
         </li>
       </ol>
 
-      <form>
+      <form
+        method="post"
+        action="https://formspree.io/f/xaygzwlw"
+        onSubmit={handleSubmit}
+      >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-[70%] mx-auto my-12">
           <input
             type="text"
+            required
             name="name"
             id="name"
             placeholder="Name"
@@ -204,6 +239,7 @@ function Header() {
           />
           <input
             type="text"
+            required
             name="cname"
             id="cname"
             placeholder="Company Name"
@@ -215,12 +251,14 @@ function Header() {
             type="email"
             name="email"
             id="email"
+            required
             placeholder="Email ID"
             className="p-4 border drop-shadow-xl focus:drop-shadow-2xl  rounded-lg"
           />
           <input
             type="number"
             name="phone"
+            required
             id="phone"
             placeholder="Phone Number"
             className="p-4 border drop-shadow-xl focus:drop-shadow-2xl rounded-lg"
@@ -246,7 +284,7 @@ function Header() {
         <div className="flex justify-center">
           <button
             type="submit"
-            className="px-6 py-4 bg-[#B99674] text-white text-xl"
+            className="px-6 py-4 bg-[#2596BE] text-white text-xl"
           >
             Send Message
           </button>
