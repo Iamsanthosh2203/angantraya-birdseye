@@ -4,6 +4,7 @@ import line from "../assets/line.svg";
 import line1 from "../assets/line1.png";
 import { Parallax } from "react-parallax";
 import { Link } from "react-router-dom";
+import Footer from "../constants/Footer";
 
 function Gallery() {
   function scrollToTop() {
@@ -16,6 +17,7 @@ function Gallery() {
   return (
     <>
       <Header />
+      <Footer />
     </>
   );
 }
