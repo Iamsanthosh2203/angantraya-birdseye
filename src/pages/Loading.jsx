@@ -1,7 +1,9 @@
+import planeloading from "../assets/planeloading.gif";
+
 function Loading() {
   return (
-    <div className="h-screen w-screen flex justify-center items-center bg-black">
-      <svg
+    <div className="h-screen w-screen flex justify-center items-center bg-[#3198da]">
+      {/* <svg
         className="pl-8 h-20 w-20"
         version="1.1"
         id="L5"
@@ -40,7 +42,8 @@ function Loading() {
             begin="0.3"
           />
         </circle>
-      </svg>{" "}
+      </svg>{" "} */}
+      <img src={planeloading} alt="loading" />
     </div>
   );
 }
