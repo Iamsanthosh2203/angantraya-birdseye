@@ -252,7 +252,7 @@ function Header({ activePackage, setActivePackage }) {
 }
 
 function Attractions({ activePackage }) {
-  let title = "Nepal";
+  let title = "Enchanting Kathmandu Exploration - A Spiritual Odyssey";
 
   if (activePackage === 2) {
     title = "Bangalore to Mysore Tour (2 Days)";
@@ -273,7 +273,7 @@ function Attractions({ activePackage }) {
 
 function Overview({ activePackage }) {
   let description =
-    "Coorg, also known as Kodagu, is a picturesque destination with its misty valleys, coffee plantations, and a rich cultural heritage. This 2-3 day tour from Bangalore offers an opportunity to explore Coorg's natural beauty, historical sites, and unique experiences. From the mesmerizing Abbey Falls to the tranquil Dubare Elephant Camp and the intricate Tibetan architecture at Namdroling Monastery, this package is packed with diverse attractions. You'll also visit the Madikeri Fort and Museum, offering insights into Coorg's history and culture.";
+    "Embark on a soul-stirring journey with our 4-day Nepal tour package, offering a captivating exploration of Kathmandu's rich history, cultural treasures, and spiritual sanctuaries. Immerse yourself in the divine aura of Pashupatinath Temple, sway to the rhythm of aarti, and witness the architectural marvels of Durbar Square. Delve into the spiritual essence of Swayambhunath and Boudhanath, concluding your adventure with the panoramic views of Nagarkot.";
 
   if (activePackage === 2) {
     description =
@@ -321,37 +321,42 @@ function Itinerary({ activePackage }) {
   let itineraryItems = [
     {
       day: "Day 1",
-      title: "Arrival in Coorg",
+      title: "Arrival & Sunset Aarti at Pashupatinath Temple",
       content: [
-        "Depart from Bangalore and enjoy an overnight journey.",
-        "Pick-up from select points in Bangalore.",
-        "Arrive in Coorg.",
+        "Arrive at the airport and transfer to the hotel.",
+        "Attend the sunset aarti at Pashupatinath Temple, a divine experience.",
+        "Return to the hotel for an overnight stay.",
       ],
     },
     {
       day: "Day 2",
-      title: "Coorg Sightseeing",
+      title: "Kathmandu Local Valley Sightseeing",
       content: [
-        "Explore Dubare Elephant Camp and interact with elephants.",
-        "Visit Chiklihole Reservoir and Nisargadhama Deer Park.",
-        "Optional lunch (at your expense).",
-        "Discover Bylakuppe and the Tibetan Flea Market.",
-        "Explore Harangi Dam or Harangi Backwaters.",
-        "Return to the hotel for dinner and an overnight stay in Coorg.",
+        "Visit Jal Narayan or Budhanilkantha, a colossal statue of Lord Vishnu.",
+        "Explore Swayambhunath Temple, a hilltop stupa offering panoramic views.",
+        "Head to Boudhanath Stupa, the largest stupa in South Asia.",
+        "Discover the historical charm of Durbar Square.",
+        "Evening for shopping and leisure.",
+        "Overnight stay at the hotel.",
       ],
     },
     {
       day: "Day 3",
-      title: "More Coorg Sightseeing and Departure",
+      title: "Nagarkot & Bhaktapur Durbar Square",
       content: [
-        "Visit Raja's Seat viewpoint for panoramic views.",
-        "Explore Madikeri Fort and Museum.",
-        "Discover Omkareshwara Temple.",
-        "Enjoy the beauty of Abbey Falls.",
-        "Optional lunch (at your expense).",
-        "Explore Mercara Gold Estate Coffee Plantation.",
-        "Visit local markets for souvenirs.",
-        "Return to Bangalore.",
+        "Transfer to Nagarkot, visit Narayanhiti Palace Museum en route.",
+        "Explore Bhaktapur Durbar Square, a conglomeration of pagoda and shikhara style temples.",
+        "Enjoy adventure activities like hiking or trekking in Nagarkot.",
+        "Experience a scenic sunset view.",
+        "Overnight stay in Nagarkot.",
+      ],
+    },
+    {
+      day: "Day 4",
+      title: "Departure from Kathmandu",
+      content: [
+        "Leisure time until departure.",
+        "Transfer to the airport for your onward journey.",
       ],
     },
   ];
@@ -543,6 +548,11 @@ function Itinerary({ activePackage }) {
 
 function Included({ activePackage }) {
   let includedItems = [
+    "Accommodation in a comfortable hotel.",
+    "Meals as per the itinerary (Breakfast).",
+    "Sightseeing to Pashupatinath Temple, Jal Narayan, Swayambhunath, Boudhanath Stupa, Durbar Square, Narayanhiti Palace Museum, Bhaktapur Durbar Square, and Nagarkot.",
+    "Sunset aarti experience at Pashupatinath Temple.",
+    "Transfers as per the itinerary.",
     "Accommodation in Coorg on a double/triple sharing basis",
     "Breakfast and dinner",
     "Transportation in a sedan/SUV/TT based on group size",
@@ -607,9 +617,12 @@ function Included({ activePackage }) {
 
 function NotIncluded({ activePackage }) {
   let notIncludedItems = [
-    "Lunch (unless specified)",
-    "Optional activities at Harangi Dam",
-    "Souvenirs and personal expenses",
+    "Airfare and related expenses.",
+    "Additional meals and personal expenses.",
+    "Entry fees for optional activities and excursions.",
+    "Travel insurance.",
+    "Gratuities.",
+    "Any expenses not mentioned in the inclusions",
   ];
 
   if (activePackage === 2) {
@@ -670,7 +683,7 @@ function Booking() {
           to="/forms"
           className="px-8 py-6 hover:bg-black hover:text-white duration-150 border border-black"
         >
-          BOOK NOW
+          ENQUIRE NOW
         </Link>
         <button className="px-8 py-6 hover:bg-black hover:text-white duration-150 border border-black">
           CONTACT US

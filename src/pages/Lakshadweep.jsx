@@ -252,12 +252,12 @@ function Header({ activePackage, setActivePackage }) {
 }
 
 function Attractions({ activePackage }) {
-  let title = "Lakshadweep";
+  let title = "Discover Serenity in Lakshadweep - Kavaratti Island Resort";
 
   if (activePackage === 2) {
-    title = "Bangalore to Mysore Tour (2 Days)";
+    title = "Explore the Serenity of Lakshadweep - Bangaram Island Getaway";
   } else if (activePackage === 3) {
-    title = " Mysore Coorg Tour";
+    title = "Discover Agatti Island Paradise - A Domestic Getaway";
   }
 
   return (
@@ -273,14 +273,14 @@ function Attractions({ activePackage }) {
 
 function Overview({ activePackage }) {
   let description =
-    "Coorg, also known as Kodagu, is a picturesque destination with its misty valleys, coffee plantations, and a rich cultural heritage. This 2-3 day tour from Bangalore offers an opportunity to explore Coorg's natural beauty, historical sites, and unique experiences. From the mesmerizing Abbey Falls to the tranquil Dubare Elephant Camp and the intricate Tibetan architecture at Namdroling Monastery, this package is packed with diverse attractions. You'll also visit the Madikeri Fort and Museum, offering insights into Coorg's history and culture.";
+    "Escape to the pristine Lakshadweep islands with our exclusive Kavaratti Island Resort Package. Nestled between 8° and 12° North Latitudes and 71° and 74° East Longitudes, these islands offer an idyllic retreat for those seeking solitude and peace in a verdant environment. The package centers around Kavaratti, the administrative capital, known for its warm sandy beaches, turquoise lagoons teeming with marine life, and exciting water sports activities. Immerse yourself in the tranquility and beauty of Lakshadweep, where every moment promises an unforgettable experience";
 
   if (activePackage === 2) {
     description =
-      "Mysore, a city steeped in history and grandeur, promises a blend of the regal past and modern comfort. This 2-day tour from Bangalore offers an opportunity to explore the best of both worlds. From the opulent palaces to lush green sandalwood forests and architectural marvels, Mysore has something for every traveler. Experience the deep-rooted history and architectural wonders, while also enjoying the serene surroundings and modern amenities.";
+      "Escape to the pristine beauty of Lakshadweep with our exclusive Bangaram Island Getaway package. This 6-day journey offers a perfect blend of relaxation and adventure. Immerse yourself in the turquoise waters, white sandy beaches, and vibrant marine life of Bangaram Island. Indulge in thrilling water sports, explore nearby islands, and create memories that will last a lifetime.";
   } else if (activePackage === 3) {
     description =
-      "This 4-day tour takes you through the enchanting cities of Mysore and Coorg, offering a blend of cultural exploration and natural beauty. Mysore, known as the 'City of Palaces,' boasts magnificent royal residences and gardens. Coorg, on the other hand, is renowned for its scenic landscapes, coffee plantations, and serene waterfalls. This tour package allows you to experience the best of both worlds in Karnataka, India.";
+      "Escape to the pristine beauty of Agatti Island with our exclusive domestic package. This 4-day journey offers a perfect blend of relaxation and adventure, allowing you to explore the natural wonders of Lakshadweep. Immerse yourself in the turquoise waters, indulge in water sports, and create unforgettable memories in this tropical paradise.";
   }
 
   return (
@@ -321,37 +321,30 @@ function Itinerary({ activePackage }) {
   let itineraryItems = [
     {
       day: "Day 1",
-      title: "Arrival in Coorg",
+      title: "Arrival at Agatti Island – Kavaratti",
       content: [
-        "Depart from Bangalore and enjoy an overnight journey.",
-        "Pick-up from select points in Bangalore.",
-        "Arrive in Coorg.",
+        "Arrive at Agatti Airport and transfer to Kavaratti Island by a scenic boat journey (2-3 hours).",
+        "Check-in at the luxurious resort, enjoy a delicious lunch, and unwind.",
+        "Explore the nearby beach in the evening, witnessing a breathtaking sunset.",
+        "Savor a delightful dinner and relax for an overnight stay at Kavaratti Island.",
       ],
     },
     {
-      day: "Day 2",
-      title: "Coorg Sightseeing",
+      day: "Days 2 to 5",
+      title: "Kavaratti – Days for Dive and Water Sports",
       content: [
-        "Explore Dubare Elephant Camp and interact with elephants.",
-        "Visit Chiklihole Reservoir and Nisargadhama Deer Park.",
-        "Optional lunch (at your expense).",
-        "Discover Bylakuppe and the Tibetan Flea Market.",
-        "Explore Harangi Dam or Harangi Backwaters.",
-        "Return to the hotel for dinner and an overnight stay in Coorg.",
+        "Embark on thrilling water sports activities, including scuba diving, kayaking, and snorkeling.",
+        "Relax and soak up the sun at the resort, surrounded by the pristine beauty of Kavaratti.",
+        "Opt for optional excursions to Kavaratti Island lagoon, Marine Aquarium, Museum, Dolphin Dive Centre, and Ujra Mosque (additional charges apply).",
+        "Enjoy overnight stays at the serene Kavaratti Island.",
       ],
     },
     {
-      day: "Day 3",
-      title: "More Coorg Sightseeing and Departure",
+      day: "Day 6",
+      title: "Kavaratti - Agatti (Departure)",
       content: [
-        "Visit Raja's Seat viewpoint for panoramic views.",
-        "Explore Madikeri Fort and Museum.",
-        "Discover Omkareshwara Temple.",
-        "Enjoy the beauty of Abbey Falls.",
-        "Optional lunch (at your expense).",
-        "Explore Mercara Gold Estate Coffee Plantation.",
-        "Visit local markets for souvenirs.",
-        "Return to Bangalore.",
+        "After a delightful breakfast, transfer to Agatti Island by a scenic boat ride.",
+        "Depart from Agatti Airport, cherishing the beautiful memories of your island adventure.",
       ],
     },
   ];
@@ -360,30 +353,41 @@ function Itinerary({ activePackage }) {
     itineraryItems = [
       {
         day: "Day 1",
-        title: "Bangalore: Welcome to the Silicon City of India",
+        title: "Arrival at Agatti Island – Bangaram",
         content: [
-          "Arrival at Bangalore airport or railway station.",
-          "Visit Bangalore Palace, ISKON Temple, and Lalbagh Botanical Garden.",
-          "Check-in at your hotel in Bangalore.",
+          "Arrive at Agatti Airport, greeted by our representative.",
+          "Transfer to Bangaram Island by boat.",
+          "Check-in at the resort, have lunch, and relax.",
+          "Evening exploration of the nearby beach and sunset.",
+          "Dinner and overnight stay at Bangaram Island.",
         ],
       },
       {
         day: "Day 2",
-        title: "Bangalore to Mysore: Wander at the City of Palaces",
+        title: "Bangaram - Thinnakara Excursion & Leisure",
         content: [
-          "Breakfast at the hotel.",
-          "Drive to Mysore, visiting Chamundeshwari Temple en-route.",
-          "Explore Mysore Palace, St. Philomena's Cathedral, and Vrindavan Gardens.",
-          "Check-in at your hotel in Mysore.",
+          "Optional half-day excursion to Thinnakara Island (Direct Payment).",
+          "Witness turtles in the lagoon, enjoy the serene beach, and water sports.",
+          "Return to Bangaram Island, leisure time after lunch.",
+          "Dinner and overnight stay at Bangaram Island.",
         ],
       },
       {
-        day: "Day 3",
-        title: "Departure from Mysore: Time to Say Goodbye",
+        day: "Days 3 to 5",
+        title: "Bangaram – Days for Dive and Water Sports",
         content: [
-          "Breakfast at the hotel.",
-          "Check-out from the hotel and drive back to Bangalore.",
-          "Drop-off at the airport or railway station for your journey back home.",
+          "Breakfast followed by water sports activities (Direct Payment).",
+          "Enjoy scuba diving, kayaking, snorkeling, and other fun activities.",
+          "Relax with sunbathing and unwind at the resort.",
+          "Overnight stay at Bangaram Island.",
+        ],
+      },
+      {
+        day: "Day 6",
+        title: "Bangaram - Agatti (Departure)",
+        content: [
+          "Breakfast, then transfer to Agatti Island by boat (40 min).",
+          "Reach Agatti Airport and fly to Kochi with cherished memories.",
         ],
       },
       // Add more items for other packages as needed
@@ -393,40 +397,46 @@ function Itinerary({ activePackage }) {
   if (activePackage === 3) {
     itineraryItems = [
       {
-        day: "Day 1 - ",
-        title: "Transfer from Bangalore to Mysore",
+        day: "Day 1",
+        title: "Kochi-Agatti (by Flight) - Island Welcome & Sightseeing",
         content: [
-          "Arrive in Bangalore, and embark on a scenic journey to Mysore.",
-          "Explore Mysore Palace, Chamundi Hills, and Brindavan Gardens.",
-          "Check in to your Mysore hotel for an overnight stay.",
+          "Arrive at Agatti Airport and Island Sightseeing",
+          "Arrive at Agatti Airport, greeted by our representative.",
+          "Transfer to the hotel, lunch, and relaxation.",
+          "Island sightseeing including Public Library, Anthropological Museum, South Beach, Eastern Jetty, NIOT Sea Water Desalination Plant, and Lagoon Beach.",
+          "Evening exploration of the nearby beach and sunset.",
+          "Dinner and overnight stay at Agatti Island.",
         ],
       },
       {
-        day: "Day 2 - ",
-        title: "Coorg Sightseeing",
+        day: "Day 2",
+        title: "Agatti - Kalpetti Island Trip (Subject to weather condition)",
         content: [
-          "Breakfast at your Mysore hotel.",
-          "Transfer to Coorg and check in to your Coorg hotel.",
-          "Visit Dubare Elephant Camp, Abbey Falls, and Raja's Seat.",
-          "Return to your Coorg hotel for an overnight stay.",
+          "Optional Kalpetti Island Trip and Water Sports",
+          "Optional half-day excursion to Kalpetti Island by boat (Direct Payment).",
+          "Return to Agatti for lunch and enjoy the rest of the day for leisure and water sports.",
+          "Water sports activities like diving, snorkeling, kayaking, fishing, reef watch, etc. (Direct Payment).",
+          "Dinner and overnight stay at Agatti.",
         ],
       },
       {
-        day: "Day 3 - ",
-        title: "Explore Coorg",
+        day: "Day 3",
+        title: "Agatti - Day for Water Sports (Subject to weather condition)",
         content: [
-          "Breakfast at your Coorg hotel.",
-          "Tour a coffee plantation and visit Talacauvery and Bhagamandala.",
-          "Return to your Coorg hotel for an overnight stay.",
+          "Full Day for Water Sports and Leisure",
+          "Full day free for water sports activities and leisure.",
+          "Enjoy activities like diving, snorkeling, kayaking, fishing, reef watch, etc. (Direct Payment).",
+          "Dinner and overnight stay at Agatti.",
         ],
       },
       {
-        day: "Day 4 - ",
-        title: "Departure from Mysore",
+        day: "Day 4",
+        title: "Departure from Agatti",
         content: [
-          "Breakfast at your Coorg hotel.",
-          "Visit Bylakuppe and Namdroling Monastery.",
-          "Depart for Bangalore with cherished memories.",
+          "Check-out and Departure",
+          "Breakfast and check-out from the hotel.",
+          "Transfer to Agatti Airport for departure.",
+          "Departure with cherished memories of Lakshadweep.",
         ],
       },
       // Add more items for other packages as needed
@@ -543,32 +553,36 @@ function Itinerary({ activePackage }) {
 
 function Included({ activePackage }) {
   let includedItems = [
-    "Accommodation in Coorg on a double/triple sharing basis",
-    "Breakfast and dinner",
-    "Transportation in a sedan/SUV/TT based on group size",
-    "Permits, tolls, fuel charges, parking charges, and driver allowances",
-    "Highly experienced driver",
-    "Knowledgeable guide",
-    "Sightseeing of various attractions",
+    "Accommodation in Deluxe AC Suite at Kavaratti Island Resort (double/triple sharing basis)",
+    "All-inclusive meals with buffet options for breakfast, lunch, and dinner",
+    "Land transfer from Agatti airport to the boat jetty and back",
+    "Scenic boat transfer from Agatti to Kavaratti and back",
+    "Entry permit for Kavaratti",
+    "All permits, tolls, fuel charges, parking charges, and driver allowances for land transportation",
+    "Experienced driver for comfortable and safe travel",
+    "Knowledgeable guide for insightful sightseeing of various attractions",
+    "Goods and Services Tax (GST)",
   ];
 
   if (activePackage === 2) {
     includedItems = [
-      "Accommodation in Bangalore and Mysore",
-      "Breakfast",
-      "Transportation between Bangalore and Mysore",
-      "Sightseeing of various attractions",
-      "Comfortable vehicle with a knowledgeable driver",
+      "Accommodation in a Standard AC Cottage at Bangaram Island Resort",
+      "All meals included (buffet) at Bangaram's main restaurant, open beach barbeque, and beach bar",
+      "Car transfer from Agatti Airport to the boat jetty and back",
+      "Boat transfers between Agatti and Bangaram Island",
+      "Entry permit for Bangaram",
+      "Sightseeing of various attractions on the islands",
     ];
   }
 
   if (activePackage === 3) {
     includedItems = [
-      "Accommodation for 1 night in Mysore and 2 nights in Coorg",
-      "Breakfast from day 2 to day 4",
-      "Transportation in an SUV or hatchback based on group size",
-      "Permits, tolls, fuel charges, parking charges",
-      "Highly experienced driver cum guide",
+      "Sea view cottage at Sea Shell Beach Resort.",
+      "All meals included in the package.",
+      "Car transfer from Agatti Airport to the resort and back.",
+      "Land excursion in Agatti by car.",
+      "Entry permit for Agatti.",
+      "GST (Goods and Services Tax).",
     ];
   }
 
@@ -607,21 +621,35 @@ function Included({ activePackage }) {
 
 function NotIncluded({ activePackage }) {
   let notIncludedItems = [
-    "Lunch (unless specified)",
-    "Optional activities at Harangi Dam",
-    "Souvenirs and personal expenses",
+    "Alliance Air flights (Kochi to Agatti Island and return) with specific timings and baggage allowance details",
+    "Kavaratti Excursion (Rs. 1,200 + tax per person)",
+    "Nature expenses and other water sports activities directly payable at the resort",
+    "Additional baggage fees (Rs. 465 extra per kg)",
+    "Expenses not mentioned in the inclusions",
+    "No credit card or debit card facilities at the resort; payments in rupees, dollars, or euros",
   ];
 
   if (activePackage === 2) {
     notIncludedItems = [
-      "Lunch and dinner",
-      "Entrance fees to attractions (unless specified)",
-      "Personal expenses",
+      "Alliance Air flights (Kochi to Agatti Island and return):",
+      "- ETD 08:55 / ETA 10:15 (Kochi to Agatti)",
+      "- ETD 10:45 / ETA 12:05 (Agatti to Kochi)",
+      "- Baggage allowance: 15 kg check-in, 7 kg hand baggage (Extra baggage at Rs. 465 per kg)",
+      "Thinnakara Excursion: Rs. 1,200 + tax per person",
+      "Nature expenses, bar, water sports, dive, Ayurveda, and extra activities directly payable at the resort",
+      "Exclusive of 5% GST",
     ];
   }
 
   if (activePackage === 3) {
-    notIncludedItems = ["Lunch and dinner", "Personal expenses"];
+    notIncludedItems = [
+      "Alliance Air flights (Kochi to Agatti Island and return).",
+      "- ETD 08:55 / ETA 10:15 (Kochi to Agatti)",
+      "- ETD 10:45 / ETA 12:05 (Agatti to Kochi)",
+      "- Baggage allowance: 15 kg check-in, 7 kg hand baggage (Extra baggage at Rs. 465 per kg).",
+      "Nature expenses, water sports, dive, and extra activities directly payable at the resort.",
+      "Excursions not mentioned in inclusions.",
+    ];
   }
 
   if (activePackage === 4) {
@@ -670,7 +698,7 @@ function Booking() {
           to="/forms"
           className="px-8 py-6 hover:bg-black hover:text-white duration-150 border border-black"
         >
-          BOOK NOW
+          ENQUIRE NOW
         </Link>
         <Link
           to="/forms"

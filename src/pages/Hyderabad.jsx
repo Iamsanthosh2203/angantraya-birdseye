@@ -252,7 +252,7 @@ function Header({ activePackage, setActivePackage }) {
 }
 
 function Attractions({ activePackage }) {
-  let title = "Hyderabad";
+  let title = "Hyderabad two days tour package";
 
   if (activePackage === 2) {
     title = "Bangalore to Mysore Tour (2 Days)";
@@ -273,7 +273,7 @@ function Attractions({ activePackage }) {
 
 function Overview({ activePackage }) {
   let description =
-    "Coorg, also known as Kodagu, is a picturesque destination with its misty valleys, coffee plantations, and a rich cultural heritage. This 2-3 day tour from Bangalore offers an opportunity to explore Coorg's natural beauty, historical sites, and unique experiences. From the mesmerizing Abbey Falls to the tranquil Dubare Elephant Camp and the intricate Tibetan architecture at Namdroling Monastery, this package is packed with diverse attractions. You'll also visit the Madikeri Fort and Museum, offering insights into Coorg's history and culture.";
+    "Explore the rich history and vibrant culture of Hyderabad with our 2-day tour package. Immerse yourself in the mesmerizing architecture of Golconda Fort, savor the exotic flavors of Hyderabadi biryani near Charminar, and witness the grandeur of Qutb Shahi Tombs. Your adventure continues with a fun-filled day at Ramoji Film City, ensuring a perfect blend of history, culture, and entertainment. Whether you're a history enthusiast, a food lover, or seeking thrilling adventures, Hyderabad has something for everyone. Our tour package includes comfortable accommodation, delicious meals, and expert-guided sightseeing, promising you a memorable experience in the 'City of Pearls.";
 
   if (activePackage === 2) {
     description =
@@ -321,37 +321,25 @@ function Itinerary({ activePackage }) {
   let itineraryItems = [
     {
       day: "Day 1",
-      title: "Arrival in Coorg",
+      title: "Arrival in Hyderabad",
       content: [
-        "Depart from Bangalore and enjoy an overnight journey.",
-        "Pick-up from select points in Bangalore.",
-        "Arrive in Coorg.",
+        "Check-in at your pre-booked hotel upon arrival.",
+        "Explore the iconic Char Minar with its impressive four minarets.",
+        "Visit the 18th-century Chowmahalla Palace, the official residence of the Nizams.",
+        "Discover the treasures at the Salar Jung Museum, including 'The Veiled Rebecca.'",
+        "Enjoy the evening at Hussain Sagar Lake with water sports activities.",
+        "Return to the hotel for a peaceful overnight stay.",
       ],
     },
     {
       day: "Day 2",
-      title: "Coorg Sightseeing",
+      title: "Sightseeing | Departure",
       content: [
-        "Explore Dubare Elephant Camp and interact with elephants.",
-        "Visit Chiklihole Reservoir and Nisargadhama Deer Park.",
-        "Optional lunch (at your expense).",
-        "Discover Bylakuppe and the Tibetan Flea Market.",
-        "Explore Harangi Dam or Harangi Backwaters.",
-        "Return to the hotel for dinner and an overnight stay in Coorg.",
-      ],
-    },
-    {
-      day: "Day 3",
-      title: "More Coorg Sightseeing and Departure",
-      content: [
-        "Visit Raja's Seat viewpoint for panoramic views.",
-        "Explore Madikeri Fort and Museum.",
-        "Discover Omkareshwara Temple.",
-        "Enjoy the beauty of Abbey Falls.",
-        "Optional lunch (at your expense).",
-        "Explore Mercara Gold Estate Coffee Plantation.",
-        "Visit local markets for souvenirs.",
-        "Return to Bangalore.",
+        "After breakfast, head to the magnificent Golconda Fort to explore its rich history.",
+        "Visit the Qutub Shahi Tombs, a major heritage site in the city.",
+        "Explore the Indo-Saracenic architecture at the AP State Museum.",
+        "Visit the beautiful Birla Mandir, a marble temple dedicated to Lord Venkateshwara.",
+        "Conclude the tour and head back home with wonderful memories of Hyderabad.",
       ],
     },
   ];
@@ -543,13 +531,11 @@ function Itinerary({ activePackage }) {
 
 function Included({ activePackage }) {
   let includedItems = [
-    "Accommodation in Coorg on a double/triple sharing basis",
-    "Breakfast and dinner",
-    "Transportation in a sedan/SUV/TT based on group size",
-    "Permits, tolls, fuel charges, parking charges, and driver allowances",
-    "Highly experienced driver",
-    "Knowledgeable guide",
-    "Sightseeing of various attractions",
+    "Accommodation on a double and triple sharing basis.",
+    "Meals including breakfast and dinner.",
+    "Sightseeing as per the itinerary.",
+    "Comfortable and hygienic vehicle (Sedan/SUV) for sightseeing on all days.",
+    "Professional English-speaking driver cum guide.",
   ];
 
   if (activePackage === 2) {
@@ -607,9 +593,10 @@ function Included({ activePackage }) {
 
 function NotIncluded({ activePackage }) {
   let notIncludedItems = [
-    "Lunch (unless specified)",
-    "Optional activities at Harangi Dam",
-    "Souvenirs and personal expenses",
+    "Lunch is not included in the package.",
+    "Personal expenses such as tips, laundry, and shopping.",
+    "Any additional activities not mentioned in the itinerary.",
+    "Travel insurance.",
   ];
 
   if (activePackage === 2) {
