@@ -768,7 +768,7 @@ function Booking() {
           to="/forms"
           className="px-8 py-6 hover:bg-black hover:text-white duration-150 border border-black"
         >
-          BOOK NOW
+          ENQUIRE NOW
         </Link>
         <Link
           to="/forms"
