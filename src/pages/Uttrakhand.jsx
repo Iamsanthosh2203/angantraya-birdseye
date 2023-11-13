@@ -252,12 +252,17 @@ function Header({ activePackage, setActivePackage }) {
 }
 
 function Attractions({ activePackage }) {
-  let title = "Uttrakhand";
+  let title =
+    "Best of Uttarakhand Tour Package A 4-Day Journey of Spiritual Bliss and Natural Wonders";
 
   if (activePackage === 2) {
-    title = "Bangalore to Mysore Tour (2 Days)";
+    title =
+      "Badrinath Yatra Package: A 6-Day Spiritual Journey in the Himalayas";
   } else if (activePackage === 3) {
-    title = " Mysore Coorg Tour";
+    title =
+      "Mussoorie Rishikesh Group Tour Package: A 4-Day Adventure and Spiritual Retreat";
+  } else if (activePackage === 4) {
+    title = "Auli and Rishikesh Adventure Package: 6 Days of Himalayan Bliss";
   }
 
   return (
@@ -273,14 +278,17 @@ function Attractions({ activePackage }) {
 
 function Overview({ activePackage }) {
   let description =
-    "Coorg, also known as Kodagu, is a picturesque destination with its misty valleys, coffee plantations, and a rich cultural heritage. This 2-3 day tour from Bangalore offers an opportunity to explore Coorg's natural beauty, historical sites, and unique experiences. From the mesmerizing Abbey Falls to the tranquil Dubare Elephant Camp and the intricate Tibetan architecture at Namdroling Monastery, this package is packed with diverse attractions. You'll also visit the Madikeri Fort and Museum, offering insights into Coorg's history and culture.";
+    "Embark on a soul-stirring journey through the heart of Uttarakhand with our Best of Uttarakhand Tour Package. This 4-day expedition takes you from the bustling streets of Delhi to the serene landscapes of Haridwar, Rishikesh, Mussoorie, and Dhanaulti. Immerse yourself in the spiritual aura of the Ganga, explore the vibrant hill stations, and experience the thrill of adventure in the lap of the Himalayas. With comfortable transportation, cozy accommodations, and a knowledgeable guide, this tour promises an unforgettable blend of spirituality and natural beauty.";
 
   if (activePackage === 2) {
     description =
-      "Mysore, a city steeped in history and grandeur, promises a blend of the regal past and modern comfort. This 2-day tour from Bangalore offers an opportunity to explore the best of both worlds. From the opulent palaces to lush green sandalwood forests and architectural marvels, Mysore has something for every traveler. Experience the deep-rooted history and architectural wonders, while also enjoying the serene surroundings and modern amenities.";
+      "Embark on a spiritual odyssey through the mystical landscapes of Badrinath and Rishikesh with our Badrinath Yatra Package. This 6-day pilgrimage takes you on a transformative journey from Delhi to the sacred abode of Lord Vishnu, Badrinath, and the Yoga Capital of the World, Rishikesh. Immerse yourself in the divine aura of these religious gems, witness the breathtaking beauty of the Himalayas, and explore the untouched paradise of Mana Village. With comfortable transportation, cozy accommodations, and a knowledgeable guide, this yatra promises a profound experience of spirituality and natural wonders.";
   } else if (activePackage === 3) {
     description =
-      "This 4-day tour takes you through the enchanting cities of Mysore and Coorg, offering a blend of cultural exploration and natural beauty. Mysore, known as the 'City of Palaces,' boasts magnificent royal residences and gardens. Coorg, on the other hand, is renowned for its scenic landscapes, coffee plantations, and serene waterfalls. This tour package allows you to experience the best of both worlds in Karnataka, India.";
+      "Embark on a delightful journey from the spiritual vibes of Rishikesh to the serene hills of Mussoorie with our Mussoorie Rishikesh Group Tour Package. This 4-day tour is a perfect blend of adventure, spirituality, and camaraderie. Start your adventure in Delhi, travel through the enchanting landscapes of Mussoorie, marvel at nature's wonders, conquer the rapids of the holy Ganga, and immerse yourself in the spiritual aura of Rishikesh. With comfortable transportation, cozy accommodations, and a knowledgeable guide, this group tour is an opportunity to connect with nature, create lasting memories, and form bonds with fellow travelers.";
+  } else if (activePackage === 4) {
+    description =
+      "Embark on an exhilarating journey through the Himalayan gems of Auli and Rishikesh with our adventure package. From the spiritual tranquility of Rishikesh to the alpine wonders of Auli, this 6-day tour is a perfect blend of adventure and serenity. Glide above the clouds on the Auli ropeway, conquer the rapids of the Ganga River, and discover the mystical beauty of Joshimath. With comfortable transportation, cozy accommodations, and an experienced guide, this adventure package offers an unforgettable Himalayan experience";
   }
 
   return (
@@ -321,37 +329,47 @@ function Itinerary({ activePackage }) {
   let itineraryItems = [
     {
       day: "Day 1",
-      title: "Arrival in Coorg",
+      title: "Delhi to Haridwar | Seek Blessings at the Evening Ganga Aarti",
       content: [
-        "Depart from Bangalore and enjoy an overnight journey.",
-        "Pick-up from select points in Bangalore.",
-        "Arrive in Coorg.",
+        "Begin your journey with a pickup from Delhi and a scenic drive to Haridwar.",
+        "Explore Mansa Devi Temple and partake in the divine Ganga Aarti at Har ki Pauri.",
+        "Check-in at the hotel for an overnight stay.",
       ],
     },
     {
       day: "Day 2",
-      title: "Coorg Sightseeing",
+      title: "Haridwar to Rishikesh | Explore the Yoga Capital of the World",
       content: [
-        "Explore Dubare Elephant Camp and interact with elephants.",
-        "Visit Chiklihole Reservoir and Nisargadhama Deer Park.",
-        "Optional lunch (at your expense).",
-        "Discover Bylakuppe and the Tibetan Flea Market.",
-        "Explore Harangi Dam or Harangi Backwaters.",
-        "Return to the hotel for dinner and an overnight stay in Coorg.",
+        "Visit iconic sites like Laxman Jhula, Ram Jhula, and Robber's Cave in Rishikesh.",
+        "Experience the spiritual Ganga Aarti in the evening.",
+        "Transfer to Mussoorie for an overnight stay.",
       ],
     },
     {
       day: "Day 3",
-      title: "More Coorg Sightseeing and Departure",
+      title: "Mussoorie Sightseeing | Welcome to the Queen of Hill Stations",
       content: [
-        "Visit Raja's Seat viewpoint for panoramic views.",
-        "Explore Madikeri Fort and Museum.",
-        "Discover Omkareshwara Temple.",
-        "Enjoy the beauty of Abbey Falls.",
-        "Optional lunch (at your expense).",
-        "Explore Mercara Gold Estate Coffee Plantation.",
-        "Visit local markets for souvenirs.",
-        "Return to Bangalore.",
+        "Explore Gun Hill, Nag Devta Temple, Company Garden, and Kempty Falls in Mussoorie.",
+        "Enjoy a leisurely stroll along Mall Road.",
+        "Return to the hotel for an overnight stay.",
+      ],
+    },
+    {
+      day: "Day 4",
+      title: "Mussoorie to Dhanaulti | Experience the Adventure",
+      content: [
+        "Head to Dhanaulti and indulge in adventurous activities at Eco Park.",
+        "Visit Surkanda Devi Temple and Tehri Dam for breathtaking views.",
+        "Return to the hotel for an overnight stay.",
+      ],
+    },
+    {
+      day: "Day 5",
+      title: "Dhanaulti to Delhi via Dehradun | Departure",
+      content: [
+        "Bid farewell to the hills and embark on a scenic drive back to Delhi.",
+        "En route, visit Sahastradhara for its therapeutic value.",
+        "Drop-off at Delhi bus stand or railway station.",
       ],
     },
   ];
@@ -360,76 +378,98 @@ function Itinerary({ activePackage }) {
     itineraryItems = [
       {
         day: "Day 1",
-        title: "Bangalore: Welcome to the Silicon City of India",
+        title:
+          "Start trip from Delhi | Embark on a Journey to the Wonderland of India",
         content: [
-          "Arrival at Bangalore airport or railway station.",
-          "Visit Bangalore Palace, ISKON Temple, and Lalbagh Botanical Garden.",
-          "Check-in at your hotel in Bangalore.",
+          "Pickup from a pre-decided location in Delhi for an overnight journey to Haridwar.",
         ],
       },
       {
         day: "Day 2",
-        title: "Bangalore to Mysore: Wander at the City of Palaces",
+        title:
+          "Reach Haridwar and Transfer to Joshimath | Pass through the Panch Prayags of Uttarakhand",
         content: [
-          "Breakfast at the hotel.",
-          "Drive to Mysore, visiting Chamundeshwari Temple en-route.",
-          "Explore Mysore Palace, St. Philomena's Cathedral, and Vrindavan Gardens.",
-          "Check-in at your hotel in Mysore.",
+          "Early morning arrival in Haridwar.",
+          "Proceed towards Joshimath with stopovers at scenic points.",
+          "Check-in at the hotel in Joshimath for an overnight stay.",
         ],
       },
       {
         day: "Day 3",
-        title: "Departure from Mysore: Time to Say Goodbye",
+        title:
+          "Joshimath to Badrinath | Journey to the Holy Abode of Lord Vishnu",
         content: [
-          "Breakfast at the hotel.",
-          "Check-out from the hotel and drive back to Bangalore.",
-          "Drop-off at the airport or railway station for your journey back home.",
+          "Transfer from Joshimath to Badrinath.",
+          "Visit Badrinath Temple and seek blessings of Lord Vishnu.",
+          "Check-in at the hotel for an overnight stay.",
         ],
       },
-      // Add more items for other packages as needed
+      {
+        day: "Day 4",
+        title: "Badrinath To Rishikesh | Descending from Divine Heights",
+        content: [
+          "Travel from Badrinath to Rishikesh.",
+          "Enroute sightseeing at Mana Village and prayags of Alaknanda River.",
+          "Check-in at the hotel in Rishikesh for an overnight stay.",
+        ],
+      },
+      {
+        day: "Day 5",
+        title: "Rishikesh Sightseeing | Explore the Yoga Capital of the World",
+        content: [
+          "Explore Laxman Jhula, Ram Jhula, and Triveni Ghat in Rishikesh.",
+          "Witness the Ganga Aarti at Triveni Ghat.",
+          "Return to the hotel for an overnight stay.",
+        ],
+      },
+      {
+        day: "Day 6",
+        title: "Departure | Bid Farewell",
+        content: [
+          "Transfer from Rishikesh to Delhi.",
+          "Drop-off at a pre-decided spot in Delhi.",
+        ],
+      },
     ];
   }
 
   if (activePackage === 3) {
     itineraryItems = [
       {
-        day: "Day 1 - ",
-        title: "Transfer from Bangalore to Mysore",
+        day: "Day 1",
+        title: "Delhi to Mussoorie | Welcome to the Queen of Hill Stations",
         content: [
-          "Arrive in Bangalore, and embark on a scenic journey to Mysore.",
-          "Explore Mysore Palace, Chamundi Hills, and Brindavan Gardens.",
-          "Check in to your Mysore hotel for an overnight stay.",
+          "Pickup from a pre-decided spot in Delhi.",
+          "Scenic drive to Mussoorie with a short stopover in Dehradun for Robber's Cave sightseeing.",
+          "Check-in at the hotel in Mussoorie for an overnight stay.",
         ],
       },
       {
-        day: "Day 2 - ",
-        title: "Coorg Sightseeing",
+        day: "Day 2",
+        title: "Mussoorie Sightseeing | Step into the Embrace of Himalayas",
         content: [
-          "Breakfast at your Mysore hotel.",
-          "Transfer to Coorg and check in to your Coorg hotel.",
-          "Visit Dubare Elephant Camp, Abbey Falls, and Raja's Seat.",
-          "Return to your Coorg hotel for an overnight stay.",
+          "Explore Gun Hill, Nag Devta Temple, Company Garden, Kempty Falls, and Mall Road in Mussoorie.",
+          "Return to the hotel for an overnight stay.",
         ],
       },
       {
-        day: "Day 3 - ",
-        title: "Explore Coorg",
+        day: "Day 3",
+        title: "Mussoorie to Rishikesh | Explore the Yoga Capital of the World",
         content: [
-          "Breakfast at your Coorg hotel.",
-          "Tour a coffee plantation and visit Talacauvery and Bhagamandala.",
-          "Return to your Coorg hotel for an overnight stay.",
+          "Transfer from Mussoorie to Rishikesh.",
+          "Visit Laxman Jhula, Ram Jhula, and Triveni Ghat in Rishikesh.",
+          "Witness the Ganga Aarti at Triveni Ghat.",
+          "Check-in at the hotel in Rishikesh for an overnight stay.",
         ],
       },
       {
-        day: "Day 4 - ",
-        title: "Departure from Mysore",
+        day: "Day 4",
+        title: "Rishikesh to Delhi | Departure",
         content: [
-          "Breakfast at your Coorg hotel.",
-          "Visit Bylakuppe and Namdroling Monastery.",
-          "Depart for Bangalore with cherished memories.",
+          "Experience adventurous River rafting from Shivpuri to Rishikesh (16 Km).",
+          "Freshen up, check-out from the hotel, and transfer to a pre-decided spot in Delhi.",
         ],
       },
-      // Add more items for other packages as needed
     ];
   }
 
@@ -437,54 +477,60 @@ function Itinerary({ activePackage }) {
     itineraryItems = [
       {
         day: "Day 1",
-        title: "Welcome to Kerala, Transfer to Munnar",
+        title:
+          "Start from Delhi to Auli | Embark on a journey to the Wonderland of India",
         content: [
-          "Airport transfer and sightseeing",
-          "Arrive at Cochin Airport",
-          "Visit Spice Plantations, Valara, and Cheeyappara Falls en route to Munnar",
-          "Check-in at the hotel in Munnar",
-          "Leisure time to explore the local markets",
-          "Overnight stay at the hotel in Munnar",
+          "Pickup from a pre-decided location in Delhi.",
+          "Overnight journey to reach Haridwar.",
         ],
       },
       {
         day: "Day 2",
-        title: "Sightseeing at Munnar",
+        title:
+          "Reach Haridwar and Transfer to Joshimath | Pass through the Panch Prayags of Uttarakhand",
         content: [
-          "Breakfast at the hotel",
-          "Full-day sightseeing tour of Munnar",
-          "Visit Mattupetty Dam, Echo Point, Nursery Garden, Photo Point, Eravikulam National Park, Anaimudi Peak, and Tea Museum",
-          "Overnight stay at the hotel in Munnar",
+          "Early morning arrival in Haridwar.",
+          "Resume the journey towards Auli with sightseeing stopovers en route.",
+          "Transfer to the hotel in Joshimath for rest.",
         ],
       },
       {
         day: "Day 3",
-        title: "Transfer to Thekkady",
+        title:
+          "Auli Sightseeing | Ride one of the Longest Cable Car from Joshimath to Auli",
         content: [
-          "Breakfast at the hotel",
-          "Journey to Thekkady through scenic landscapes",
-          "Check-in at the hotel in Thekkady",
-          "Enjoy a wildlife safari at the Periyar Tiger Reserve",
-          "Overnight stay at the hotel in Thekkady",
+          "Take the famous gondola ride to Auli, experiencing breathtaking views.",
+          "Optional trek to Gorson Bugyal for a 360° view of snow-capped peaks.",
+          "Explore Joshimath's temples and local markets.",
         ],
       },
       {
         day: "Day 4",
-        title: "Thekkady to Alleppey",
+        title:
+          "Auli Sightseeing | Spend the day exploring the beautiful town of Auli",
         content: [
-          "Breakfast at the hotel",
-          "Travel to Alleppey, a land of serene backwaters",
-          "Check-in at a Kerala houseboat",
-          "Cruise through the intricate network of canals",
-          "Enjoy lunch, dinner, and an overnight stay on the houseboat",
+          "Leisure day to explore Auli, visit Auli Lake, and enjoy adventure activities.",
+          "Evening return to the hotel in Joshimath.",
         ],
       },
       {
         day: "Day 5",
-        title: "Departure from Alleppey",
-        content: ["Breakfast on the houseboat", "Disembark from the houseboat"],
+        title:
+          "Auli to Rishikesh | Indulge in the Spiritual Aura during Ganga Aarti",
+        content: [
+          "Journey back to Rishikesh.",
+          "Witness the evening Ganga Aarti at Triveni Ghat.",
+          "Explore Laxman Jhula and Ram Jhula.",
+        ],
       },
-      // Add more items here
+      {
+        day: "Day 6",
+        title: "Departure to Delhi | Goodbye with Lots of Memories",
+        content: [
+          "Transfer from Rishikesh to Delhi.",
+          "Drop-off at the pre-decided location in Delhi.",
+        ],
+      },
     ];
   }
 
@@ -543,46 +589,46 @@ function Itinerary({ activePackage }) {
 
 function Included({ activePackage }) {
   let includedItems = [
-    "Accommodation in Coorg on a double/triple sharing basis",
-    "Breakfast and dinner",
-    "Transportation in a sedan/SUV/TT based on group size",
-    "Permits, tolls, fuel charges, parking charges, and driver allowances",
-    "Highly experienced driver",
-    "Knowledgeable guide",
-    "Sightseeing of various attractions",
+    "Pickup and drop-off from Delhi bus stand or railway station.",
+    "Comfortable and hygienic vehicle (Sedan, SUV, or traveler) for sightseeing.",
+    "Stay on a double- and triple-sharing basis in hygienic and sanitized hotels.",
+    "Breakfast as per the itinerary.",
+    "Highly-experienced driver cum guide.",
+    "Sightseeing as per the itinerary.",
   ];
 
   if (activePackage === 2) {
     includedItems = [
-      "Accommodation in Bangalore and Mysore",
-      "Breakfast",
-      "Transportation between Bangalore and Mysore",
-      "Sightseeing of various attractions",
-      "Comfortable vehicle with a knowledgeable driver",
+      "Pickup and drop-off from bus stand or railway station.",
+      "Comfortable and hygienic vehicle (Sedan, SUV, or traveler) for sightseeing.",
+      "Stay on a double- and triple-sharing basis in hygienic and sanitized hotels.",
+      "Breakfast as per the itinerary.",
+      "Highly-experienced driver cum guide.",
+      "Sightseeing as per the itinerary.",
     ];
   }
 
   if (activePackage === 3) {
     includedItems = [
-      "Accommodation for 1 night in Mysore and 2 nights in Coorg",
-      "Breakfast from day 2 to day 4",
-      "Transportation in an SUV or hatchback based on group size",
-      "Permits, tolls, fuel charges, parking charges",
-      "Highly experienced driver cum guide",
+      "Pickup and drop-off from bus stand or railway station.",
+      "Comfortable and hygienic shared vehicle (Sedan, SUV, or traveler) for sightseeing.",
+      "Stay on a double- and triple-sharing basis in hygienic and sanitized hotels.",
+      "Breakfast as per the itinerary.",
+      "Highly-experienced driver cum guide.",
+      "Sightseeing as per the itinerary.",
+      "River rafting adventure in Rishikesh.",
     ];
   }
 
   if (activePackage === 4) {
     includedItems = [
-      "Accommodation in hotels and a Kerala houseboat",
-      "Breakfast at hotels",
-      "All meals during the houseboat stay",
-      "Airport and railway station transfers",
-      "Parking, tolls, driver allowance, and fuel costs",
-      "GST, VAT, and service charges",
-      "Sightseeing transfers by cab",
-      "Full-day sightseeing in Munnar",
-      "Wildlife safari in Thekkady",
+      "Pickup and drop-off from bus stand or railway station.",
+      "Comfortable and hygienic shared vehicle (Sedan, SUV, or traveler) for sightseeing.",
+      "Stay on a double- and triple-sharing basis in hygienic and sanitized hotels.",
+      "Breakfast as per the itinerary.",
+      "Highly-experienced driver cum guide.",
+      "Sightseeing as per the itinerary.",
+      "River rafting adventure in Rishikesh.",
     ];
   }
 
@@ -607,30 +653,40 @@ function Included({ activePackage }) {
 
 function NotIncluded({ activePackage }) {
   let notIncludedItems = [
-    "Lunch (unless specified)",
-    "Optional activities at Harangi Dam",
-    "Souvenirs and personal expenses",
+    "Airfare or train tickets.",
+    "Lunch and dinner expenses.",
+    "Optional activities or services not mentioned in the itinerary.",
+    "Personal expenses.",
+    "Travel insurance.",
   ];
 
   if (activePackage === 2) {
     notIncludedItems = [
-      "Lunch and dinner",
-      "Entrance fees to attractions (unless specified)",
-      "Personal expenses",
+      "Airfare or train tickets.",
+      "Lunch and dinner expenses.",
+      "Optional activities or services not mentioned in the itinerary.",
+      "Personal expenses.",
+      "Travel insurance.",
     ];
   }
 
   if (activePackage === 3) {
-    notIncludedItems = ["Lunch and dinner", "Personal expenses"];
+    notIncludedItems = [
+      "Airfare or train tickets.",
+      "Lunch and dinner expenses.",
+      "Optional activities or services not mentioned in the itinerary.",
+      "Personal expenses.",
+      "Travel insurance.",
+    ];
   }
 
   if (activePackage === 4) {
     notIncludedItems = [
-      "Air/train fare",
-      "Entry tickets to attractions",
-      "Early check-in and late checkout",
-      "Lunch and dinner at hotels",
-      "Boating and other activities",
+      "Airfare or train tickets.",
+      "Lunch and dinner expenses.",
+      "Optional activities or services not mentioned in the itinerary.",
+      "Personal expenses.",
+      "Travel insurance.",
     ];
   }
 
@@ -670,7 +726,7 @@ function Booking() {
           to="/forms"
           className="px-8 py-6 hover:bg-black hover:text-white duration-150 border border-black"
         >
-          BOOK NOW
+          ENQUIRE NOW
         </Link>
         <Link
           to="/forms"

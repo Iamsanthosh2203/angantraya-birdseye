@@ -252,12 +252,14 @@ function Header({ activePackage, setActivePackage }) {
 }
 
 function Attractions({ activePackage }) {
-  let title = "Gujarat";
+  let title = "White Rann Resort Kutch";
 
   if (activePackage === 2) {
-    title = "Bangalore to Mysore Tour (2 Days)";
+    title = "Dwarka Somnath Tour Package";
   } else if (activePackage === 3) {
-    title = " Mysore Coorg Tour";
+    title = "Dwarka Somnath Gir Tour Package";
+  } else if (activePackage === 4) {
+    title = "Wildlife Expedition in Gujarat: A 6-Day Adventure";
   }
 
   return (
@@ -273,14 +275,17 @@ function Attractions({ activePackage }) {
 
 function Overview({ activePackage }) {
   let description =
-    "Coorg, also known as Kodagu, is a picturesque destination with its misty valleys, coffee plantations, and a rich cultural heritage. This 2-3 day tour from Bangalore offers an opportunity to explore Coorg's natural beauty, historical sites, and unique experiences. From the mesmerizing Abbey Falls to the tranquil Dubare Elephant Camp and the intricate Tibetan architecture at Namdroling Monastery, this package is packed with diverse attractions. You'll also visit the Madikeri Fort and Museum, offering insights into Coorg's history and culture.";
+    "Experience the mesmerizing beauty of the White Rann at Dhordo, Kutch, with a stay at the White Rann Resort. As the official operator for RANN UTSAV, the resort provides a unique opportunity to explore Kutch's enchanting desert life, vibrant culture, and breathtaking natural beauty. Whether you're an adventure enthusiast or someone seeking a tranquil retreat, the resort offers a range of recreational options and outdoor activities. Immerse yourself in the rich Gujarati culture with daily folk dance and music performances. The package includes a stay in a luxurious Swiss tent, a desert safari, camel ride during sunset, and complimentary breakfast.";
 
   if (activePackage === 2) {
     description =
-      "Mysore, a city steeped in history and grandeur, promises a blend of the regal past and modern comfort. This 2-day tour from Bangalore offers an opportunity to explore the best of both worlds. From the opulent palaces to lush green sandalwood forests and architectural marvels, Mysore has something for every traveler. Experience the deep-rooted history and architectural wonders, while also enjoying the serene surroundings and modern amenities.";
+      "Embark on a spiritual journey with the Dwarka Somnath Tour Package by Thrillophilia. This 3-day tour takes you to the holy land of Dwarka, believed to be part of Lord Krishna's kingdom, and Somnath, home to the Somnath temple, one of the twelve Lord Shiva Jyotirlingas. Immerse yourself in the divine atmosphere of these ancient towns, visit age-old temples, and witness the rich cultural and historical heritage.";
   } else if (activePackage === 3) {
     description =
-      "This 4-day tour takes you through the enchanting cities of Mysore and Coorg, offering a blend of cultural exploration and natural beauty. Mysore, known as the 'City of Palaces,' boasts magnificent royal residences and gardens. Coorg, on the other hand, is renowned for its scenic landscapes, coffee plantations, and serene waterfalls. This tour package allows you to experience the best of both worlds in Karnataka, India.";
+      "Embark on a 6-day journey through the vibrant state of Gujarat with our Dwarka Somnath Gir Tour Package. This meticulously crafted vacation takes you through five enchanting destinations, including Ahmedabad, Jamnagar, Dwarka, Somnath, and Gir. Immerse yourself in the rich culture, history, and natural beauty of these places as you explore temples, historic sites, and the wilderness of Gir, home to the majestic Asiatic Lions.";
+  } else if (activePackage === 4) {
+    description =
+      "Embark on a thrilling six-day journey through the untamed wilderness of Gujarat, India. This adventure takes you to Gir National Park, the abode of Asiatic Lions, and introduces you to the vibrant birdlife at Nal Sarovar Bird Sanctuary. Immerse yourself in the rich culture of Kutch, known for its traditional textile making and embroidery. The experience is enhanced with stays in eco-friendly safari resorts and tents in the desert, providing a close encounter with nature";
   }
 
   return (
@@ -321,37 +326,24 @@ function Itinerary({ activePackage }) {
   let itineraryItems = [
     {
       day: "Day 1",
-      title: "Arrival in Coorg",
+      title: "Arrival at White Rann Resort",
       content: [
-        "Depart from Bangalore and enjoy an overnight journey.",
-        "Pick-up from select points in Bangalore.",
-        "Arrive in Coorg.",
+        "Check-in at White Rann Resort at 12:00 PM.",
+        "Relax and explore the resort premises.",
+        "Enjoy recreational activities such as billiards and table tennis.",
+        "In the evening, embark on a thrilling desert safari in a jeep.",
+        "Experience a camel ride while witnessing the beautiful sunset.",
+        "Immerse yourself in the rich Gujarati culture with a folk dance show.",
+        "Overnight stay in a luxurious Swiss tent.",
       ],
     },
     {
       day: "Day 2",
-      title: "Coorg Sightseeing",
+      title: "Departure",
       content: [
-        "Explore Dubare Elephant Camp and interact with elephants.",
-        "Visit Chiklihole Reservoir and Nisargadhama Deer Park.",
-        "Optional lunch (at your expense).",
-        "Discover Bylakuppe and the Tibetan Flea Market.",
-        "Explore Harangi Dam or Harangi Backwaters.",
-        "Return to the hotel for dinner and an overnight stay in Coorg.",
-      ],
-    },
-    {
-      day: "Day 3",
-      title: "More Coorg Sightseeing and Departure",
-      content: [
-        "Visit Raja's Seat viewpoint for panoramic views.",
-        "Explore Madikeri Fort and Museum.",
-        "Discover Omkareshwara Temple.",
-        "Enjoy the beauty of Abbey Falls.",
-        "Optional lunch (at your expense).",
-        "Explore Mercara Gold Estate Coffee Plantation.",
-        "Visit local markets for souvenirs.",
-        "Return to Bangalore.",
+        "Wake up to the serene surroundings of the White Rann.",
+        "Have a complimentary breakfast.",
+        "Check-out by 09:30 AM with fond memories of your desert retreat.",
       ],
     },
   ];
@@ -360,76 +352,97 @@ function Itinerary({ activePackage }) {
     itineraryItems = [
       {
         day: "Day 1",
-        title: "Bangalore: Welcome to the Silicon City of India",
+        title: "Arrival in Dwarka",
         content: [
-          "Arrival at Bangalore airport or railway station.",
-          "Visit Bangalore Palace, ISKON Temple, and Lalbagh Botanical Garden.",
-          "Check-in at your hotel in Bangalore.",
+          "Arrive in Dwarka and check-in to your hotel.",
+          "Visit Dwarkadhish Temple, dedicated to Lord Krishna.",
+          "Explore Nageshwar Jyotirlinga Temple, one of the twelve Jyotirlingas.",
+          "Overnight stay in Dwarka.",
         ],
       },
       {
         day: "Day 2",
-        title: "Bangalore to Mysore: Wander at the City of Palaces",
+        title: "Dwarka to Somnath",
         content: [
-          "Breakfast at the hotel.",
-          "Drive to Mysore, visiting Chamundeshwari Temple en-route.",
-          "Explore Mysore Palace, St. Philomena's Cathedral, and Vrindavan Gardens.",
-          "Check-in at your hotel in Mysore.",
+          "Proceed to Somnath, a town known for the Somnath temple.",
+          "Visit Bhalka Tirth, believed to be the place where Lord Krishna was accidentally wounded.",
+          "Explore Somnath Temple, a significant Jyotirlinga.",
+          "Enjoy the evening Aarti at the temple.",
+          "Overnight stay in Somnath.",
         ],
       },
       {
         day: "Day 3",
-        title: "Departure from Mysore: Time to Say Goodbye",
+        title: "Departure",
         content: [
-          "Breakfast at the hotel.",
-          "Check-out from the hotel and drive back to Bangalore.",
-          "Drop-off at the airport or railway station for your journey back home.",
+          "Check-out from the hotel.",
+          "Visit Triveni Sangam Ghat.",
+          "Depart for your onward journey.",
         ],
       },
-      // Add more items for other packages as needed
     ];
   }
 
   if (activePackage === 3) {
     itineraryItems = [
       {
-        day: "Day 1 - ",
-        title: "Transfer from Bangalore to Mysore",
+        day: "Day 1",
+        title: "Arrival in Ahmedabad",
         content: [
-          "Arrive in Bangalore, and embark on a scenic journey to Mysore.",
-          "Explore Mysore Palace, Chamundi Hills, and Brindavan Gardens.",
-          "Check in to your Mysore hotel for an overnight stay.",
+          "Arrive in Ahmedabad, the colorful city of Gujarat.",
+          "Check-in to your hotel and relax.",
+          "Optionally explore local markets or take a stroll along the Sabarmati Riverfront.",
         ],
       },
       {
-        day: "Day 2 - ",
-        title: "Coorg Sightseeing",
+        day: "Day 2",
+        title: "Ahmedabad to Jamnagar",
         content: [
-          "Breakfast at your Mysore hotel.",
-          "Transfer to Coorg and check in to your Coorg hotel.",
-          "Visit Dubare Elephant Camp, Abbey Falls, and Raja's Seat.",
-          "Return to your Coorg hotel for an overnight stay.",
+          "After breakfast, depart for Jamnagar.",
+          "Visit the Lakhota Lake and Lakhota Palace.",
+          "Explore the beautiful Ranmal Lake and Khijadia Bird Sanctuary.",
+          "Overnight stay in Jamnagar.",
         ],
       },
       {
-        day: "Day 3 - ",
-        title: "Explore Coorg",
+        day: "Day 3",
+        title: "Jamnagar to Dwarka",
         content: [
-          "Breakfast at your Coorg hotel.",
-          "Tour a coffee plantation and visit Talacauvery and Bhagamandala.",
-          "Return to your Coorg hotel for an overnight stay.",
+          "Proceed to Dwarka, the ancient city known for its temples.",
+          "Visit the Dwarkadhish Temple, Nageshwar Jyotirlinga, and Rukmini Devi Temple.",
+          "Enjoy the evening aarti at Dwarkadhish Temple.",
+          "Overnight stay in Dwarka.",
         ],
       },
       {
-        day: "Day 4 - ",
-        title: "Departure from Mysore",
+        day: "Day 4",
+        title: "Dwarka to Somnath",
         content: [
-          "Breakfast at your Coorg hotel.",
-          "Visit Bylakuppe and Namdroling Monastery.",
-          "Depart for Bangalore with cherished memories.",
+          "Head to Somnath, a historic pilgrimage site.",
+          "Explore Somnath Temple, known for its stunning architecture.",
+          "Visit Bhalka Tirth and Triveni Ghat.",
+          "Witness the mesmerizing Somnath Temple Aarti in the evening.",
+          "Overnight stay in Somnath.",
         ],
       },
-      // Add more items for other packages as needed
+      {
+        day: "Day 5",
+        title: "Somnath to Gir",
+        content: [
+          "Journey to Gir, the last abode of Asiatic Lions.",
+          "Explore Gir National Park and Wildlife Sanctuary.",
+          "Enjoy a safari to spot lions, leopards, and various other wildlife.",
+          "Overnight stay in Gir.",
+        ],
+      },
+      {
+        day: "Day 6",
+        title: "Departure",
+        content: [
+          "Check-out from the hotel in Gir.",
+          "Bid farewell to the enchanting land of Gujarat as you depart for your onward journey.",
+        ],
+      },
     ];
   }
 
@@ -437,54 +450,63 @@ function Itinerary({ activePackage }) {
     itineraryItems = [
       {
         day: "Day 1",
-        title: "Welcome to Kerala, Transfer to Munnar",
+        title: "Arrival in Ahmedabad",
         content: [
-          "Airport transfer and sightseeing",
-          "Arrive at Cochin Airport",
-          "Visit Spice Plantations, Valara, and Cheeyappara Falls en route to Munnar",
-          "Check-in at the hotel in Munnar",
-          "Leisure time to explore the local markets",
-          "Overnight stay at the hotel in Munnar",
+          "Arrive in Ahmedabad and transfer to the hotel.",
+          "Excursion to Nal Sarovar Bird Sanctuary.",
+          "Visit Mahatma Gandhi's Sabarmati Ashram, Akshardham Temple, and Adalaj Stepwell.",
+          "Evening walking tour in Old Ahmedabad.",
+          "Dinner and overnight stay in Ahmedabad.",
         ],
       },
       {
         day: "Day 2",
-        title: "Sightseeing at Munnar",
+        title: "Ahmedabad to Bhavnagar",
         content: [
-          "Breakfast at the hotel",
-          "Full-day sightseeing tour of Munnar",
-          "Visit Mattupetty Dam, Echo Point, Nursery Garden, Photo Point, Eravikulam National Park, Anaimudi Peak, and Tea Museum",
-          "Overnight stay at the hotel in Munnar",
+          "Drive to Bhavnagar after breakfast.",
+          "Visit Blackbuck National Park, Victoria Park, and Takhteshwar Temple.",
+          "Dinner and overnight stay in Bhavnagar.",
         ],
       },
       {
         day: "Day 3",
-        title: "Transfer to Thekkady",
+        title: "Bhavnagar to Dasada",
         content: [
-          "Breakfast at the hotel",
-          "Journey to Thekkady through scenic landscapes",
-          "Check-in at the hotel in Thekkady",
-          "Enjoy a wildlife safari at the Periyar Tiger Reserve",
-          "Overnight stay at the hotel in Thekkady",
+          "Travel to Dasada and check in to an eco-friendly safari resort.",
+          "Afternoon visit to Little Rann of Kutch, home of the Indian Wild Ass.",
+          "Dinner at the resort.",
         ],
       },
       {
         day: "Day 4",
-        title: "Thekkady to Alleppey",
+        title: "Exploring Dasada",
         content: [
-          "Breakfast at the hotel",
-          "Travel to Alleppey, a land of serene backwaters",
-          "Check-in at a Kerala houseboat",
-          "Cruise through the intricate network of canals",
-          "Enjoy lunch, dinner, and an overnight stay on the houseboat",
+          "Morning sightseeing, including Nawa Talao and Rann villages.",
+          "Explore the rich handicrafts and embroidery.",
+          "Dinner at the resort.",
         ],
       },
       {
         day: "Day 5",
-        title: "Departure from Alleppey",
-        content: ["Breakfast on the houseboat", "Disembark from the houseboat"],
+        title: "Dasada to Gir National Park",
+        content: [
+          "Drive to Gir National Park, home of Asiatic lions.",
+          "Check-in to the resort and enjoy lunch.",
+          "Visit the crocodile breeding farm at Sasan.",
+          "Dinner and overnight stay in Gir.",
+        ],
       },
-      // Add more items here
+      {
+        day: "Day 6",
+        title: "Return to Ahmedabad",
+        content: [
+          "Morning safari in Gir National Park.",
+          "Return to Ahmedabad (330 km/205 miles).",
+          "Check-in to the hotel.",
+          "Evening Ayurvedic massage and Bollywood film.",
+          "Drop-off at the railway station or airport.",
+        ],
+      },
     ];
   }
 
@@ -543,46 +565,40 @@ function Itinerary({ activePackage }) {
 
 function Included({ activePackage }) {
   let includedItems = [
-    "Accommodation in Coorg on a double/triple sharing basis",
-    "Breakfast and dinner",
-    "Transportation in a sedan/SUV/TT based on group size",
-    "Permits, tolls, fuel charges, parking charges, and driver allowances",
-    "Highly experienced driver",
-    "Knowledgeable guide",
-    "Sightseeing of various attractions",
+    "Stay in a Luxury Tent: Large, airy, and serene tents with contemporary style and modern amenities, including LCD TV, room service, electronic safe, free Wi-Fi, and more.",
+    "Activities: Billiards, table tennis, jeep safari, camel ride, and folk dance show.",
+    "Complimentary Breakfast",
   ];
 
   if (activePackage === 2) {
     includedItems = [
-      "Accommodation in Bangalore and Mysore",
-      "Breakfast",
-      "Transportation between Bangalore and Mysore",
-      "Sightseeing of various attractions",
-      "Comfortable vehicle with a knowledgeable driver",
+      "Accommodation: 2 nights' stay in comfortable hotels.",
+      "Meals: Daily breakfast included.",
+      "Sightseeing: Visit Dwarkadhish Temple, Nageshwar Jyotirlinga Temple, Bhalka Tirth, Somnath Temple, and Triveni Sangam Ghat.",
+      "Aarti: Experience the evening Aarti at Somnath Temple.",
+      "Comfortable Transportation: Travel in comfort with included transfers.",
     ];
   }
 
   if (activePackage === 3) {
     includedItems = [
-      "Accommodation for 1 night in Mysore and 2 nights in Coorg",
-      "Breakfast from day 2 to day 4",
-      "Transportation in an SUV or hatchback based on group size",
-      "Permits, tolls, fuel charges, parking charges",
-      "Highly experienced driver cum guide",
+      "Accommodation in well-appointed hotels.",
+      "Daily breakfast and dinner.",
+      "Transportation between cities and local sightseeing.",
+      "Entrance fees to temples, monuments, and wildlife sanctuary.",
+      "Safari in Gir National Park.",
+      "Experienced tour guide.",
     ];
   }
 
   if (activePackage === 4) {
     includedItems = [
-      "Accommodation in hotels and a Kerala houseboat",
-      "Breakfast at hotels",
-      "All meals during the houseboat stay",
-      "Airport and railway station transfers",
-      "Parking, tolls, driver allowance, and fuel costs",
-      "GST, VAT, and service charges",
-      "Sightseeing transfers by cab",
-      "Full-day sightseeing in Munnar",
-      "Wildlife safari in Thekkady",
+      "Accommodation in hotels and eco-friendly safari resorts on a sharing basis.",
+      "Breakfast and dinner on all days.",
+      "Guided sightseeing tours.",
+      "Driver's allowance.",
+      "Entry fees to parks and attractions.",
+      "All transportation during the tour in a private vehicle.",
     ];
   }
 
@@ -607,30 +623,38 @@ function Included({ activePackage }) {
 
 function NotIncluded({ activePackage }) {
   let notIncludedItems = [
-    "Lunch (unless specified)",
-    "Optional activities at Harangi Dam",
-    "Souvenirs and personal expenses",
+    "Transportation to and from the resort.",
+    "Any additional meals or beverages not mentioned in the package.",
+    "Personal expenses, tips, and gratuities.",
+    "Expenses related to activities not specified in the itinerary.",
   ];
 
   if (activePackage === 2) {
     notIncludedItems = [
-      "Lunch and dinner",
-      "Entrance fees to attractions (unless specified)",
-      "Personal expenses",
+      "Personal Expenses: Expenses of a personal nature are not included.",
+      "Meals: Lunch and dinner are not included.",
+      "Travel Insurance: Travel insurance is not provided.",
+      "Tips: Tips and gratuities are at your discretion.",
+      "Any Other Expenses: Any other expenses not mentioned in the inclusions.",
     ];
   }
 
   if (activePackage === 3) {
-    notIncludedItems = ["Lunch and dinner", "Personal expenses"];
+    notIncludedItems = [
+      "Airfare or train tickets.",
+      "Lunch and personal expenses.",
+      "Any additional activities or services not mentioned in the itinerary.",
+      "Travel insurance.",
+      "Tips and gratuities.",
+    ];
   }
 
   if (activePackage === 4) {
     notIncludedItems = [
-      "Air/train fare",
-      "Entry tickets to attractions",
-      "Early check-in and late checkout",
-      "Lunch and dinner at hotels",
-      "Boating and other activities",
+      "Airfare or train tickets.",
+      "Lunch and personal expenses.",
+      "Optional activities or services not mentioned in the itinerary.",
+      "Travel insurance.",
     ];
   }
 
@@ -670,7 +694,7 @@ function Booking() {
           to="/forms"
           className="px-8 py-6 hover:bg-black hover:text-white duration-150 border border-black"
         >
-          BOOK NOW
+          ENQUIRE NOW
         </Link>
         <Link
           to="/forms"
