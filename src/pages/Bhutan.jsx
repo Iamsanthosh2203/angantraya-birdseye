@@ -252,12 +252,14 @@ function Header({ activePackage, setActivePackage }) {
 }
 
 function Attractions({ activePackage }) {
-  let title = "Bhutan";
+  let title = "Enchanting Bhutan Expedition (4 Nights / 5 Days)";
 
   if (activePackage === 2) {
-    title = "Bangalore to Mysore Tour (2 Days)";
+    title = "Explore the Enchanting Kingdom of Bhutan";
   } else if (activePackage === 3) {
-    title = " Mysore Coorg Tour";
+    title = "Explore the Enchanting Beauty of Bhutan in 7 Days";
+  } else if (activePackage === 4) {
+    title = "Discover Bhutan - Land of Happiness";
   }
 
   return (
@@ -273,14 +275,17 @@ function Attractions({ activePackage }) {
 
 function Overview({ activePackage }) {
   let description =
-    "Coorg, also known as Kodagu, is a picturesque destination with its misty valleys, coffee plantations, and a rich cultural heritage. This 2-3 day tour from Bangalore offers an opportunity to explore Coorg's natural beauty, historical sites, and unique experiences. From the mesmerizing Abbey Falls to the tranquil Dubare Elephant Camp and the intricate Tibetan architecture at Namdroling Monastery, this package is packed with diverse attractions. You'll also visit the Madikeri Fort and Museum, offering insights into Coorg's history and culture.";
+    "Embark on a mesmerizing journey to the mystical kingdom of Bhutan with our 4-night, 5-day travel package. From the vibrant capital city of Thimphu to the scenic beauty of Paro and Punakha, this itinerary offers a glimpse into Bhutan's rich culture, spirituality, and breathtaking landscapes. Witness iconic landmarks, explore historic dzongs, and immerse yourself in the tranquility of this Himalayan gem.";
 
   if (activePackage === 2) {
     description =
-      "Mysore, a city steeped in history and grandeur, promises a blend of the regal past and modern comfort. This 2-day tour from Bangalore offers an opportunity to explore the best of both worlds. From the opulent palaces to lush green sandalwood forests and architectural marvels, Mysore has something for every traveler. Experience the deep-rooted history and architectural wonders, while also enjoying the serene surroundings and modern amenities.";
+      "Embark on a mesmerizing 6-day journey through the mystical landscapes of Bhutan. This carefully crafted itinerary takes you to the heart of Bhutanese culture, allowing you to explore the vibrant city of Thimphu, the historical town of Paro, and the scenic beauty of Punakha. Immerse yourself in the rich cultural heritage, visit iconic landmarks, and witness the breathtaking natural wonders of the Land of the Thunder Dragon.";
   } else if (activePackage === 3) {
     description =
-      "This 4-day tour takes you through the enchanting cities of Mysore and Coorg, offering a blend of cultural exploration and natural beauty. Mysore, known as the 'City of Palaces,' boasts magnificent royal residences and gardens. Coorg, on the other hand, is renowned for its scenic landscapes, coffee plantations, and serene waterfalls. This tour package allows you to experience the best of both worlds in Karnataka, India.";
+      "Embark on a mesmerizing 7-day journey to Bhutan, a land of happiness and tranquility. This well-crafted itinerary takes you through the picturesque landscapes and cultural wonders of Thimphu, Punakha, Phobjakha, and Paro. From the iconic Tigers Nest to the serene Dochula Pass, experience the rich cultural heritage and natural beauty that Bhutan has to offer. Immerse yourself in the Bhutanese way of life, visit sacred monasteries, and enjoy the warmth of the local hospitality.";
+  } else if (activePackage === 4) {
+    description =
+      "Embark on an enchanting journey through the mystical landscapes of Bhutan with our meticulously crafted 8-day tour. From the bustling city of Thimphu to the serene valleys of Bumthang and Paro, this itinerary promises an immersive experience of Bhutanese culture, breathtaking scenery, and sacred sites. Witness iconic landmarks, explore ancient monasteries, and enjoy the warmth of Bhutanese hospitality";
   }
 
   return (
@@ -321,37 +326,52 @@ function Itinerary({ activePackage }) {
   let itineraryItems = [
     {
       day: "Day 1",
-      title: "Arrival in Coorg",
+      title: "Arrival at IXB/NJP/Phuentsholing",
       content: [
-        "Depart from Bangalore and enjoy an overnight journey.",
-        "Pick-up from select points in Bangalore.",
-        "Arrive in Coorg.",
+        "Arrive at IXB/NJP/Phuentsholing, where our representative will welcome you",
+        "Complete Bhutan travel permit formalities.",
+        "Transfer to Thimphu (5 hours journey).",
+        "Check-in at the hotel and relax",
       ],
     },
     {
       day: "Day 2",
-      title: "Coorg Sightseeing",
+      title: "Thimphu Sightseeing",
       content: [
-        "Explore Dubare Elephant Camp and interact with elephants.",
-        "Visit Chiklihole Reservoir and Nisargadhama Deer Park.",
-        "Optional lunch (at your expense).",
-        "Discover Bylakuppe and the Tibetan Flea Market.",
-        "Explore Harangi Dam or Harangi Backwaters.",
-        "Return to the hotel for dinner and an overnight stay in Coorg.",
+        "Visit Buddha Point for panoramic views of Thimphu",
+        "Explore the Memorial Chorten, a symbol of Bhutanese spirituality",
+        "Experience the cultural heritage at Simply Bhutan",
+        "Discover the unique Takin Preserve.",
+        "Visit Thimphu Dzong, an impressive fortress-monastery.",
+        "Explore the Royal Textile Museum (RTM).",
+        "Wander through the Handicraft Market and town",
       ],
     },
     {
       day: "Day 3",
-      title: "More Coorg Sightseeing and Departure",
+      title: "Paro Sightseeing (Day Trip)",
       content: [
-        "Visit Raja's Seat viewpoint for panoramic views.",
-        "Explore Madikeri Fort and Museum.",
-        "Discover Omkareshwara Temple.",
-        "Enjoy the beauty of Abbey Falls.",
-        "Optional lunch (at your expense).",
-        "Explore Mercara Gold Estate Coffee Plantation.",
-        "Visit local markets for souvenirs.",
-        "Return to Bangalore.",
+        "Venture to the iconic Tigers Nest or Chella Pass, a prominent Bhutanese monastery",
+        "Explore the historic Paro Dzong.",
+        "Enjoy a leisurely time by the river",
+      ],
+    },
+    {
+      day: "Day 4",
+      title: "Punakha Sightseeing (Day Trip)",
+      content: [
+        "Drive through Dochula Pass for stunning mountain views",
+        "Visit Punakha Dzong, a majestic fortress at the confluence of two rivers",
+        "Experience the thrill of crossing the Suspension Bridge",
+        "Explore Chhemi Lhakhang and embark on a hike to Khamsung Yellay Namgay Chortem",
+      ],
+    },
+    {
+      day: "Day 5",
+      title: "Thimphu to IXB/NJP/Phuentsholing",
+      content: [
+        "Check-out from the hotel in Thimphu",
+        "Depart for IXB/NJP/Phuentsholing for your onward journey",
       ],
     },
   ];
@@ -360,30 +380,58 @@ function Itinerary({ activePackage }) {
     itineraryItems = [
       {
         day: "Day 1",
-        title: "Bangalore: Welcome to the Silicon City of India",
+        title: "Arrival at IXB/NJP/Phuntsholing",
         content: [
-          "Arrival at Bangalore airport or railway station.",
-          "Visit Bangalore Palace, ISKON Temple, and Lalbagh Botanical Garden.",
-          "Check-in at your hotel in Bangalore.",
+          "Our representative will welcome you and assist with Bhutan travel permit formalities.",
+          "Transfer to Thimphu, a scenic journey taking approximately 5 hours.",
+          "Check-in at the hotel and relax.",
         ],
       },
       {
         day: "Day 2",
-        title: "Bangalore to Mysore: Wander at the City of Palaces",
+        title: "Thimphu Sightseeing",
         content: [
-          "Breakfast at the hotel.",
-          "Drive to Mysore, visiting Chamundeshwari Temple en-route.",
-          "Explore Mysore Palace, St. Philomena's Cathedral, and Vrindavan Gardens.",
-          "Check-in at your hotel in Mysore.",
+          "Visit Buddha Point for panoramic views of Thimphu.",
+          "Explore Memorial Chorten, a sacred shrine.",
+          "Experience Bhutanese culture at Simply Bhutan.",
+          "Visit the Takin Preserve and witness the unique national animal.",
+          "Explore Thimphu Dzong and the Royal Textile Museum (RTM)",
         ],
       },
       {
         day: "Day 3",
-        title: "Departure from Mysore: Time to Say Goodbye",
+        title: "Thimphu Sightseeing",
         content: [
-          "Breakfast at the hotel.",
-          "Check-out from the hotel and drive back to Bangalore.",
-          "Drop-off at the airport or railway station for your journey back home.",
+          "Explore Samthokha Dzong, the oldest fortress in Bhutan.",
+          "Visit the School of 13 Arts and Craft.",
+          "Explore the Handicraft Market and enjoy the town excursion.",
+        ],
+      },
+      {
+        day: "Day 4",
+        title: "Paro Sightseeing (Day Trip)",
+        content: [
+          "Hike to the iconic Tiger's Nest or visit Chele La Pass for stunning views",
+          "Explore Paro Dzong, a historic fortress",
+          "Enjoy the serene River View",
+        ],
+      },
+      {
+        day: "Day 5",
+        title: "Punakha Sightseeing (Day Trip)",
+        content: [
+          "Visit Dochula Pass for breathtaking scenery",
+          "Explore Punakha Dzong, a majestic fortress",
+          "Walk the Suspension Bridge for thrilling views",
+          "Hike to Chhemi Lhakhang and visit Khamsung Yellay Namgay Chortem",
+        ],
+      },
+      {
+        day: "Day 6",
+        title: "Thimphu to IXB/NJP/Phuntsholing",
+        content: [
+          "Check-out from the hotel",
+          "Depart for IXB/NJP/Phuntsholing, marking the end of your Bhutanese adventure",
         ],
       },
       // Add more items for other packages as needed
@@ -393,42 +441,63 @@ function Itinerary({ activePackage }) {
   if (activePackage === 3) {
     itineraryItems = [
       {
-        day: "Day 1 - ",
-        title: "Transfer from Bangalore to Mysore",
+        day: "Day 1",
+        title: "Arrival at IXB/NJP/Phuntsholing",
         content: [
-          "Arrive in Bangalore, and embark on a scenic journey to Mysore.",
-          "Explore Mysore Palace, Chamundi Hills, and Brindavan Gardens.",
-          "Check in to your Mysore hotel for an overnight stay.",
+          "Arrival at the designated point (IXB/NJP/Phuntsholing)",
+          "Our representative will assist with immigration formalities and transfer to Thimphu.",
+          "Travel time: 5 hours.",
         ],
       },
       {
-        day: "Day 2 - ",
-        title: "Coorg Sightseeing",
+        day: "Day 2",
+        title: "Thimphu Sightseeing",
         content: [
-          "Breakfast at your Mysore hotel.",
-          "Transfer to Coorg and check in to your Coorg hotel.",
-          "Visit Dubare Elephant Camp, Abbey Falls, and Raja's Seat.",
-          "Return to your Coorg hotel for an overnight stay.",
+          "Visit Buddha Point, Memorial Chorten, Simply Bhutan, Takin Preserve, Thimphu Dzong, RTM, Handicraft Market, and explore the town.",
+          "A day filled with cultural and historical wonders.",
         ],
       },
       {
-        day: "Day 3 - ",
-        title: "Explore Coorg",
+        day: "Day 3",
+        title: "Thimphu to Punakha Sightseeing and Drive to Phobjakha",
         content: [
-          "Breakfast at your Coorg hotel.",
-          "Tour a coffee plantation and visit Talacauvery and Bhagamandala.",
-          "Return to your Coorg hotel for an overnight stay.",
+          "Explore Dochula Pass, Punakha Dzong, Suspension Bridge, Chhemi Lhakhang, Khamsung Yellay Namgay Chortem (Hike).",
+          "Drive to Phobjakha.",
         ],
       },
       {
-        day: "Day 4 - ",
-        title: "Departure from Mysore",
+        day: "Day 4",
+        title: "Phobjakha Sightseeing and Drive to Paro",
         content: [
-          "Breakfast at your Coorg hotel.",
-          "Visit Bylakuppe and Namdroling Monastery.",
-          "Depart for Bangalore with cherished memories.",
+          "Visit Gangtay Valley and Phobjakha Valley.",
+          "Proceed to Paro.",
         ],
       },
+      {
+        day: "Day 5",
+        title: "Paro Sightseeing",
+        content: [
+          "Trek to the iconic Tigers Nest (Paro Taktsang).",
+          "Explore Paro Dzong and enjoy the River View.",
+        ],
+      },
+      {
+        day: "Day 6",
+        title: "Paro Sightseeing",
+        content: [
+          "Visit Chella Pass and explore Paro town.",
+          "Leisure time for personal exploration.",
+        ],
+      },
+      {
+        day: "Day 7",
+        title: "Paro to IXB/NJP/Phuntsholing",
+        content: [
+          "Depart from Paro and transfer to IXB/NJP/Phuntsholing.",
+          "Bid farewell to the enchanting land of Bhutan.",
+        ],
+      },
+
       // Add more items for other packages as needed
     ];
   }
@@ -437,54 +506,60 @@ function Itinerary({ activePackage }) {
     itineraryItems = [
       {
         day: "Day 1",
-        title: "Welcome to Kerala, Transfer to Munnar",
+        title: "Arrival at IXB/NJP/Phuntsholing, Transfer to Thimphu",
         content: [
-          "Airport transfer and sightseeing",
-          "Arrive at Cochin Airport",
-          "Visit Spice Plantations, Valara, and Cheeyappara Falls en route to Munnar",
-          "Check-in at the hotel in Munnar",
-          "Leisure time to explore the local markets",
-          "Overnight stay at the hotel in Munnar",
+          "Meet our representative and complete Bhutan travel permit formalities.",
+          "Transfer to Thimphu (5 hours).",
         ],
       },
       {
         day: "Day 2",
-        title: "Sightseeing at Munnar",
+        title: "Thimphu Sightseeing",
         content: [
-          "Breakfast at the hotel",
-          "Full-day sightseeing tour of Munnar",
-          "Visit Mattupetty Dam, Echo Point, Nursery Garden, Photo Point, Eravikulam National Park, Anaimudi Peak, and Tea Museum",
-          "Overnight stay at the hotel in Munnar",
+          "Explore Buddha Point, Memorial Chorten, Simply Bhutan, Takin Preserve, Thimphu Dzong, RTM, Handicraft Market.",
+          "Town excursion.",
         ],
       },
       {
         day: "Day 3",
-        title: "Transfer to Thekkady",
+        title: "Punakha Sightseeing and Drive to Bumthang",
         content: [
-          "Breakfast at the hotel",
-          "Journey to Thekkady through scenic landscapes",
-          "Check-in at the hotel in Thekkady",
-          "Enjoy a wildlife safari at the Periyar Tiger Reserve",
-          "Overnight stay at the hotel in Thekkady",
+          "Visit Dochula Pass, Punakha Dzong, Suspension Bridge.",
+          "Drive to Bumthang.",
         ],
       },
       {
         day: "Day 4",
-        title: "Thekkady to Alleppey",
+        title: "Bumthang Sightseeing",
         content: [
-          "Breakfast at the hotel",
-          "Travel to Alleppey, a land of serene backwaters",
-          "Check-in at a Kerala houseboat",
-          "Cruise through the intricate network of canals",
-          "Enjoy lunch, dinner, and an overnight stay on the houseboat",
+          "Explore Kichu Monastery, Jambay Lhakhang, and Burning Lake.",
         ],
       },
       {
         day: "Day 5",
-        title: "Departure from Alleppey",
-        content: ["Breakfast on the houseboat", "Disembark from the houseboat"],
+        title: "Bumthang to Phobjikha Sightseeing",
+        content: ["Visit Gangtey Valley and Phobjikha Valley."],
       },
-      // Add more items here
+      {
+        day: "Day 6",
+        title: "Phobjikha to Paro",
+        content: ["Enjoy the scenic journey to Paro."],
+      },
+      {
+        day: "Day 7",
+        title: "Paro Sightseeing",
+        content: [
+          "Choose between the iconic Tiger's Nest or Chella Pass hike.",
+          "Explore Paro Dzong and River View.",
+        ],
+      },
+      {
+        day: "Day 8",
+        title: "Paro to IXB/NJP/Phuntsholing",
+        content: [
+          "Bid farewell to Bhutan and transfer to the departure point.",
+        ],
+      },
     ];
   }
 
@@ -543,46 +618,44 @@ function Itinerary({ activePackage }) {
 
 function Included({ activePackage }) {
   let includedItems = [
-    "Accommodation in Coorg on a double/triple sharing basis",
-    "Breakfast and dinner",
-    "Transportation in a sedan/SUV/TT based on group size",
-    "Permits, tolls, fuel charges, parking charges, and driver allowances",
-    "Highly experienced driver",
-    "Knowledgeable guide",
-    "Sightseeing of various attractions",
+    "Accommodation in well-selected hotels",
+    "Breakfast and dinner included daily.",
+    "Bhutan travel permit processing.",
+    "Comfortable transfers in a private vehicle",
+    "Guided sightseeing tours as per the itinerary",
+    "Hike to Khamsung Yellay Namgay Chortem in Punakha",
   ];
 
   if (activePackage === 2) {
     includedItems = [
-      "Accommodation in Bangalore and Mysore",
-      "Breakfast",
-      "Transportation between Bangalore and Mysore",
-      "Sightseeing of various attractions",
-      "Comfortable vehicle with a knowledgeable driver",
+      "Accommodation in comfortable hotels",
+      "All meals during the tour",
+      "Bhutan travel permit processing",
+      "Sightseeing as per the itinerary",
+      "Knowledgeable local guide",
+      "Comfortable transfers in a private vehicle",
     ];
   }
 
   if (activePackage === 3) {
     includedItems = [
-      "Accommodation for 1 night in Mysore and 2 nights in Coorg",
-      "Breakfast from day 2 to day 4",
-      "Transportation in an SUV or hatchback based on group size",
-      "Permits, tolls, fuel charges, parking charges",
-      "Highly experienced driver cum guide",
+      "Accommodation in comfortable hotels.",
+      "All meals as per the itinerary.",
+      "Local transportation for sightseeing and transfers.",
+      "Bhutan travel permit.",
+      "Experienced English-speaking guide.",
+      "Entrance fees to monuments and attractions.",
     ];
   }
 
   if (activePackage === 4) {
     includedItems = [
-      "Accommodation in hotels and a Kerala houseboat",
-      "Breakfast at hotels",
-      "All meals during the houseboat stay",
-      "Airport and railway station transfers",
-      "Parking, tolls, driver allowance, and fuel costs",
-      "GST, VAT, and service charges",
-      "Sightseeing transfers by cab",
-      "Full-day sightseeing in Munnar",
-      "Wildlife safari in Thekkady",
+      "Accommodation in comfortable hotels",
+      "All transfers and sightseeing in a private vehicle",
+      "Professional English-speaking guide",
+      "Entrance fees to monuments and attractions",
+      "Daily breakfast, lunch, and dinner",
+      "Bhutan travel permit processing and immigration assistance",
     ];
   }
 
@@ -607,30 +680,38 @@ function Included({ activePackage }) {
 
 function NotIncluded({ activePackage }) {
   let notIncludedItems = [
-    "Lunch (unless specified)",
-    "Optional activities at Harangi Dam",
-    "Souvenirs and personal expenses",
+    "Airfare or train tickets to IXB/NJP/Phuentsholing",
+    "Lunch and any additional meals not mentioned",
+    "Personal expenses, tips, and travel insurance",
+    "Expenses arising due to unforeseen circumstances like natural calamities, roadblocks, etc",
   ];
 
   if (activePackage === 2) {
     notIncludedItems = [
-      "Lunch and dinner",
-      "Entrance fees to attractions (unless specified)",
-      "Personal expenses",
+      "Airfare or train tickets to IXB/NJP/Phuntsholing",
+      "Personal expenses, tips, and travel insurance",
+      "Additional activities not mentioned in the itinerary",
+      "Expenses arising due to unforeseen circumstances like natural calamities or political disruptions",
+      "Any other item not explicitly mentioned as included",
     ];
   }
 
   if (activePackage === 3) {
-    notIncludedItems = ["Lunch and dinner", "Personal expenses"];
+    notIncludedItems = [
+      "Airfare to and from the designated points (IXB/NJP/Phuntsholing)",
+      "Personal expenses, tips, and travel insurance",
+      "Additional activities not mentioned in the itinerary",
+      "Expenses arising due to unforeseen circumstances like natural calamities, political disruptions, etc.",
+    ];
   }
 
   if (activePackage === 4) {
     notIncludedItems = [
-      "Air/train fare",
-      "Entry tickets to attractions",
-      "Early check-in and late checkout",
-      "Lunch and dinner at hotels",
-      "Boating and other activities",
+      "Airfare or train tickets to IXB/NJP/Phuntsholing",
+      "Personal expenses such as tips, laundry, and shopping",
+      "Optional activities and experiences not mentioned in the itinerary",
+      "Travel insurance",
+      "Any additional expenses due to unforeseen circumstances like natural calamities, political disruptions, etc..",
     ];
   }
 
@@ -670,7 +751,7 @@ function Booking() {
           to="/forms"
           className="px-8 py-6 hover:bg-black hover:text-white duration-150 border border-black"
         >
-          BOOK NOW
+          ENQUIRE NOW
         </Link>
         <Link
           to="/forms"
