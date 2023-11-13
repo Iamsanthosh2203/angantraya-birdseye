@@ -44,7 +44,7 @@ function Footer() {
           <div className="hidden md:flex flex-col gap-6">
             <h6 className="font-bold text-xl">Meet Us</h6>
             <div className="flex flex-col text-lg gap-3">
-              <a href="">+918883226229</a>
+              <a href="tel:+918883226229">+918883226229</a>
               <a href="mailto:birdseyetrip@gmail.com">birdseyetrip@gmail.com</a>
             </div>
           </div>
