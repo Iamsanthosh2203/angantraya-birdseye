@@ -18,6 +18,10 @@ import Services from "./pages/Services";
 import Gallery from "./pages/Gallery";
 import About from "./pages/About";
 import Partner from "./pages/Partner";
+import Gujarat from "./pages/Gujarat";
+import Hyderabad from "./pages/Hyderabad";
+import Lakshadweep from "./pages/Lakshadweep";
+import Uttrakhand from "./pages/Uttrakhand";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -49,6 +53,10 @@ export default function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/about" element={<About />} />
           <Route path="/partner" element={<Partner />} />
+          <Route path="/gujarat" element={<Gujarat />} />
+          <Route path="/hyderabad" element={<Hyderabad />} />
+          <Route path="/lakshadweep" element={<Lakshadweep />} />
+          <Route path="/uttrakhand" element={<Uttrakhand />} />
         </Routes>
       )}
     </BrowserRouter>
