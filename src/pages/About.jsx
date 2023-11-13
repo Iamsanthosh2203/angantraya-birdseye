@@ -146,9 +146,9 @@ function Header() {
                       : "absolute top-16 h-f w-full bg-white text-black p-4 hidden flex-col gap-3 -translate-y-12 duration-200 -z-10"
                   }
                 >
-                  <a href="">Book Online</a>
-                  <a href="">By Email</a>
-                  <a href="">By Phone</a>
+                  <button onClick={handleDestinationsClick}>Book Online</button>
+                  <button onClick={handleEmailClick}>By Email</button>
+                  <button onClick={handleCallClick}>By Phone</button>
                 </div>
               </div>
             </div>
@@ -172,19 +172,19 @@ function Section1() {
       </h4>
       <div className="flex md:flex-row flex-col gap-4 justify-around py-12">
         <div className="flex flex-col items-center">
-          <p className="text-4xl font-adanda">12000+</p>
-          <p className="font-noticia tracking-[3px]">ACTIVITES</p>
+          <p className="text-4xl font-adanda">200+</p>
+          <p className="font-noticia tracking-[3px]">PACKAGES</p>
         </div>
         <div className="flex flex-col items-center">
-          <p className="text-4xl font-adanda">125+</p>
+          <p className="text-4xl font-adanda">400+</p>
           <p className="font-noticia tracking-[3px]">DESTINATIONS</p>
         </div>
         <div className="flex flex-col items-center">
-          <p className="text-4xl font-adanda">5000+</p>
+          <p className="text-4xl font-adanda">300+</p>
           <p className="font-noticia tracking-[3px]">SUPPLIERS</p>
         </div>
         <div className="flex flex-col items-center">
-          <p className="text-4xl font-adanda">3.5M+</p>
+          <p className="text-4xl font-adanda">2.5K</p>
           <p className="font-noticia tracking-[3px]">USERS / MONTH</p>
         </div>
       </div>
@@ -256,11 +256,13 @@ function OurGroups() {
           </p>
         </div>
         <div className="flex flex-col items-center py-12 gap-7">
-          <img
-            src={service3}
-            alt="service3"
-            className="w-[250px] h-[250px] object-contain"
-          />
+          <div className="w-[250px] h-[250px] flex items-center justify-center">
+            <img
+              src={service3}
+              alt="service3"
+              className="w-[150px] h-[150px] object-contain"
+            />
+          </div>
           <p className="text-2xl font-noticia tracking-[3px] text-center">
             ANGANTRAYA <br />
             TRANSPORTATION
@@ -274,11 +276,13 @@ function OurGroups() {
           </p>
         </div>
         <div className="flex flex-col items-center py-12 gap-7">
-          <img
-            src={gridabout}
-            alt="gridabout"
-            className="w-[250px] h-[250px]"
-          />
+          <div className="w-[250px] h-[250px] flex justify-center items-center">
+            <img
+              src={gridabout}
+              alt="gridabout"
+              className="w-[150px] h-[150px]"
+            />
+          </div>
           <p className="text-2xl font-noticia tracking-[3px] text-center">
             YUVARAJ <br />
             TRAVELS
