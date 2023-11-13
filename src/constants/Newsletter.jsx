@@ -18,8 +18,6 @@ function Newsletter() {
               <br />
               Nepal
               <br />
-              India
-              <br />
             </p>
           </div>
           <div className="h-[200px] py-3 border-b md:border-l md:border-b-0 border-black  basis-[30%]">
@@ -28,8 +26,6 @@ function Newsletter() {
               Norzin lam Thimphu,
               <br />
               Bhutan
-              <br />
-              India
               <br />
             </p>
           </div>

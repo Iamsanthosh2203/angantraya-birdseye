@@ -61,7 +61,7 @@ function Footer() {
       </footer>
       <div className="text-center font-recursive py-2">
         <p>
-          Design And Developed By{" "}
+          Designed And Developed By{" "}
           <a href="https://midlead.com" className="text-[#2596BE]">
             MidLead
           </a>
