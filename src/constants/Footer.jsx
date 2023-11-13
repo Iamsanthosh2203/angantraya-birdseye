@@ -7,7 +7,7 @@ function Footer() {
       <footer className="flex flex-col md:flex-row text-center mt-11 gap-6 md:gap-24">
         <img src={logoai} alt="logo" />
         <div className="flex flex-col justify-between basis-[20%]">
-          <p>
+          <p className="text-left">
             Angantraya Birdseye LLP - A Destination Management Company&B2B Tour
             Company, Package Supplier, travel management services like Cultural
             Packages, Corporate Packages, Adventure Packages, Honeymoon
