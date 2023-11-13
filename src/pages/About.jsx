@@ -10,6 +10,7 @@ import service1 from "../assets/service1.jpg";
 import service2 from "../assets/service2.png";
 import service3 from "../assets/service3.png";
 import service5 from "../assets/service5.jpg";
+import service6 from "../assets/service6.png";
 
 function About() {
   function scrollToTop() {
@@ -243,50 +244,85 @@ function OurGroups() {
   return (
     <section className="py-12 px-6 flex flex-col justify-center">
       <h4 className="font-alfa text-5xl text-center uppercase">Our Groups</h4>
-      <div className="flex md:flex-row flex-col justify-around font-bold">
-        <div className="flex flex-col items-center py-12 gap-7">
-          <img src={service1} alt="service1" className="w-[250px] h-[250px]" />
-          <p className="text-2xl font-noticia tracking-[3px]">BROGIBRO</p>
-        </div>
-        <div className="flex flex-col items-center py-12 gap-7">
-          <img src={service2} alt="service2" className="w-[250px] h-[250px]" />
-          <p className="text-2xl font-noticia tracking-[3px] text-center">
-            APOORVA <br />
-            TOURS AND TRAVELS
-          </p>
-        </div>
-        <div className="flex flex-col items-center py-12 gap-7">
-          <div className="w-[250px] h-[250px] flex items-center justify-center">
-            <img
-              src={service3}
-              alt="service3"
-              className="w-[150px] h-[150px] object-contain"
-            />
+      <div className="md:grid font-bold font-recursive">
+        <div className="flex md:flex-row flex-col justify-evenly">
+          {/* YUVARAJ */}
+          <div className="flex flex-col items-center py-12 gap-7">
+            <div className="w-[250px] h-[250px] flex justify-center items-center">
+              <img
+                src={gridabout}
+                alt="gridabout"
+                className="w-[150px] h-[150px]"
+              />
+            </div>
+            <p className="text-2xl font-noticia tracking-[3px] text-center uppercase">
+              YUVARAJ <br />
+              BY Angantraya
+            </p>
           </div>
-          <p className="text-2xl font-noticia tracking-[3px] text-center">
-            ANGANTRAYA <br />
-            TRANSPORTATION
-          </p>
-        </div>
-        <div className="flex flex-col items-center py-12 gap-7">
-          <img src={service5} alt="service5" className="w-[250px] h-[250px]" />
-          <p className="text-2xl font-noticia tracking-[3px] text-center">
-            MIDLEAD <br />
-            TECHNOVATIONS
-          </p>
-        </div>
-        <div className="flex flex-col items-center py-12 gap-7">
-          <div className="w-[250px] h-[250px] flex justify-center items-center">
+          {/* Apoorva */}
+          <div className="flex flex-col items-center py-12 gap-7">
             <img
-              src={gridabout}
-              alt="gridabout"
-              className="w-[150px] h-[150px]"
+              src={service2}
+              alt="service2"
+              className="w-[250px] h-[250px]"
             />
+            <p className="text-2xl font-noticia tracking-[3px] text-center">
+              APOORVA <br />
+              TOURS AND TRAVELS
+            </p>
           </div>
-          <p className="text-2xl font-noticia tracking-[3px] text-center">
-            YUVARAJ <br />
-            TRAVELS
-          </p>
+          {/* ANGANTRAYA */}
+          <div className="flex flex-col items-center py-12 gap-7">
+            <div className="w-[250px] h-[250px] flex items-center justify-center">
+              <img
+                src={service3}
+                alt="service3"
+                className="w-[150px] h-[150px] object-contain"
+              />
+            </div>
+            <p className="text-2xl font-noticia tracking-[3px] text-center">
+              ANGANTRAYA <br />
+              TRANSPORTATION <br />& TRADERS
+            </p>
+          </div>
+        </div>
+
+        <div className="flex md:flex-row flex-col  justify-evenly w-full">
+          {/* BROGIBRO */}
+          <div className="flex flex-col items-center py-12 gap-7">
+            <img
+              src={service1}
+              alt="service1"
+              className="w-[250px] h-[250px]"
+            />
+            <p className="text-2xl font-noticia tracking-[3px]">BROGIBRO</p>
+          </div>
+          {/* COCKTAIL */}
+          <div className="flex flex-col items-center py-12 gap-7">
+            <img
+              src={service6}
+              alt="service5"
+              className="w-[250px] h-[250px]"
+            />
+            <p className="text-2xl font-noticia tracking-[3px] text-center">
+              COCKTAIL <br />
+              MEDIA
+            </p>
+          </div>
+
+          {/* MIDLEAD */}
+          <div className="flex flex-col items-center py-12 gap-7">
+            <img
+              src={service5}
+              alt="service5"
+              className="w-[250px] h-[250px]"
+            />
+            <p className="text-2xl font-noticia tracking-[3px] text-center">
+              MIDLEAD <br />
+              TECHNOVATIONS
+            </p>
+          </div>
         </div>
       </div>
     </section>

@@ -258,6 +258,8 @@ function Attractions({ activePackage }) {
     title = "Chennai To Yelagiri Tour Package";
   } else if (activePackage === 3) {
     title = "Honeymoon Package Overview";
+  } else if (activePackage === 4) {
+    title = "Chariot Beach Resort Mahabalipuram | Luxury Seaside Retreat";
   }
 
   return (
@@ -281,6 +283,9 @@ function Overview({ activePackage }) {
   } else if (activePackage === 3) {
     description =
       "Escape the hustle and bustle of daily life and embark on a romantic and enchanting journey with our Ooty Kodaikanal Munnar Honeymoon Package. These three hill stations offer the perfect backdrop for your romantic getaway. In Ooty, witness the breathtaking sunset at Doddabetta Peak, explore the vibrant Botanical Garden, and stroll through the fragrant Rose Garden. In Kodaikanal, enjoy a romantic boat ride on the tranquil Kodaikanal Lake, walk hand in hand on Coaker's Walk, and immerse yourself in the beauty of colorful flowers at Bryant Park. Finally, in Munnar, relish boating at the serene Mattupetty Dam, take in the panoramic views from Dolphin's Nose viewpoint, and create timeless memories at Echo Point. This honeymoon package promises an unforgettable experience surrounded by the natural beauty of these hill stations, allowing you to cherish these moments forever.";
+  } else if (activePackage === 4) {
+    description =
+      "Escape to the blissful shores of Mahabalipuram with our exclusive staycation deal at Chariot Beach Resort. Nestled amidst the scenic beauty of misty sandy beaches, this luxury resort promises a rejuvenating experience. With a remarkable rating of 4.8/5 from 109 reviews and endorsed by Thrillophilia, it guarantees a safe and secure environment. Immerse yourself in the charm of Mahabalipuram, featuring spacious rooms, engaging activities, and a wellness spa.";
   }
 
   return (
@@ -518,54 +523,32 @@ function Itinerary({ activePackage }) {
     itineraryItems = [
       {
         day: "Day 1",
-        title: "Welcome to Kerala, Transfer to Munnar",
+        title: "Arrival in Mahabalipuram",
         content: [
-          "Airport transfer and sightseeing",
-          "Arrive at Cochin Airport",
-          "Visit Spice Plantations, Valara, and Cheeyappara Falls en route to Munnar",
-          "Check-in at the hotel in Munnar",
-          "Leisure time to explore the local markets",
-          "Overnight stay at the hotel in Munnar",
+          "2:00 PM: Check-in at Chariot Beach Resort",
+          "2:30 PM - 6:00 PM: Settle into your room and explore the resort amenities",
+          "7:00 PM: Dinner at the resort's dining facility",
         ],
       },
       {
         day: "Day 2",
-        title: "Sightseeing at Munnar",
+        title: "Leisure Day at Chariot Beach Resort",
         content: [
-          "Breakfast at the hotel",
-          "Full-day sightseeing tour of Munnar",
-          "Visit Mattupetty Dam, Echo Point, Nursery Garden, Photo Point, Eravikulam National Park, Anaimudi Peak, and Tea Museum",
-          "Overnight stay at the hotel in Munnar",
+          "8:00 AM - 10:00 AM: Breakfast",
+          "10:00 AM - 1:00 PM: Engage in resort activities (tennis, cricket, badminton)",
+          "1:00 PM: Lunch",
+          "2:00 PM - 5:00 PM: Relax at the wellness spa with Ayurvedic treatments",
+          "7:00 PM: Dinner",
         ],
       },
       {
         day: "Day 3",
-        title: "Transfer to Thekkady",
+        title: "Departure",
         content: [
-          "Breakfast at the hotel",
-          "Journey to Thekkady through scenic landscapes",
-          "Check-in at the hotel in Thekkady",
-          "Enjoy a wildlife safari at the Periyar Tiger Reserve",
-          "Overnight stay at the hotel in Thekkady",
+          "8:00 AM - 10:00 AM: Breakfast",
+          "12:00 PM: Check-out and depart from Chariot Beach Resort",
         ],
       },
-      {
-        day: "Day 4",
-        title: "Thekkady to Alleppey",
-        content: [
-          "Breakfast at the hotel",
-          "Travel to Alleppey, a land of serene backwaters",
-          "Check-in at a Kerala houseboat",
-          "Cruise through the intricate network of canals",
-          "Enjoy lunch, dinner, and an overnight stay on the houseboat",
-        ],
-      },
-      {
-        day: "Day 5",
-        title: "Departure from Alleppey",
-        content: ["Breakfast on the houseboat", "Disembark from the houseboat"],
-      },
-      // Add more items here
     ];
   }
 
@@ -663,15 +646,13 @@ function Included({ activePackage }) {
 
   if (activePackage === 4) {
     includedItems = [
-      "Accommodation in hotels and a Kerala houseboat",
-      "Breakfast at hotels",
-      "All meals during the houseboat stay",
-      "Airport and railway station transfers",
-      "Parking, tolls, driver allowance, and fuel costs",
-      "GST, VAT, and service charges",
-      "Sightseeing transfers by cab",
-      "Full-day sightseeing in Munnar",
-      "Wildlife safari in Thekkady",
+      "Comfortable accommodation in a choice of rooms (Garden View, Sea View, Family Room, Pool Side Cottage, Sea View Cottage, Sea View Suite)",
+      "Delicious breakfast to kickstart your day",
+      "Complimentary Wi-Fi for seamless connectivity",
+      "Access to resort amenities such as swimming pool, badminton court, and basketball court",
+      "Dining facility offering multi-cuisine homely meals",
+      "Housekeeping services for a neat and hygienic stay",
+      "Free parking facilities for your convenience",
     ];
   }
 
@@ -724,11 +705,12 @@ function NotIncluded({ activePackage }) {
 
   if (activePackage === 4) {
     notIncludedItems = [
-      "Air/train fare",
-      "Entry tickets to attractions",
-      "Early check-in and late checkout",
-      "Lunch and dinner at hotels",
-      "Boating and other activities",
+      "Gondola ride or any other activities not mentioned in the itinerary",
+      "Laundry and dry-cleaning services (available at an additional charge)",
+      "Any additional meals or snacks not specified in the package",
+      "Personal expenses, tips, and gratuities",
+      "Optional tours or activities outside the resort premises",
+      "Gondola tickets for optional Gorson Bugyal hike (if chosen)",
     ];
   }
 
