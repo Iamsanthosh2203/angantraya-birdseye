@@ -24,14 +24,14 @@ const destinationsData = [
   {
     title: "Corporate Packages",
     description:
-      "We a leading Destination Management Company and B2B tour company, offers a range of corporate tailor made packages(M.I.C.E) to the needs of businesses of all sizes. Our packages are designed to help your team achieve their goals, whether you're looking to boost productivity, foster teamwork, or reward top performers.",
+      "We are a leading Destination Management Company and B2B tour company, offers a range of corporate tailor made packages(M.I.C.E) to the needs of businesses of all sizes. Our packages are designed to help your team achieve their goals, whether you're looking to boost productivity, foster teamwork, or reward top performers.",
     imageUrl:
       "https://images.unsplash.com/photo-1536607961765-592e80bcc19e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     title: "Adventure Packages",
     description:
-      "We a leading destination management company and B2B tour company, offers a variety of adventure packages for thrill-seekers of all levels of experience. Our packages are designed to showcase the best of India's natural wonders and cultural experiences, while offering a healthy dose of adrenaline. From trekking in the Himalayas to whitewater rafting in the Ganges to scuba diving in the Andaman Islands, we have an adventure package for everyone. Our team of experienced and knowledgeable guides will ensure that you have a safe and unforgettable experience.",
+      "We are a leading destination management company and B2B tour company, offers a variety of adventure packages for thrill-seekers of all levels of experience. Our packages are designed to showcase the best of India's natural wonders and cultural experiences, while offering a healthy dose of adrenaline. From trekking in the Himalayas to whitewater rafting in the Ganges to scuba diving in the Andaman Islands, we have an adventure package for everyone. Our team of experienced and knowledgeable guides will ensure that you have a safe and unforgettable experience.",
     imageUrl:
       "https://plus.unsplash.com/premium_photo-1667516408599-67d72068eaa9?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },

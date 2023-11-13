@@ -65,7 +65,7 @@ function Newsletter() {
             </p>
           </div>
           <div className="md:border-l py-3 border-b md:border-b-0 border-black h-[200px]  basis-[30%]">
-            <h5 className="md:pl-6 text-4xl font-semibold">Coimbatore</h5>
+            <h5 className="md:pl-6 text-4xl font-semibold">Pollachi</h5>
             <p className="pl-6 md:pl-12 pt-6">
               Indra Nagar EXT Mahalingapuram,
               <br />

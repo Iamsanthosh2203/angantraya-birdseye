@@ -5,7 +5,10 @@ function Footer() {
     <div>
       {" "}
       <footer className="flex flex-col md:flex-row text-center mt-11 gap-6 md:gap-24">
-        <img src={logoai} alt="logo" />
+        {" "}
+        <div>
+          <img src={logoai} alt="logo" />
+        </div>
         <div className="flex flex-col justify-between basis-[20%]">
           <p className="text-left">
             Angantraya Birdseye LLP - A Destination Management Company&B2B Tour
