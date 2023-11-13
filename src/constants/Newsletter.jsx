@@ -78,9 +78,7 @@ function Newsletter() {
             </p>
           </div>
           <div className="md:border-l border-b md:border-b-0 py-3 border-black h-[200px]  basis-[30%]">
-            <h5 className="md:pl-6 text-4xl font-semibold">
-              Andaman and Nicobar Islands
-            </h5>
+            <h5 className="md:pl-6 text-4xl font-semibold">Andaman</h5>
             <address className="pl-6 md:pl-12 pt-6">
               Bhathu Basti,
               <br />
