@@ -255,9 +255,11 @@ function Attractions({ activePackage }) {
   let title = "Enchanting Kathmandu Exploration - A Spiritual Odyssey";
 
   if (activePackage === 2) {
-    title = "Bangalore to Mysore Tour (2 Days)";
+    title = "Kathmandu Tour Package From Delhi";
   } else if (activePackage === 3) {
-    title = " Mysore Coorg Tour";
+    title = "Kathmandu Sightseeing Tour For 4 Days and 3 Nights";
+  } else if (activePackage === 4) {
+    title = "6 Days Nepal Tour Package";
   }
 
   return (
@@ -277,10 +279,13 @@ function Overview({ activePackage }) {
 
   if (activePackage === 2) {
     description =
-      "Mysore, a city steeped in history and grandeur, promises a blend of the regal past and modern comfort. This 2-day tour from Bangalore offers an opportunity to explore the best of both worlds. From the opulent palaces to lush green sandalwood forests and architectural marvels, Mysore has something for every traveler. Experience the deep-rooted history and architectural wonders, while also enjoying the serene surroundings and modern amenities.";
+      "Embark on a captivating 3-day journey from Delhi to Kathmandu, the mystical capital city of Nepal. Immerse yourself in the timeless charm of Kathmandu as you explore its beautiful alleyways, visit UNESCO World Heritage Sites, and seek blessings at the sacred Pashupatinath Temple. Relive Bollywood moments at the majestic Durbar Square and experience the rich Newari culture in the medieval town of Bhaktapur. This Kathmandu tour package offers a perfect blend of cultural exploration, historical wonders, and tranquil moments in the heart of the Himalayas.";
   } else if (activePackage === 3) {
     description =
-      "This 4-day tour takes you through the enchanting cities of Mysore and Coorg, offering a blend of cultural exploration and natural beauty. Mysore, known as the 'City of Palaces,' boasts magnificent royal residences and gardens. Coorg, on the other hand, is renowned for its scenic landscapes, coffee plantations, and serene waterfalls. This tour package allows you to experience the best of both worlds in Karnataka, India.";
+      "Embark on a captivating Kathmandu Sightseeing Tour for 4 Days and 3 Nights, exploring the timeless charm and cultural richness of Nepal's capital city. From the iconic Pashupatinath Temple to the majestic Durbar Square and the breathtaking views from Nagarkot, this tour promises a blend of spirituality, history, and natural beauty. With accommodation, meals, transfers, and sightseeing included, immerse yourself in the enchanting landscapes and cultural treasures of Kathmandu.";
+  } else if (activePackage === 4) {
+    description =
+      "Embark on a mesmerizing 5 Nights 6 Days Nepal Tour, a journey that blends spirituality, nature's wonders, and cultural exploration. Begin in the vibrant capital, Kathmandu, where you'll explore UNESCO World Heritage Sites, seek blessings at sacred temples, and walk through the charming old city. Continue to Pokhara, a haven of nature, for breathtaking landscapes and serene lakeside experiences. The tour concludes with the panoramic views of the Himalayas in Nagarkot. With accommodation, meals, transfers, and sightseeing included, this tour promises a perfect blend of adventure and tranquility.";
   }
 
   return (
@@ -365,30 +370,31 @@ function Itinerary({ activePackage }) {
     itineraryItems = [
       {
         day: "Day 1",
-        title: "Bangalore: Welcome to the Silicon City of India",
+        title: "Delhi to Kathmandu | Welcome to the Himalayan Gateway",
         content: [
-          "Arrival at Bangalore airport or railway station.",
-          "Visit Bangalore Palace, ISKON Temple, and Lalbagh Botanical Garden.",
-          "Check-in at your hotel in Bangalore.",
+          "Arrive at Indira Gandhi International Airport (IGI) and board your flight to Kathmandu.",
+          "Complete immigration at Tribhuvan International Airport, meet our representative, and transfer to the hotel.",
+          "Check-in, rest, and leisure time. Overnight stay in Kathmandu.",
         ],
       },
       {
         day: "Day 2",
-        title: "Bangalore to Mysore: Wander at the City of Palaces",
+        title: "Sightseeing in Kathmandu | Explore UNESCO World Heritage Sites",
         content: [
-          "Breakfast at the hotel.",
-          "Drive to Mysore, visiting Chamundeshwari Temple en-route.",
-          "Explore Mysore Palace, St. Philomena's Cathedral, and Vrindavan Gardens.",
-          "Check-in at your hotel in Mysore.",
+          "Post breakfast, embark on a city tour of Kathmandu.",
+          "Visit Pashupatinath Temple, Boudhanath Stupa, Durbar Square, and Swayambhunath Stupa.",
+          "Explore Thamel (Local Market) if time permits.",
+          "Return to the hotel for an overnight stay.",
         ],
       },
       {
         day: "Day 3",
-        title: "Departure from Mysore: Time to Say Goodbye",
+        title:
+          "Excursion to Bhaktapur | A City of Architectural Masterpieces and Ancient Sculptures",
         content: [
-          "Breakfast at the hotel.",
-          "Check-out from the hotel and drive back to Bangalore.",
-          "Drop-off at the airport or railway station for your journey back home.",
+          "Check out from the hotel and journey to Bhaktapur.",
+          "Explore architectural wonders like 55 Windows Palace, Golden Gate, and Nyatapola Temple.",
+          "Return to Kathmandu and drop-off at Tribhuvan International Airport for the onward flight to Delhi.",
         ],
       },
       // Add more items for other packages as needed
@@ -398,40 +404,43 @@ function Itinerary({ activePackage }) {
   if (activePackage === 3) {
     itineraryItems = [
       {
-        day: "Day 1 - ",
-        title: "Transfer from Bangalore to Mysore",
+        day: "Day 1",
+        title: "Arrival in Kathmandu | Welcome to the Himalayan Gateway",
         content: [
-          "Arrive in Bangalore, and embark on a scenic journey to Mysore.",
-          "Explore Mysore Palace, Chamundi Hills, and Brindavan Gardens.",
-          "Check in to your Mysore hotel for an overnight stay.",
+          "Arrival at Tribhuvan International Airport.",
+          "Transfer to the hotel for check-in.",
+          "Leisure time or explore the local area.",
+          "Overnight stay in Kathmandu.",
         ],
       },
       {
-        day: "Day 2 - ",
-        title: "Coorg Sightseeing",
+        day: "Day 2",
+        title: "Sightseeing in Kathmandu | Explore UNESCO World Heritage Sites",
         content: [
-          "Breakfast at your Mysore hotel.",
-          "Transfer to Coorg and check in to your Coorg hotel.",
-          "Visit Dubare Elephant Camp, Abbey Falls, and Raja's Seat.",
-          "Return to your Coorg hotel for an overnight stay.",
+          "Visit Pashupatinath Temple and Boudhanath Stupa.",
+          "Explore Durbar Square and Swayambhunath Stupa.",
+          "Optional exploration of Thamel (Local Market).",
+          "Overnight stay in Kathmandu.",
         ],
       },
       {
-        day: "Day 3 - ",
-        title: "Explore Coorg",
+        day: "Day 3 ",
+        title:
+          "Drive to Nagarkot via Bhaktapur | Take a closer look at the mighty Himalayan peaks",
         content: [
-          "Breakfast at your Coorg hotel.",
-          "Tour a coffee plantation and visit Talacauvery and Bhagamandala.",
-          "Return to your Coorg hotel for an overnight stay.",
+          "Drive to Nagarkot via Bhaktapur.",
+          "Explore Bhaktapur's architectural wonders.",
+          "Sunset Tour of Nagarkot for panoramic Himalayan views.",
+          "Overnight stay in Nagarkot.",
         ],
       },
       {
-        day: "Day 4 - ",
-        title: "Departure from Mysore",
+        day: "Day 4",
+        title: "Departure | Bid Farewell with a lot of memories",
         content: [
-          "Breakfast at your Coorg hotel.",
-          "Visit Bylakuppe and Namdroling Monastery.",
-          "Depart for Bangalore with cherished memories.",
+          "Witness the sunrise and glowing Himalayan peaks.",
+          "Breakfast at the hotel.",
+          "Transfer to Tribhuvan International Airport for departure.",
         ],
       },
       // Add more items for other packages as needed
@@ -442,52 +451,63 @@ function Itinerary({ activePackage }) {
     itineraryItems = [
       {
         day: "Day 1",
-        title: "Welcome to Kerala, Transfer to Munnar",
+        title: " Kathmandu Arrival | Welcome to the Himalayan Gateway",
         content: [
-          "Airport transfer and sightseeing",
-          "Arrive at Cochin Airport",
-          "Visit Spice Plantations, Valara, and Cheeyappara Falls en route to Munnar",
-          "Check-in at the hotel in Munnar",
-          "Leisure time to explore the local markets",
-          "Overnight stay at the hotel in Munnar",
+          "Arrival at Tribhuvan International Airport.",
+          "Transfer to the hotel in Kathmandu.",
+          "Leisure time or explore the local area.",
+          "Overnight stay in Kathmandu.",
         ],
       },
       {
         day: "Day 2",
-        title: "Sightseeing at Munnar",
+        title: "Sightseeing in Kathmandu | Explore UNESCO World Heritage Sites",
         content: [
-          "Breakfast at the hotel",
-          "Full-day sightseeing tour of Munnar",
-          "Visit Mattupetty Dam, Echo Point, Nursery Garden, Photo Point, Eravikulam National Park, Anaimudi Peak, and Tea Museum",
-          "Overnight stay at the hotel in Munnar",
+          "Visit Pashupatinath Temple and Boudhanath Stupa.",
+          "Explore Durbar Square and Swayambhunath Stupa.",
+          "Optional exploration of Thamel (Local Market).",
+          "Overnight stay in Kathmandu.",
         ],
       },
       {
         day: "Day 3",
-        title: "Transfer to Thekkady",
+        title: "Transfer to Pokhara | Blessings at Manakamana Temple",
         content: [
-          "Breakfast at the hotel",
-          "Journey to Thekkady through scenic landscapes",
-          "Check-in at the hotel in Thekkady",
-          "Enjoy a wildlife safari at the Periyar Tiger Reserve",
-          "Overnight stay at the hotel in Thekkady",
+          "Drive to Pokhara via Manakamana Devi temple.",
+          "Take blessings at the temple and proceed to Pokhara.",
+          "Check-in at the hotel in Pokhara.",
+          "Leisure time or explore the local area.",
+          "Overnight stay in Pokhara.",
         ],
       },
       {
         day: "Day 4",
-        title: "Thekkady to Alleppey",
+        title: "Sightseeing in Pokhara | Nature's Haven in Simple Words",
         content: [
-          "Breakfast at the hotel",
-          "Travel to Alleppey, a land of serene backwaters",
-          "Check-in at a Kerala houseboat",
-          "Cruise through the intricate network of canals",
-          "Enjoy lunch, dinner, and an overnight stay on the houseboat",
+          "Explore Devi's Waterfall, Gupteshwar Cave, and Bindhyabasini Temple.",
+          "Leisure time to enjoy the scenic beauty of Pokhara.",
+          "Overnight stay in Pokhara.",
         ],
       },
       {
         day: "Day 5",
-        title: "Departure from Alleppey",
-        content: ["Breakfast on the houseboat", "Disembark from the houseboat"],
+        title:
+          "Pokhara to Nagarkot | Take a closer look at the mighty Himalayan peaks",
+        content: [
+          "Drive to Nagarkot from Pokhara.",
+          "Arrival in Nagarkot and check-in at the hotel.",
+          "Sunset Tour at Nagarkot with panoramic Himalayan views.",
+          "Overnight stay in Nagarkot.",
+        ],
+      },
+      {
+        day: "Day 6",
+        title: "Kathmandu Departure | Bid Farewell with lots of memories",
+        content: [
+          "Witness the sunrise and glowing Himalayan peaks.",
+          "Breakfast at the hotel.",
+          "Transfer to Tribhuvan International Airport for departure.",
+        ],
       },
       // Add more items here
     ];
@@ -564,35 +584,34 @@ function Included({ activePackage }) {
 
   if (activePackage === 2) {
     includedItems = [
-      "Accommodation in Bangalore and Mysore",
-      "Breakfast",
-      "Transportation between Bangalore and Mysore",
-      "Sightseeing of various attractions",
-      "Comfortable vehicle with a knowledgeable driver",
+      "Accommodation on a double sharing basis with breakfast.",
+      "To and from flights from Delhi.",
+      "Private cab for all transfers within Kathmandu and to Bhaktapur.",
+      "Private cab for all sightseeing activities as per the itinerary.",
+      "Airport transfers in Nepal.",
+      "All applicable taxes on accommodation.",
+      "All toll taxes, driver's allowance, fuel charges, etc.",
     ];
   }
 
   if (activePackage === 3) {
     includedItems = [
-      "Accommodation for 1 night in Mysore and 2 nights in Coorg",
-      "Breakfast from day 2 to day 4",
-      "Transportation in an SUV or hatchback based on group size",
-      "Permits, tolls, fuel charges, parking charges",
-      "Highly experienced driver cum guide",
+      "Accommodation on a double sharing basis with breakfast.",
+      "All transfers from Kathmandu, Nagarkot, or Kathmandu by a private cab.",
+      "All sightseeing by a private cab, as per the itinerary.",
+      "02 airport transfers by cab.",
+      "All applicable taxes on accommodation.",
+      "All toll taxes, driver's allowance, fuel charges, etc.",
     ];
   }
 
   if (activePackage === 4) {
     includedItems = [
-      "Accommodation in hotels and a Kerala houseboat",
-      "Breakfast at hotels",
-      "All meals during the houseboat stay",
-      "Airport and railway station transfers",
-      "Parking, tolls, driver allowance, and fuel costs",
-      "GST, VAT, and service charges",
-      "Sightseeing transfers by cab",
-      "Full-day sightseeing in Munnar",
-      "Wildlife safari in Thekkady",
+      "Accommodation on a double sharing basis with breakfast.",
+      "All sightseeing by a private cab, as per the itinerary.",
+      "02 airport transfers by cab.",
+      "All applicable taxes on accommodation.",
+      "All toll taxes, driver's allowance, fuel charges, etc.",
     ];
   }
 
@@ -627,23 +646,34 @@ function NotIncluded({ activePackage }) {
 
   if (activePackage === 2) {
     notIncludedItems = [
-      "Lunch and dinner",
-      "Entrance fees to attractions (unless specified)",
-      "Personal expenses",
+      "Tips.",
+      "Lunch and dinner (unless specified).",
+      "Personal expenses.",
+      "International flights.",
+      "Visa fees.",
+      "Any other extras not detailed in the itinerary.",
     ];
   }
 
   if (activePackage === 3) {
-    notIncludedItems = ["Lunch and dinner", "Personal expenses"];
+    notIncludedItems = [
+      "International airfare.",
+      "Lunch and dinner.",
+      "Personal expenses.",
+      "Tips and gratuities.",
+      "Travel insurance.",
+      "Optional activities and entrance fees not mentioned in the itinerary.",
+    ];
   }
 
   if (activePackage === 4) {
     notIncludedItems = [
-      "Air/train fare",
-      "Entry tickets to attractions",
-      "Early check-in and late checkout",
-      "Lunch and dinner at hotels",
-      "Boating and other activities",
+      "International airfare.",
+      "Lunch and dinner.",
+      "Personal expenses.",
+      "Tips and gratuities.",
+      "Travel insurance.",
+      "Optional activities and entrance fees not mentioned in the itinerary.",
     ];
   }
 

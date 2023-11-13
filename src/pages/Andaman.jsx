@@ -252,12 +252,14 @@ function Header({ activePackage, setActivePackage }) {
 }
 
 function Attractions({ activePackage }) {
-  let title = "Andaman";
+  let title = "ANDAMAN PARADISE 5 NIGHTS 6 DAYS";
 
   if (activePackage === 2) {
-    title = "Bangalore to Mysore Tour (2 Days)";
+    title = "EXCEPTIONAL ANDAMAN 6 NIGHTS 7 DAYS";
   } else if (activePackage === 3) {
-    title = " Mysore Coorg Tour";
+    title = "EXPLORE ANDAMAN 5 NIGHTS 6 DAYS";
+  } else if (activePackage === 4) {
+    title = "7 Days Blissful Romantic Tour Of Andaman Islands";
   }
 
   return (
@@ -273,14 +275,17 @@ function Attractions({ activePackage }) {
 
 function Overview({ activePackage }) {
   let description =
-    "Coorg, also known as Kodagu, is a picturesque destination with its misty valleys, coffee plantations, and a rich cultural heritage. This 2-3 day tour from Bangalore offers an opportunity to explore Coorg's natural beauty, historical sites, and unique experiences. From the mesmerizing Abbey Falls to the tranquil Dubare Elephant Camp and the intricate Tibetan architecture at Namdroling Monastery, this package is packed with diverse attractions. You'll also visit the Madikeri Fort and Museum, offering insights into Coorg's history and culture.";
+    "Embark on a 5 Nights, 6 Days journey to the enchanting Andaman Islands with our 'Andaman Paradise' package. This well-crafted itinerary offers a perfect blend of history, adventure, and serene beaches. Explore the historic Cellular Jail, witness the Light and Sound Show, visit the picturesque Radhanagar Beach, and enjoy the tranquility of Havelock Island. Snorkel in the crystal-clear waters of North Bay, explore Ross Island's historical remnants, and relax on the scenic Kalapathar Beach. With comfortable accommodations, daily meals, and private transfers, this package promises an unforgettable experience in the Andaman archipelago..";
 
   if (activePackage === 2) {
     description =
-      "Mysore, a city steeped in history and grandeur, promises a blend of the regal past and modern comfort. This 2-day tour from Bangalore offers an opportunity to explore the best of both worlds. From the opulent palaces to lush green sandalwood forests and architectural marvels, Mysore has something for every traveler. Experience the deep-rooted history and architectural wonders, while also enjoying the serene surroundings and modern amenities.";
+      "Embark on a captivating 6 Nights, 7 Days journey through the stunning Andaman Islands with our 'Exceptional Andaman' package. This well-designed itinerary ensures an immersive experience, blending historical insights, adventure, and serene beach retreats. Explore the historic Cellular Jail, witness the Light and Sound Show, discover the natural beauty of Radhanagar Beach in Havelock, and unwind on the pristine shores of Neil Island. Snorkel in North Bay, visit the picturesque Ross Island, and enjoy the solitude of Kalapathar Beach. With comfortable accommodations, daily meals, and private transfers, this package promises an extraordinary sojourn in the Andaman archipelago.";
   } else if (activePackage === 3) {
     description =
-      "This 4-day tour takes you through the enchanting cities of Mysore and Coorg, offering a blend of cultural exploration and natural beauty. Mysore, known as the 'City of Palaces,' boasts magnificent royal residences and gardens. Coorg, on the other hand, is renowned for its scenic landscapes, coffee plantations, and serene waterfalls. This tour package allows you to experience the best of both worlds in Karnataka, India.";
+      "Embark on an unforgettable 5 Nights, 6 Days adventure with our 'Explore Andaman' package. Immerse yourself in the rich history of Cellular Jail, witness the beauty of Radhanagar Beach in Havelock, and discover the tranquility of Neil Island. This meticulously crafted itinerary combines cultural exploration, water sports, and beach relaxation, promising an exceptional Andaman experience. With comfortable accommodations, daily meals, and private transfers, this package is designed for those seeking a perfect blend of adventure and leisure in the Andaman archipelago.";
+  } else if (activePackage === 4) {
+    description =
+      "Embark on a 7 Days Blissful Romantic Tour of Andaman Islands, where azure waters, sandy beaches, and historical landmarks create the perfect backdrop for a romantic escapade. This enchanting journey includes visits to Port Blair, Havelock Island, Neil Island, Ross Island, and North Bay. Experience the historical charm of Cellular Jail, indulge in water sports, and witness the natural beauty of pristine beaches. Unwind in comfortable accommodations, savor delicious meals, and create timeless memories with your loved one";
   }
 
   return (
@@ -321,115 +326,177 @@ function Itinerary({ activePackage }) {
   let itineraryItems = [
     {
       day: "Day 1",
-      title: "Arrival in Coorg",
+      title: "Port Blair – City Tour",
       content: [
-        "Depart from Bangalore and enjoy an overnight journey.",
-        "Pick-up from select points in Bangalore.",
-        "Arrive in Coorg.",
+        "Arrive at Port Blair airport, transfer to the hotel, and check-in.",
+        "Visit Carbyn’s Cove Beach, Cellular Jail, and enjoy the Light and Sound Show.",
+        "Overnight stay in Port Blair.",
       ],
     },
     {
       day: "Day 2",
-      title: "Coorg Sightseeing",
+      title: "Port Blair - Coral Island & Ross Island Excursion",
       content: [
-        "Explore Dubare Elephant Camp and interact with elephants.",
-        "Visit Chiklihole Reservoir and Nisargadhama Deer Park.",
-        "Optional lunch (at your expense).",
-        "Discover Bylakuppe and the Tibetan Flea Market.",
-        "Explore Harangi Dam or Harangi Backwaters.",
-        "Return to the hotel for dinner and an overnight stay in Coorg.",
+        "Visit North Bay for snorkeling and water sports.",
+        "Explore Ross Island, the former capital of Port Blair.",
+        "Return to the hotel for an overnight stay.",
       ],
     },
     {
       day: "Day 3",
-      title: "More Coorg Sightseeing and Departure",
+      title: "Port Blair to Havelock - Radhanagar Beach",
       content: [
-        "Visit Raja's Seat viewpoint for panoramic views.",
-        "Explore Madikeri Fort and Museum.",
-        "Discover Omkareshwara Temple.",
-        "Enjoy the beauty of Abbey Falls.",
-        "Optional lunch (at your expense).",
-        "Explore Mercara Gold Estate Coffee Plantation.",
-        "Visit local markets for souvenirs.",
-        "Return to Bangalore.",
+        "Transfer to Havelock Island by cruise.",
+        "Visit Radhanagar Beach, rated as the seventh most beautiful beach in the world.",
+        "Overnight stay in Havelock.",
       ],
     },
+    {
+      day: "Day 4",
+      title: "Havelock - Elephanta Beach",
+      content: [
+        "Leisure day for personal activities.",
+        "Explore Elephanta Beach for water sports and activities.",
+        "Overnight stay in Havelock.",
+      ],
+    },
+    {
+      day: "Day 5",
+      title: "Havelock - Kalapathar Beach - Port Blair",
+      content: [
+        "Visit Kalapathar Beach for solitude and scenic beauty.",
+        "Return to Port Blair by private cruise.",
+        "Evening free for local marketing.",
+        "Overnight stay in Port Blair.",
+      ],
+    },
+    {
+      day: "Day 6",
+      title: "Port Blair – Airport Dropping",
+      content: ["Drop to the airport for departure with cherished memories."],
+    },
+
+    // Add more days as needed
   ];
 
   if (activePackage === 2) {
     itineraryItems = [
       {
         day: "Day 1",
-        title: "Bangalore: Welcome to the Silicon City of India",
+        title: "Port Blair – City Tour",
         content: [
-          "Arrival at Bangalore airport or railway station.",
-          "Visit Bangalore Palace, ISKON Temple, and Lalbagh Botanical Garden.",
-          "Check-in at your hotel in Bangalore.",
+          "Arrive at Port Blair airport, transfer to the hotel, and check-in.",
+          "Visit Carbyn’s Cove Beach, Cellular Jail, and enjoy the Light and Sound Show.",
+          "Overnight stay in Port Blair.",
         ],
       },
       {
         day: "Day 2",
-        title: "Bangalore to Mysore: Wander at the City of Palaces",
+        title: "Port Blair - Coral Island & Ross Island Excursion",
         content: [
-          "Breakfast at the hotel.",
-          "Drive to Mysore, visiting Chamundeshwari Temple en-route.",
-          "Explore Mysore Palace, St. Philomena's Cathedral, and Vrindavan Gardens.",
-          "Check-in at your hotel in Mysore.",
+          "Visit North Bay for snorkeling and water sports.",
+          "Explore Ross Island, the former capital of Port Blair.",
+          "Return to the hotel for an overnight stay.",
         ],
       },
       {
         day: "Day 3",
-        title: "Departure from Mysore: Time to Say Goodbye",
+        title: "Port Blair to Havelock - Radhanagar Beach",
         content: [
-          "Breakfast at the hotel.",
-          "Check-out from the hotel and drive back to Bangalore.",
-          "Drop-off at the airport or railway station for your journey back home.",
+          "Transfer to Havelock Island by cruise.",
+          "Explore Radhanagar Beach.",
+          "Overnight stay in Havelock.",
         ],
       },
-      // Add more items for other packages as needed
+      {
+        day: "Day 4",
+        title: "Havelock - Elephanta Beach",
+        content: [
+          "Leisure day for personal activities.",
+          "Explore Elephanta Beach for water sports.",
+          "Overnight stay in Havelock.",
+        ],
+      },
+      {
+        day: "Day 5",
+        title: "Havelock – Kalapathar – Neil Island",
+        content: [
+          "Visit Kalapathar Beach in Havelock.",
+          "Board a private ferry to Neil Island.",
+          "Explore Laxmanpur, Bharatpur, and Howrah Bridge beaches on Neil Island.",
+          "Overnight stay in Neil Island.",
+        ],
+      },
+      {
+        day: "Day 6",
+        title: "Neil - Port Blair",
+        content: [
+          "Board a private ferry and return to Port Blair.",
+          "Overnight stay in Port Blair.",
+        ],
+      },
+      {
+        day: "Day 7",
+        title: "Port Blair – Airport Dropping",
+        content: ["Drop to the airport for departure with cherished memories."],
+      },
     ];
   }
 
   if (activePackage === 3) {
     itineraryItems = [
       {
-        day: "Day 1 - ",
-        title: "Transfer from Bangalore to Mysore",
+        day: "Day 1",
+        title: "Port Blair – City Tour",
         content: [
-          "Arrive in Bangalore, and embark on a scenic journey to Mysore.",
-          "Explore Mysore Palace, Chamundi Hills, and Brindavan Gardens.",
-          "Check in to your Mysore hotel for an overnight stay.",
+          "Arrive at Port Blair airport, where our representative will greet you.",
+          "Check-in at the hotel, and later, visit Carbyn’s Cove Beach, Cellular Jail, and witness the Light and Sound Show.",
+          "Overnight stay at Port Blair.",
         ],
       },
       {
-        day: "Day 2 - ",
-        title: "Coorg Sightseeing",
+        day: "Day 2",
+        title: "Port Blair - Coral Island & Ross Island Excursion",
         content: [
-          "Breakfast at your Mysore hotel.",
-          "Transfer to Coorg and check in to your Coorg hotel.",
-          "Visit Dubare Elephant Camp, Abbey Falls, and Raja's Seat.",
-          "Return to your Coorg hotel for an overnight stay.",
+          "Explore North Bay for snorkeling and water sports.",
+          "Visit Ross Island, the former capital of Port Blair.",
+          "Return to the hotel for an overnight stay.",
         ],
       },
       {
-        day: "Day 3 - ",
-        title: "Explore Coorg",
+        day: "Day 3",
+        title: "Port Blair to Havelock - Radhanagar Beach",
         content: [
-          "Breakfast at your Coorg hotel.",
-          "Tour a coffee plantation and visit Talacauvery and Bhagamandala.",
-          "Return to your Coorg hotel for an overnight stay.",
+          "Transfer to Havelock Island by cruise.",
+          "Explore Radhanagar Beach, known for its pristine beauty.",
+          "Overnight stay in Havelock.",
         ],
       },
       {
-        day: "Day 4 - ",
-        title: "Departure from Mysore",
+        day: "Day 4",
+        title: "Havelock – Kalapathar Beach – Neil Island",
         content: [
-          "Breakfast at your Coorg hotel.",
-          "Visit Bylakuppe and Namdroling Monastery.",
-          "Depart for Bangalore with cherished memories.",
+          "Check out from the hotel, visit Kalapathar Beach in Havelock.",
+          "Board a boat to Neil Island, check-in, and explore Laxmanpur, Bharatpur & Howrah Bridge beaches.",
+          "Overnight stay at Neil Island.",
         ],
       },
-      // Add more items for other packages as needed
+      {
+        day: "Day 5",
+        title: "Neil - Port Blair",
+        content: [
+          "Explore Neil Island's beautiful beaches.",
+          "Board a private ferry and return to Port Blair.",
+          "Overnight stay in Port Blair.",
+        ],
+      },
+      {
+        day: "Day 6",
+        title: "Port Blair – Airport Dropping",
+        content: [
+          "Drop to the airport with cherished memories of your Andaman Islands adventure.",
+        ],
+      },
     ];
   }
 
@@ -437,54 +504,66 @@ function Itinerary({ activePackage }) {
     itineraryItems = [
       {
         day: "Day 1",
-        title: "Welcome to Kerala, Transfer to Munnar",
+        title: "Port Blair - Witness the Historical Beauty of Cellular Jail",
         content: [
-          "Airport transfer and sightseeing",
-          "Arrive at Cochin Airport",
-          "Visit Spice Plantations, Valara, and Cheeyappara Falls en route to Munnar",
-          "Check-in at the hotel in Munnar",
-          "Leisure time to explore the local markets",
-          "Overnight stay at the hotel in Munnar",
+          "Arrival in Port Blair, transfer to the hotel, and check-in.",
+          "Explore Corbyn Cove Beach, known for its coconut-palm-fringed beauty.",
+          "Visit Cellular Jail and attend the Light & Sound Show narrating India's freedom struggle.",
+          "Overnight stay in Port Blair.",
         ],
       },
       {
         day: "Day 2",
-        title: "Sightseeing at Munnar",
+        title: "Havelock Island - Experience a Ferry Ride",
         content: [
-          "Breakfast at the hotel",
-          "Full-day sightseeing tour of Munnar",
-          "Visit Mattupetty Dam, Echo Point, Nursery Garden, Photo Point, Eravikulam National Park, Anaimudi Peak, and Tea Museum",
-          "Overnight stay at the hotel in Munnar",
+          "After breakfast, take a ferry to Havelock Island.",
+          "Explore Radhanagar Beach, recognized as the best beach in Asia.",
+          "Overnight stay in Havelock Island.",
         ],
       },
       {
         day: "Day 3",
-        title: "Transfer to Thekkady",
+        title: "Havelock Island - Enjoy a Leisure Day",
         content: [
-          "Breakfast at the hotel",
-          "Journey to Thekkady through scenic landscapes",
-          "Check-in at the hotel in Thekkady",
-          "Enjoy a wildlife safari at the Periyar Tiger Reserve",
-          "Overnight stay at the hotel in Thekkady",
+          "Relax on the pristine beaches of Havelock.",
+          "Engage in snorkeling to witness underwater life.",
+          "Overnight stay in Havelock Island.",
         ],
       },
       {
         day: "Day 4",
-        title: "Thekkady to Alleppey",
+        title: "Neil Island - Explore the Beauty of Kalapathar Beach",
         content: [
-          "Breakfast at the hotel",
-          "Travel to Alleppey, a land of serene backwaters",
-          "Check-in at a Kerala houseboat",
-          "Cruise through the intricate network of canals",
-          "Enjoy lunch, dinner, and an overnight stay on the houseboat",
+          "Visit Kalapathar Beach, known for its white sands and crystal-clear blue waters.",
+          "Transfer to Neil Island via ferry.",
+          "Overnight stay at Neil Island.",
         ],
       },
       {
         day: "Day 5",
-        title: "Departure from Alleppey",
-        content: ["Breakfast on the houseboat", "Disembark from the houseboat"],
+        title: "Neil Island - Enjoy a Ferry Ride",
+        content: [
+          "Explore Bharatpur Beach, Laxmanpur Beach, and Natural Coral Bridge on Neil Island.",
+          "Return to Port Blair via ferry.",
+          "Overnight stay in Port Blair.",
+        ],
       },
-      // Add more items here
+      {
+        day: "Day 6",
+        title: "Ross & North Bay Island - Witness the Coral Views",
+        content: [
+          "Explore Ross Island, a former British administrative center.",
+          "Visit North Bay Coral Island for its pristine beauty.",
+          "Overnight stay in Port Blair.",
+        ],
+      },
+      {
+        day: "Day 7",
+        title: "Departure - Time to Head Back Home",
+        content: [
+          "Check-out from the hotel and transfer to the airport for departure.",
+        ],
+      },
     ];
   }
 
@@ -543,46 +622,48 @@ function Itinerary({ activePackage }) {
 
 function Included({ activePackage }) {
   let includedItems = [
-    "Accommodation in Coorg on a double/triple sharing basis",
-    "Breakfast and dinner",
-    "Transportation in a sedan/SUV/TT based on group size",
-    "Permits, tolls, fuel charges, parking charges, and driver allowances",
-    "Highly experienced driver",
-    "Knowledgeable guide",
-    "Sightseeing of various attractions",
+    "Meet and Greet at Port Blair Airport.",
+    "Airport Transfers and Sightseeing by A/C car.",
+    "Accommodation for 3 nights in Port Blair.",
+    "Daily Breakfast and Dinner at Hotels in Port Blair.",
+    "Entry permits, entry tickets, boat tickets.",
+    "Private cruise from Port Blair to Havelock, Neil to Port Blair.",
   ];
 
   if (activePackage === 2) {
     includedItems = [
-      "Accommodation in Bangalore and Mysore",
-      "Breakfast",
-      "Transportation between Bangalore and Mysore",
-      "Sightseeing of various attractions",
-      "Comfortable vehicle with a knowledgeable driver",
+      "Meet and Greet at Port Blair Airport.",
+      "Airport Transfers and Sightseeing by A/C car.",
+      "Accommodation for 3 nights in Port Blair and 2 nights in Havelock.",
+      "Daily Breakfast and Dinner at Hotels.",
+      "Entry permits, entry tickets, boat tickets.",
+      "Private cruise from Port Blair to Havelock and return.",
     ];
   }
 
   if (activePackage === 3) {
     includedItems = [
-      "Accommodation for 1 night in Mysore and 2 nights in Coorg",
-      "Breakfast from day 2 to day 4",
-      "Transportation in an SUV or hatchback based on group size",
-      "Permits, tolls, fuel charges, parking charges",
-      "Highly experienced driver cum guide",
+      "Meet and Greet by our Tour Executives on arrival at Port Blair Airport.",
+      "Airport Transfers and Sightseeing as per the itinerary by A/C car.",
+      "Accommodation for 3 nights in Port Blair, 1 night in Havelock, and 1 night in Neil.",
+      "Daily Breakfast and Dinner at Hotels.",
+      "Entry permits, entry tickets, boat tickets wherever required.",
+      "Private Cruise from Port Blair to Havelock, Neil, and back to Port Blair.",
+      "Assistance at all arrival and departure points.",
     ];
   }
 
   if (activePackage === 4) {
     includedItems = [
-      "Accommodation in hotels and a Kerala houseboat",
-      "Breakfast at hotels",
-      "All meals during the houseboat stay",
-      "Airport and railway station transfers",
-      "Parking, tolls, driver allowance, and fuel costs",
-      "GST, VAT, and service charges",
-      "Sightseeing transfers by cab",
-      "Full-day sightseeing in Munnar",
-      "Wildlife safari in Thekkady",
+      "Airport pick-up and drop-off as per your flight timings.",
+      "Comfortable and hygienic vehicle (SUV/Sedan) based on group size.",
+      "Double or triple-sharing stay in hotels as per the selected variant.",
+      "Breakfast from Day 2 to the last day as per the itinerary.",
+      "Driver night charges, allowances, toll tax, parking charges, etc.",
+      "Experienced driver for the entire journey.",
+      "Sightseeing as per the itinerary.",
+      "Inter-island transfers, jetty pick-up & drop as per the itinerary.",
+      "Activities as per the variant (if any).",
     ];
   }
 
@@ -610,18 +691,34 @@ function NotIncluded({ activePackage }) {
     "Lunch (unless specified)",
     "Optional activities at Harangi Dam",
     "Souvenirs and personal expenses",
+    "GST 5%",
+    "Personal expenses such as tips, laundry, telephone bills, and beverages",
+    "Meals not specified in the itinerary",
+    "Optional, suggested, or unspecified activities",
+    "Camera fees",
+    "Undersea Walk (Sea walking), Game Fishing, Snorkeling, and other water sports",
   ];
 
   if (activePackage === 2) {
     notIncludedItems = [
-      "Lunch and dinner",
-      "Entrance fees to attractions (unless specified)",
-      "Personal expenses",
+      "GST 5%",
+      "Personal expenses such as tips, laundry, telephone bills, and beverages",
+      "Meals not specifically mentioned",
+      "Optional, suggested, or unspecified activities",
+      "Camera fee (still or movie)",
+      "Undersea Walk (Sea walking), Game Fishing, Snorkeling, and all other water sports",
     ];
   }
 
   if (activePackage === 3) {
-    notIncludedItems = ["Lunch and dinner", "Personal expenses"];
+    notIncludedItems = [
+      "GST (as applicable)",
+      "Personal expenses such as tips, laundry, telephone bills, and beverages",
+      "Meals not specifically mentioned",
+      "Optional activities and unspecified activities",
+      "Camera fee (still or movie)",
+      "Undersea walk (Sea walking), Game Fishing, Snorkeling, and all other water sports",
+    ];
   }
 
   if (activePackage === 4) {
@@ -670,7 +767,7 @@ function Booking() {
           to="/forms"
           className="px-8 py-6 hover:bg-black hover:text-white duration-150 border border-black"
         >
-          BOOK NOW
+          ENQUIRE NOW
         </Link>
         <Link
           to="/forms"

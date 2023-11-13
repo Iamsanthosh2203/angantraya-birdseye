@@ -255,9 +255,11 @@ function Attractions({ activePackage }) {
   let title = "Hyderabad two days tour package";
 
   if (activePackage === 2) {
-    title = "Bangalore to Mysore Tour (2 Days)";
+    title = "Hyderabad Tour Package For Family";
   } else if (activePackage === 3) {
-    title = " Mysore Coorg Tour";
+    title = "Hyderabad Tour Package For 3 Days";
+  } else if (activePackage === 4) {
+    title = "Hyderabad Tour Package For 4 Days";
   }
 
   return (
@@ -277,10 +279,13 @@ function Overview({ activePackage }) {
 
   if (activePackage === 2) {
     description =
-      "Mysore, a city steeped in history and grandeur, promises a blend of the regal past and modern comfort. This 2-day tour from Bangalore offers an opportunity to explore the best of both worlds. From the opulent palaces to lush green sandalwood forests and architectural marvels, Mysore has something for every traveler. Experience the deep-rooted history and architectural wonders, while also enjoying the serene surroundings and modern amenities.";
+      "Embark on a family adventure in the 'City of Pearls,' Hyderabad, where tradition and modernization seamlessly coexist. This 4-day, 3-night tour package offers a perfect blend of cultural exploration and modern entertainment. From the ancient forts and age-old mosques to the swanky malls and posh buildings of the Hi-tech city, Hyderabad has something for every member of the family. Witness the architectural marvels of Golconda Fort, explore the enchanting Ramoji Film City, stroll around Charminar, and savor the exotic flavors of Hyderabadi biryani. Our package includes comfortable accommodation, delicious meals, and expert-guided sightseeing, ensuring a memorable family getaway in Hyderabad.";
   } else if (activePackage === 3) {
     description =
-      "This 4-day tour takes you through the enchanting cities of Mysore and Coorg, offering a blend of cultural exploration and natural beauty. Mysore, known as the 'City of Palaces,' boasts magnificent royal residences and gardens. Coorg, on the other hand, is renowned for its scenic landscapes, coffee plantations, and serene waterfalls. This tour package allows you to experience the best of both worlds in Karnataka, India.";
+      "Embark on a captivating 3-day journey through the enchanting city of Hyderabad, blending its rich historical charm with modern-day delights. Known as the 'City of Nizams,' Hyderabad beckons with its ornate palaces, historic forts, and delectable cuisine. The Hyderabad Tour Package for 3 Days offers a perfect balance of cultural exploration, thrilling adventures, and culinary delights. From the iconic Charminar to the sprawling Ramoji Film City, this tour promises an immersive experience in the heart of Telangana.";
+  } else if (activePackage === 4) {
+    description =
+      "Embark on a delightful journey from Bangalore to Hyderabad with our 4-day tour package. Hyderabad, the city of Nizams, offers a perfect blend of historical charm and modern attractions. From the iconic Charminar to the majestic Golconda Fort, this tour promises an enriching experience. Relish the exotic flavors of Hyderabadi biryani, explore the enchanting Ramoji Film City, and witness the architectural wonders of Qutb Shahi Tombs. This Hyderabad Tour Package from Bangalore ensures a perfect getaway filled with culture, adventure, and culinary delights.";
   }
 
   return (
@@ -348,30 +353,39 @@ function Itinerary({ activePackage }) {
     itineraryItems = [
       {
         day: "Day 1",
-        title: "Bangalore: Welcome to the Silicon City of India",
+        title: "Arrival in Hyderabad: Explore the City of Pearls",
         content: [
-          "Arrival at Bangalore airport or railway station.",
-          "Visit Bangalore Palace, ISKON Temple, and Lalbagh Botanical Garden.",
-          "Check-in at your hotel in Bangalore.",
+          "Warm welcome at the railway station/bus station and transfer to the designated hotel.",
+          "Check-in, freshen up, and embark on a sightseeing tour.",
+          "Visit Snow World, Lumbini Park, NTR Gardens, Necklace Road, Birla Mandir, Birla Planetarium, Science Museum, and enjoy water sports at Hussain Sagar Lake.",
+          "Overnight stay at the hotel.",
         ],
       },
       {
         day: "Day 2",
-        title: "Bangalore to Mysore: Wander at the City of Palaces",
+        title: "Ramoji Film City Adventure",
         content: [
-          "Breakfast at the hotel.",
-          "Drive to Mysore, visiting Chamundeshwari Temple en-route.",
-          "Explore Mysore Palace, St. Philomena's Cathedral, and Vrindavan Gardens.",
-          "Check-in at your hotel in Mysore.",
+          "Post breakfast, visit the magnificent Ramoji Film City, one of the world's famous film studios.",
+          "Explore entertainment options, visit Eco Zone, Butterfly Park, Exotic Bird Park, Bonsai Garden, Fundustan, Borasura & Rain Dance, and experience Ramoji Movie Magic.",
+          "Overnight stay.",
         ],
       },
       {
         day: "Day 3",
-        title: "Departure from Mysore: Time to Say Goodbye",
+        title: "Hyderabad Historical Tour",
         content: [
-          "Breakfast at the hotel.",
-          "Check-out from the hotel and drive back to Bangalore.",
-          "Drop-off at the airport or railway station for your journey back home.",
+          "Enjoy breakfast and proceed for a full day of sightseeing.",
+          "Visit Golconda Fort, Qutub Shahi Tombs, Salar Jung Museum, Chowmahalla Palace, Mecca Masjid, and Charminar.",
+          "Stroll around Lad Bazaar for shopping.",
+          "Overnight stay.",
+        ],
+      },
+      {
+        day: "Day 4",
+        title: "Departure from Hyderabad",
+        content: [
+          "Morning breakfast and check-out from the hotel.",
+          "Drop-off at the railway station/bus station for the return journey.",
         ],
       },
       // Add more items for other packages as needed
@@ -381,40 +395,34 @@ function Itinerary({ activePackage }) {
   if (activePackage === 3) {
     itineraryItems = [
       {
-        day: "Day 1 - ",
-        title: "Transfer from Bangalore to Mysore",
+        day: "Day 1",
+        title: "Arrival in Hyderabad",
         content: [
-          "Arrive in Bangalore, and embark on a scenic journey to Mysore.",
-          "Explore Mysore Palace, Chamundi Hills, and Brindavan Gardens.",
-          "Check in to your Mysore hotel for an overnight stay.",
+          "Arrive at the Railway Station or Bus Stand and transfer to the hotel.",
+          "Check-in at the hotel and freshen up.",
+          "Visit Snow World, Birla Mandir, Birla Planetarium, and Science Museum.",
+          "Explore Hussain Sagar Lake, NTR Gardens, and Necklace Road.",
+          "Stroll along the famous Necklace Road and enjoy local cuisine.",
+          "Overnight stay at the hotel.",
         ],
       },
       {
-        day: "Day 2 - ",
-        title: "Coorg Sightseeing",
+        day: "Day 2",
+        title: "Ramoji Film City Day Out",
         content: [
-          "Breakfast at your Mysore hotel.",
-          "Transfer to Coorg and check in to your Coorg hotel.",
-          "Visit Dubare Elephant Camp, Abbey Falls, and Raja's Seat.",
-          "Return to your Coorg hotel for an overnight stay.",
+          "Breakfast at the hotel.",
+          "Full-day excursion to Ramoji Film City, the world's largest film complex.",
+          "Enjoy city tours, adventure sports, and witness famous monuments.",
+          "Return to the hotel for an overnight stay.",
         ],
       },
       {
-        day: "Day 3 - ",
-        title: "Explore Coorg",
+        day: "Day 3",
+        title: "Departure",
         content: [
-          "Breakfast at your Coorg hotel.",
-          "Tour a coffee plantation and visit Talacauvery and Bhagamandala.",
-          "Return to your Coorg hotel for an overnight stay.",
-        ],
-      },
-      {
-        day: "Day 4 - ",
-        title: "Departure from Mysore",
-        content: [
-          "Breakfast at your Coorg hotel.",
-          "Visit Bylakuppe and Namdroling Monastery.",
-          "Depart for Bangalore with cherished memories.",
+          "Breakfast at the hotel.",
+          "Continue the sightseeing tour: Golconda Fort, Char Minar, Laad Bazaar, Chowmahalla Palace, Qutub Shahi Tombs, Salar Jung Museum, Mecca Masjid.",
+          "Drop-off at the railway station or bus stand.",
         ],
       },
       // Add more items for other packages as needed
@@ -425,52 +433,40 @@ function Itinerary({ activePackage }) {
     itineraryItems = [
       {
         day: "Day 1",
-        title: "Welcome to Kerala, Transfer to Munnar",
+        title: "Arrival in Hyderabad",
         content: [
-          "Airport transfer and sightseeing",
-          "Arrive at Cochin Airport",
-          "Visit Spice Plantations, Valara, and Cheeyappara Falls en route to Munnar",
-          "Check-in at the hotel in Munnar",
-          "Leisure time to explore the local markets",
-          "Overnight stay at the hotel in Munnar",
+          "Arrive in Hyderabad and transfer to the hotel.",
+          "Visit Snow World, Birla Mandir, Birla Planetarium, and Science Museum.",
+          "Explore NTR Gardens and enjoy water sports at Hussain Sagar Lake.",
+          "Drive on Necklace Road and overnight stay at the hotel.",
         ],
       },
       {
         day: "Day 2",
-        title: "Sightseeing at Munnar",
+        title: "Ramoji Film City Excursion",
         content: [
-          "Breakfast at the hotel",
-          "Full-day sightseeing tour of Munnar",
-          "Visit Mattupetty Dam, Echo Point, Nursery Garden, Photo Point, Eravikulam National Park, Anaimudi Peak, and Tea Museum",
-          "Overnight stay at the hotel in Munnar",
+          "Full-day excursion to Ramoji Film City.",
+          "Explore shooting sets, theme parks, and studios.",
+          "Enjoy thrilling rides and return to the hotel for dinner.",
         ],
       },
       {
         day: "Day 3",
-        title: "Transfer to Thekkady",
+        title: "Hyderabad Sightseeing",
         content: [
-          "Breakfast at the hotel",
-          "Journey to Thekkady through scenic landscapes",
-          "Check-in at the hotel in Thekkady",
-          "Enjoy a wildlife safari at the Periyar Tiger Reserve",
-          "Overnight stay at the hotel in Thekkady",
+          "Visit Golconda Fort, Qutb Shahi Tombs, Salar Jung Museum, Chowmahalla Palace, and Charminar.",
+          "Explore Mecca Masjid and Lad Bazaar for shopping.",
+          "Evening at leisure and overnight stay.",
         ],
       },
       {
         day: "Day 4",
-        title: "Thekkady to Alleppey",
+        title: "Departure",
         content: [
-          "Breakfast at the hotel",
-          "Travel to Alleppey, a land of serene backwaters",
-          "Check-in at a Kerala houseboat",
-          "Cruise through the intricate network of canals",
-          "Enjoy lunch, dinner, and an overnight stay on the houseboat",
+          "Check out from the hotel.",
+          "Optional city exploration and tasting Hyderabadi biryani.",
+          "Drop-off at Hyderabad airport/railway/bus station for the return journey.",
         ],
-      },
-      {
-        day: "Day 5",
-        title: "Departure from Alleppey",
-        content: ["Breakfast on the houseboat", "Disembark from the houseboat"],
       },
       // Add more items here
     ];
@@ -540,35 +536,31 @@ function Included({ activePackage }) {
 
   if (activePackage === 2) {
     includedItems = [
-      "Accommodation in Bangalore and Mysore",
-      "Breakfast",
-      "Transportation between Bangalore and Mysore",
-      "Sightseeing of various attractions",
-      "Comfortable vehicle with a knowledgeable driver",
+      "Accommodation on double and triple sharing basis",
+      "Meals include breakfast and dinner",
+      "Sightseeing as per the itinerary",
+      "Comfortable and hygienic vehicle (Sedan/SUV) for sightseeing on all days",
+      "Professional English-speaking driver cum guide",
     ];
   }
 
   if (activePackage === 3) {
     includedItems = [
-      "Accommodation for 1 night in Mysore and 2 nights in Coorg",
-      "Breakfast from day 2 to day 4",
-      "Transportation in an SUV or hatchback based on group size",
-      "Permits, tolls, fuel charges, parking charges",
-      "Highly experienced driver cum guide",
+      "Accommodation on a double or triple sharing basis.",
+      "Meals: Breakfast and dinner included.",
+      "Sightseeing as per the itinerary.",
+      "Comfortable and hygienic vehicle (Sedan/SUV) provided for sightseeing on all days.",
+      "Professional English-speaking driver cum guide included.",
     ];
   }
 
   if (activePackage === 4) {
     includedItems = [
-      "Accommodation in hotels and a Kerala houseboat",
-      "Breakfast at hotels",
-      "All meals during the houseboat stay",
-      "Airport and railway station transfers",
-      "Parking, tolls, driver allowance, and fuel costs",
-      "GST, VAT, and service charges",
-      "Sightseeing transfers by cab",
-      "Full-day sightseeing in Munnar",
-      "Wildlife safari in Thekkady",
+      "Accommodation on a double and triple sharing basis.",
+      "Meals include breakfast and dinner.",
+      "Sightseeing as per the itinerary.",
+      "Comfortable and hygienic vehicle (Sedan/SUV) for sightseeing.",
+      "Professional English-speaking driver cum guide.",
     ];
   }
 
@@ -601,23 +593,30 @@ function NotIncluded({ activePackage }) {
 
   if (activePackage === 2) {
     notIncludedItems = [
-      "Lunch and dinner",
-      "Entrance fees to attractions (unless specified)",
-      "Personal expenses",
+      "Lunch (not included in the package)",
+      "Personal expenses such as tips, laundry, and shopping",
+      "Any additional activities not mentioned in the itinerary",
+      "Travel insurance",
     ];
   }
 
   if (activePackage === 3) {
-    notIncludedItems = ["Lunch and dinner", "Personal expenses"];
+    notIncludedItems = [
+      "International airfare.",
+      "Lunch and personal expenses.",
+      "Entry fees for attractions not mentioned in the itinerary.",
+      "Optional activities and water sports at Hussain Sagar Lake.",
+      "Tips and gratuities.",
+    ];
   }
 
   if (activePackage === 4) {
     notIncludedItems = [
-      "Air/train fare",
-      "Entry tickets to attractions",
-      "Early check-in and late checkout",
-      "Lunch and dinner at hotels",
-      "Boating and other activities",
+      "International airfare.",
+      "Lunch and personal expenses.",
+      "Entry fees for attractions not mentioned in the itinerary.",
+      "Optional activities and water sports at Hussain Sagar Lake.",
+      "Tips and gratuities.",
     ];
   }
 
@@ -657,7 +656,7 @@ function Booking() {
           to="/forms"
           className="px-8 py-6 hover:bg-black hover:text-white duration-150 border border-black"
         >
-          BOOK NOW
+          ENQUIRE NOW
         </Link>
         <Link
           to="/forms"
