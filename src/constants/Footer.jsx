@@ -8,10 +8,11 @@ function Footer() {
         <img src={logoai} alt="logo" />
         <div className="flex flex-col justify-between basis-[20%]">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            Angantraya Birdseye LLP - A Destination Management Company&B2B Tour
+            Company, Package Supplier, travel management services like Cultural
+            Packages, Corporate Packages, Adventure Packages, Honeymoon
+            Packages, Etc.... We specialize in leisure and corporate travel to
+            clients from India and other parts of the world.
           </p>
           <div className="flex gap-5 justify-center md:justify-normal items-center mt-5 md:mt-0">
             <i className="fa-brands fa-linkedin-in p-3 bg-[#2596BE] rounded-full text-white"></i>

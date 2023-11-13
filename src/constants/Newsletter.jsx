@@ -10,46 +10,41 @@ function Newsletter() {
 
         <div className="flex md:flex-row flex-col w-full justify-center">
           <div className="h-[200px] border-black pb-3 md:border-0 border-b  basis-[30%]">
-            <h5 className="text-4xl font-semibold">Coimbatore</h5>
-            <address className="pl-5 pt-6">
-              3/200 Sample Address,
+            <h5 className="text-4xl font-semibold">Nepal</h5>
+            <p className="pl-5 pt-6">
+              Galkupakha, Thamel,
               <br />
-              Coimbatore
+              Kathmandu,
               <br />
-              Tamilnadu
+              Nepal
               <br />
               India
               <br />
-              641001
-            </address>
+            </p>
           </div>
           <div className="h-[200px] py-3 border-b md:border-l md:border-b-0 border-black  basis-[30%]">
-            <h5 className="md:pl-6 text-4xl font-semibold">Coimbatore</h5>
-            <address className="pl-5 md:pl-12 pt-6">
-              3/200 Sample Address,
+            <h5 className="md:pl-6 text-4xl font-semibold">Bhutan</h5>
+            <p className="pl-5 md:pl-12 pt-6">
+              Norzin lam Thimphu,
               <br />
-              Coimbatore
-              <br />
-              Tamilnadu
+              Bhutan
               <br />
               India
               <br />
-              641001
-            </address>
+            </p>
           </div>
           <div className="md:border-l py-3 border-black h-[200px]  basis-[30%]">
-            <h5 className="md:pl-6 text-4xl font-semibold">Coimbatore</h5>
-            <address className="pl-6 md:pl-12 pt-6">
-              3/200 Sample Address,
+            <h5 className="md:pl-6 text-4xl font-semibold">Kerala</h5>
+            <p className="pl-6 md:pl-12 pt-6">
+              Yuvaraj Buliding M C Road,
               <br />
-              Coimbatore
+              Perumbavoor Ernakulam,
               <br />
-              Tamilnadu
+              Kerala
               <br />
               India
               <br />
-              641001
-            </address>
+            </p>
           </div>
         </div>
 
@@ -57,45 +52,44 @@ function Newsletter() {
 
         <div className="flex md:flex-row flex-col w-full justify-center">
           <div className="h-[200px] basis-[30%] border-b border-black md:border-0 py-3">
-            <h5 className="text-4xl font-semibold">Coimbatore</h5>
-            <address className="pl-5 pt-6">
-              3/200 Sample Address,
+            <h5 className="text-4xl font-semibold">Kenya</h5>
+            <p className="pl-5 pt-6">
+              6th Floor,
               <br />
-              Coimbatore
+              Room 615 Commerce House,
               <br />
-              Tamilnadu
+              Moi Avenue
               <br />
-              India
+              Kenya
               <br />
-              641001
-            </address>
+            </p>
           </div>
           <div className="md:border-l py-3 border-b md:border-b-0 border-black h-[200px]  basis-[30%]">
             <h5 className="md:pl-6 text-4xl font-semibold">Coimbatore</h5>
-            <address className="pl-6 md:pl-12 pt-6">
-              3/200 Sample Address,
+            <p className="pl-6 md:pl-12 pt-6">
+              Indra Nagar EXT Mahalingapuram,
+              <br />
+              Pollachi,
               <br />
               Coimbatore
               <br />
-              Tamilnadu
-              <br />
               India
               <br />
-              641001
-            </address>
+            </p>
           </div>
           <div className="md:border-l border-b md:border-b-0 py-3 border-black h-[200px]  basis-[30%]">
-            <h5 className="md:pl-6 text-4xl font-semibold">Coimbatore</h5>
+            <h5 className="md:pl-6 text-4xl font-semibold">
+              Andaman and Nicobar Islands
+            </h5>
             <address className="pl-6 md:pl-12 pt-6">
-              3/200 Sample Address,
+              Bhathu Basti,
               <br />
-              Coimbatore
+              Port Blair
               <br />
-              Tamilnadu
+              Andaman and Nicobar Islands,
               <br />
               India
               <br />
-              641001
             </address>
           </div>
         </div>
