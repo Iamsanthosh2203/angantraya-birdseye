@@ -1,4 +1,5 @@
 import logoai from "../assets/logoai.png";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -18,8 +19,12 @@ function Footer() {
             clients from India and other parts of the world.
           </p>
           <div className="flex gap-5 justify-center md:justify-normal items-center mt-5 md:mt-0">
-            <i className="fa-brands fa-linkedin-in p-3 bg-[#2596BE] rounded-full text-white"></i>
-            <i className="fa-brands fa-instagram p-3 bg-[#2596BE] rounded-full text-white"></i>
+            <Link to="https://www.linkedin.com/company/angantrayabirdseye/">
+              <i className="fa-brands fa-linkedin-in p-3 bg-[#2596BE] rounded-full text-white"></i>
+            </Link>
+            <Link to="https://www.instagram.com/angantrayabirdseye">
+              <i className="fa-brands fa-instagram p-3 bg-[#2596BE] rounded-full text-white"></i>
+            </Link>
           </div>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3">
