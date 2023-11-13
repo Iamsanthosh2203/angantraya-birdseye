@@ -252,12 +252,14 @@ function Header({ activePackage, setActivePackage }) {
 }
 
 function Attractions({ activePackage }) {
-  let title = "Kenya";
+  let title = "Explore Amboseli, Naivasha, Maasai Mara, and Nairobi (6N/7D)";
 
   if (activePackage === 2) {
-    title = "Bangalore to Mysore Tour (2 Days)";
+    title = "5 Days Highlights of Kenya Safari Experience";
   } else if (activePackage === 3) {
-    title = " Mysore Coorg Tour";
+    title = "9 Days Best of Kenya and Tanzania";
+  } else if (activePackage === 4) {
+    title = "Maasai Mara And Lake Nakuru Tour In Kenya";
   }
 
   return (
@@ -273,14 +275,17 @@ function Attractions({ activePackage }) {
 
 function Overview({ activePackage }) {
   let description =
-    "Coorg, also known as Kodagu, is a picturesque destination with its misty valleys, coffee plantations, and a rich cultural heritage. This 2-3 day tour from Bangalore offers an opportunity to explore Coorg's natural beauty, historical sites, and unique experiences. From the mesmerizing Abbey Falls to the tranquil Dubare Elephant Camp and the intricate Tibetan architecture at Namdroling Monastery, this package is packed with diverse attractions. You'll also visit the Madikeri Fort and Museum, offering insights into Coorg's history and culture.";
+    "Embark on a captivating 7-day safari adventure through Kenya's most iconic wildlife destinations. Witness the majestic landscapes of Amboseli National Park, the serene beauty of Lake Naivasha, the vast plains of Maasai Mara Game Reserve, and the vibrant city life of Nairobi. This package offers an unforgettable blend of game drives, cultural experiences, and leisure, providing a glimpse into Kenya's rich biodiversity and the Maasai way of life.";
 
   if (activePackage === 2) {
     description =
-      "Mysore, a city steeped in history and grandeur, promises a blend of the regal past and modern comfort. This 2-day tour from Bangalore offers an opportunity to explore the best of both worlds. From the opulent palaces to lush green sandalwood forests and architectural marvels, Mysore has something for every traveler. Experience the deep-rooted history and architectural wonders, while also enjoying the serene surroundings and modern amenities.";
+      "Embark on an unforgettable safari adventure through the diverse landscapes of Kenya with Brogibro Tours, Travel & Events Organizers. This 5-day journey takes you from the flamingo-filled Lake Nakuru National Park to the iconic Maasai Mara Game Reserve, offering a chance to witness the Big Five and the spectacular Wildebeest migration. The adventure continues to the foot of Mount Kilimanjaro in Amboseli National Park before concluding with a unique dining experience at the world-famous Carnivore restaurant in Nairobi. Immerse yourself in the rich wildlife and stunning scenery while enjoying the comfort and hospitality of top-notch accommodations.";
   } else if (activePackage === 3) {
     description =
-      "This 4-day tour takes you through the enchanting cities of Mysore and Coorg, offering a blend of cultural exploration and natural beauty. Mysore, known as the 'City of Palaces,' boasts magnificent royal residences and gardens. Coorg, on the other hand, is renowned for its scenic landscapes, coffee plantations, and serene waterfalls. This tour package allows you to experience the best of both worlds in Karnataka, India.";
+      "Embark on a breathtaking 9-day adventure through the best of Kenya and Tanzania with 'Brogibro Tours, Travel & Events Organizers.' This meticulously crafted tour takes you from the captivating landscapes of Nakuru National Park and Maasai Mara in Kenya to the iconic Amboseli National Park with the majestic backdrop of Mount Kilimanjaro, and finally, the renowned Serengeti and Ngorongoro Crater in Tanzania. Immerse yourself in the diverse wildlife, stunning scenery, and rich cultural experiences that define this region. Our professional driver/guide will ensure a seamless and memorable journey for you and your travel companions.";
+  } else if (activePackage === 4) {
+    description =
+      "Embark on an unforgettable journey through the wild landscapes of Kenya with our Maasai Mara and Lake Nakuru Tour. Immerse yourself in the mesmerizing beauty of Maasai Mara National Park and Lake Nakuru, home to exotic flora and fauna. Witness the majestic Big 5 – lion, leopard, buffalo, rhino, and elephant – in their natural habitat, and marvel at the diverse bird species around Nakuru Lake. This 3-night, 4-day adventure promises an exciting blend of game drives and wildlife spotting, making it a paradise for nature and animal enthusiasts. All meals are included, ensuring you focus solely on the thrilling experiences these destinations have to offer";
   }
 
   return (
@@ -321,38 +326,65 @@ function Itinerary({ activePackage }) {
   let itineraryItems = [
     {
       day: "Day 1",
-      title: "Arrival in Coorg",
+      title: "Nairobi – Amboseli National Park",
       content: [
-        "Depart from Bangalore and enjoy an overnight journey.",
-        "Pick-up from select points in Bangalore.",
-        "Arrive in Coorg.",
+        "Early breakfast and departure to Amboseli.",
+        "En-route game drive and arrival at the lodge.",
+        "Afternoon game drive in Amboseli.",
+        "Dinner and overnight stay.",
       ],
     },
     {
       day: "Day 2",
-      title: "Coorg Sightseeing",
+      title: "Explore Amboseli National Park",
       content: [
-        "Explore Dubare Elephant Camp and interact with elephants.",
-        "Visit Chiklihole Reservoir and Nisargadhama Deer Park.",
-        "Optional lunch (at your expense).",
-        "Discover Bylakuppe and the Tibetan Flea Market.",
-        "Explore Harangi Dam or Harangi Backwaters.",
-        "Return to the hotel for dinner and an overnight stay in Coorg.",
+        "Morning game drive with views of Mount Kilimanjaro.",
+        "Visit to a Maasai village after breakfast.",
+        "Afternoon rest and another game drive.",
+        "Dinner and overnight stay.",
       ],
     },
     {
       day: "Day 3",
-      title: "More Coorg Sightseeing and Departure",
+      title: "Amboseli – Lake Naivasha",
       content: [
-        "Visit Raja's Seat viewpoint for panoramic views.",
-        "Explore Madikeri Fort and Museum.",
-        "Discover Omkareshwara Temple.",
-        "Enjoy the beauty of Abbey Falls.",
-        "Optional lunch (at your expense).",
-        "Explore Mercara Gold Estate Coffee Plantation.",
-        "Visit local markets for souvenirs.",
-        "Return to Bangalore.",
+        "Depart for Lake Naivasha after breakfast.",
+        "Optional boat ride or visit to Crescent Island.",
+        "Dinner and overnight stay in Naivasha.",
       ],
+    },
+    {
+      day: "Day 4",
+      title: "Naivasha – Maasai Mara",
+      content: [
+        "Depart for Maasai Mara after breakfast.",
+        "Game drive with a visit to a Maasai village.",
+        "Dinner and overnight stay in Maasai Mara.",
+      ],
+    },
+    {
+      day: "Day 5",
+      title: "Discover Maasai Mara",
+      content: [
+        "Morning and afternoon game drives.",
+        "Explore the Maasai Mara's abundant wildlife.",
+        "Dinner and overnight stay.",
+      ],
+    },
+    {
+      day: "Day 6",
+      title: "Maasai Mara – Nairobi",
+      content: [
+        "Early morning game drive and breakfast.",
+        "Overland journey to Nairobi.",
+        "Leisure time for shopping and sightseeing.",
+        "Evening transfer to the airport.",
+      ],
+    },
+    {
+      day: "Day 7",
+      title: "Nairobi",
+      content: ["Breakfast at the hotel.", "Airport transfer for departure"],
     },
   ];
 
@@ -360,76 +392,130 @@ function Itinerary({ activePackage }) {
     itineraryItems = [
       {
         day: "Day 1",
-        title: "Bangalore: Welcome to the Silicon City of India",
+        title: "Nairobi – Lake Nakuru National Park",
         content: [
-          "Arrival at Bangalore airport or railway station.",
-          "Visit Bangalore Palace, ISKON Temple, and Lalbagh Botanical Garden.",
-          "Check-in at your hotel in Bangalore.",
+          "Meet and greet at Jomo Kenyatta International Airport.",
+          "Depart for Lake Nakuru National Park with lunch and an evening game drive.",
+          "Overnight stay at Lake Nakuru Sopa Lodge.",
         ],
       },
       {
         day: "Day 2",
-        title: "Bangalore to Mysore: Wander at the City of Palaces",
+        title: "Lake Nakuru National Park – Maasai Mara Game Reserve",
         content: [
-          "Breakfast at the hotel.",
-          "Drive to Mysore, visiting Chamundeshwari Temple en-route.",
-          "Explore Mysore Palace, St. Philomena's Cathedral, and Vrindavan Gardens.",
-          "Check-in at your hotel in Mysore.",
+          "Depart for Maasai Mara Game Reserve after breakfast.",
+          "Check-in, lunch, and afternoon game drives in Maasai Mara.",
+          "Optional activities include hot air balloon safari and guided nature walks.",
+          "Overnight stay at Mara Sopa Lodge.",
         ],
       },
       {
         day: "Day 3",
-        title: "Departure from Mysore: Time to Say Goodbye",
+        title: "Full Day in Maasai Mara Game Reserve",
         content: [
-          "Breakfast at the hotel.",
-          "Check-out from the hotel and drive back to Bangalore.",
-          "Drop-off at the airport or railway station for your journey back home.",
+          "Extensive full-day game drive in Maasai Mara with a picnic lunch at the hippo pool.",
+          "Witness the Wildebeest migration and explore the diverse wildlife.",
+          "Overnight stay at Mara Sopa Lodge.",
         ],
       },
-      // Add more items for other packages as needed
+      {
+        day: "Day 4",
+        title: "Maasai Mara Game Reserve – Amboseli National Park",
+        content: [
+          "Early breakfast and departure for Amboseli National Park.",
+          "Afternoon game drive with views of Mount Kilimanjaro.",
+          "Dinner and overnight at Amboseli Sopa Lodge.",
+        ],
+      },
+      {
+        day: "Day 5",
+        title: "Amboseli National Park – Nairobi",
+        content: [
+          "Early morning game drive, followed by breakfast.",
+          "Drive back to Nairobi with an early dinner at the Nairobi Carnivore.",
+          "Airport transfer for your departure.",
+        ],
+      },
     ];
   }
 
   if (activePackage === 3) {
     itineraryItems = [
       {
-        day: "Day 1 - ",
-        title: "Transfer from Bangalore to Mysore",
+        day: "Day 1",
+        title: "Nairobi – Nakuru National Park",
         content: [
-          "Arrive in Bangalore, and embark on a scenic journey to Mysore.",
-          "Explore Mysore Palace, Chamundi Hills, and Brindavan Gardens.",
-          "Check in to your Mysore hotel for an overnight stay.",
+          "Meet and greet at Jomo Kenyatta International Airport.",
+          "Depart for Lake Nakuru National Park, known for its flamingos and diverse bird species.",
+          "Evening game drive and overnight at Flamingo Hill Tented Camp.",
         ],
       },
       {
-        day: "Day 2 - ",
-        title: "Coorg Sightseeing",
+        day: "Day 2",
+        title: "Lake Nakuru National Park – Maasai Mara Game Reserve",
         content: [
-          "Breakfast at your Mysore hotel.",
-          "Transfer to Coorg and check in to your Coorg hotel.",
-          "Visit Dubare Elephant Camp, Abbey Falls, and Raja's Seat.",
-          "Return to your Coorg hotel for an overnight stay.",
+          "Depart for Maasai Mara, home to the big five.",
+          "Afternoon game drives and optional activities.",
+          "Overnight at Mara Sopa Lodge.",
         ],
       },
       {
-        day: "Day 3 - ",
-        title: "Explore Coorg",
+        day: "Day 3",
+        title: "Full day in Masai Mara Game Reserve",
         content: [
-          "Breakfast at your Coorg hotel.",
-          "Tour a coffee plantation and visit Talacauvery and Bhagamandala.",
-          "Return to your Coorg hotel for an overnight stay.",
+          "Full day game drive with a picnic lunch at the Mara River.",
+          "Witness the annual Wildebeest migration (June to October).",
+          "Overnight at Mara Sopa Lodge.",
         ],
       },
       {
-        day: "Day 4 - ",
-        title: "Departure from Mysore",
+        day: "Day 4",
+        title: "Maasai Mara Game Reserve – Amboseli National Park",
         content: [
-          "Breakfast at your Coorg hotel.",
-          "Visit Bylakuppe and Namdroling Monastery.",
-          "Depart for Bangalore with cherished memories.",
+          "Depart for Amboseli National Park, with views of Mount Kilimanjaro.",
+          "Afternoon game drive and overnight at Amboseli Sopa Lodge.",
         ],
       },
-      // Add more items for other packages as needed
+      {
+        day: "Day 5",
+        title: "Full day in Amboseli National Park",
+        content: [
+          "Full day game drives with optional Maasai village visit.",
+          "Overnight at Amboseli Sopa Lodge.",
+        ],
+      },
+      {
+        day: "Day 6",
+        title: "Amboseli National – Arusha – Lake Manyara",
+        content: [
+          "Depart for Arusha and proceed to Lake Manyara.",
+          "Afternoon game drive and overnight at Lake Manyara campsite.",
+        ],
+      },
+      {
+        day: "Day 7",
+        title: "Lake Manyara National park – Serengeti Game Reserve",
+        content: [
+          "Depart for Serengeti, passing through Olduvai Gorge.",
+          "Overnight at Serengeti Campsite.",
+        ],
+      },
+      {
+        day: "Day 8",
+        title: "Serengeti – Ngorongoro Crater",
+        content: [
+          "Drive to Ngorongoro Crater for a unique wildlife experience.",
+          "Picnic lunch at the crater and overnight at Ngorongoro Campsite.",
+        ],
+      },
+      {
+        day: "Day 9",
+        title: "Ngorongoro – Arusha – Nairobi",
+        content: [
+          "Depart for Nairobi with an airport transfer.",
+          "End of an amazing 9-day safari.",
+        ],
+      },
     ];
   }
 
@@ -437,52 +523,39 @@ function Itinerary({ activePackage }) {
     itineraryItems = [
       {
         day: "Day 1",
-        title: "Welcome to Kerala, Transfer to Munnar",
+        title: "Nairobi – Masai Mara",
         content: [
-          "Airport transfer and sightseeing",
-          "Arrive at Cochin Airport",
-          "Visit Spice Plantations, Valara, and Cheeyappara Falls en route to Munnar",
-          "Check-in at the hotel in Munnar",
-          "Leisure time to explore the local markets",
-          "Overnight stay at the hotel in Munnar",
+          "Arrive in Nairobi and embark on a 5.5-hour drive to Maasai Mara National Park.",
+          "Lunch upon arrival followed by the first game drive.",
+          "Relax and enjoy dinner at the overnight camp.",
         ],
       },
       {
         day: "Day 2",
-        title: "Sightseeing at Munnar",
+        title: "Masai Mara",
         content: [
-          "Breakfast at the hotel",
-          "Full-day sightseeing tour of Munnar",
-          "Visit Mattupetty Dam, Echo Point, Nursery Garden, Photo Point, Eravikulam National Park, Anaimudi Peak, and Tea Museum",
-          "Overnight stay at the hotel in Munnar",
+          "Morning and afternoon game drives for Big 5 spotting.",
+          "Option to visit a Maasai Village (additional cost).",
+          "Leisure time to unwind at the camp with dinner and an overnight stay.",
         ],
       },
       {
         day: "Day 3",
-        title: "Transfer to Thekkady",
+        title: "Masai Mara – Lake Nakuru",
         content: [
-          "Breakfast at the hotel",
-          "Journey to Thekkady through scenic landscapes",
-          "Check-in at the hotel in Thekkady",
-          "Enjoy a wildlife safari at the Periyar Tiger Reserve",
-          "Overnight stay at the hotel in Thekkady",
+          "Depart from Masai Mara and head to Lake Nakuru.",
+          "Lunch at Kenya Guest House followed by an afternoon game drive.",
+          "Explore the diverse bird species and wildlife around Nakuru Lake.",
+          "Dinner and overnight stay at Nakuru Guest House.",
         ],
       },
       {
         day: "Day 4",
-        title: "Thekkady to Alleppey",
+        title: "Lake Nakuru - Nairobi",
         content: [
-          "Breakfast at the hotel",
-          "Travel to Alleppey, a land of serene backwaters",
-          "Check-in at a Kerala houseboat",
-          "Cruise through the intricate network of canals",
-          "Enjoy lunch, dinner, and an overnight stay on the houseboat",
+          "Early morning game drive at Lake Nakuru.",
+          "Breakfast and a 3-hour drive back to Nairobi, marking the end of the tour.",
         ],
-      },
-      {
-        day: "Day 5",
-        title: "Departure from Alleppey",
-        content: ["Breakfast on the houseboat", "Disembark from the houseboat"],
       },
       // Add more items here
     ];
@@ -543,46 +616,54 @@ function Itinerary({ activePackage }) {
 
 function Included({ activePackage }) {
   let includedItems = [
-    "Accommodation in Coorg on a double/triple sharing basis",
-    "Breakfast and dinner",
-    "Transportation in a sedan/SUV/TT based on group size",
-    "Permits, tolls, fuel charges, parking charges, and driver allowances",
-    "Highly experienced driver",
-    "Knowledgeable guide",
-    "Sightseeing of various attractions",
+    "Transportation in a 4x4 Safari Land Cruiser with open roof",
+    "Accommodation on a full board basis in Naivasha, Maasai Mara, and Amboseli",
+    "1-night stay in Nairobi on a bed and breakfast basis",
+    "Park entrance fees and government taxes",
+    "English-speaking professional driver/guide",
+    "Complimentary return airport transfers",
+    "1 boat ride in Lake Naivasha",
+    "One complimentary dinner at a local Indian restaurant in Nairobi",
   ];
-
-  if (activePackage === 2) {
-    includedItems = [
-      "Accommodation in Bangalore and Mysore",
-      "Breakfast",
-      "Transportation between Bangalore and Mysore",
-      "Sightseeing of various attractions",
-      "Comfortable vehicle with a knowledgeable driver",
-    ];
-  }
 
   if (activePackage === 3) {
     includedItems = [
-      "Accommodation for 1 night in Mysore and 2 nights in Coorg",
-      "Breakfast from day 2 to day 4",
-      "Transportation in an SUV or hatchback based on group size",
-      "Permits, tolls, fuel charges, parking charges",
-      "Highly experienced driver cum guide",
+      "Transport on a 4 x 4 Land Cruiser for optimal game viewing",
+      "Full board accommodation throughout the safari",
+      "Accommodation in a double room",
+      "All park entrance fees and government taxes",
+      "Service of an English-speaking professional driver/guide",
+      "All game drives as detailed in the itinerary",
+      "Complimentary return airport transfers",
+      "Bottled water during the safari",
+      "Personalized service",
+      "One-way Shuttle Bus Arusha – Nairobi",
+    ];
+  }
+
+  if (activePackage === 2) {
+    includedItems = [
+      "Transport on a 4x4 Safari vehicle ideal for game viewing and photography",
+      "Full board accommodation during the safari",
+      "Accommodation in a double room",
+      "All park entrance fees and government taxes",
+      "Service of an English-speaking professional driver/guide",
+      "Complimentary return airport transfers",
+      "Bottled water during the safari",
+      "Personalized service",
+      "Dinner at the Carnivore",
     ];
   }
 
   if (activePackage === 4) {
     includedItems = [
-      "Accommodation in hotels and a Kerala houseboat",
-      "Breakfast at hotels",
-      "All meals during the houseboat stay",
-      "Airport and railway station transfers",
-      "Parking, tolls, driver allowance, and fuel costs",
-      "GST, VAT, and service charges",
-      "Sightseeing transfers by cab",
-      "Full-day sightseeing in Munnar",
-      "Wildlife safari in Thekkady",
+      "Transfers from Nairobi to Nairobi",
+      "Accommodation in camps and luxury lodges on a sharing basis",
+      "All meals from lunch on Day 1 to breakfast on Day 4",
+      "Game drives as per the itinerary in a Safari Minivan with a pop-up roof",
+      "Park Entrance Fees",
+      "One water bottle per person at each Game Drive",
+      "Driver/Tour Assistant Charges",
     ];
   }
 
@@ -607,30 +688,47 @@ function Included({ activePackage }) {
 
 function NotIncluded({ activePackage }) {
   let notIncludedItems = [
-    "Lunch (unless specified)",
-    "Optional activities at Harangi Dam",
-    "Souvenirs and personal expenses",
+    "International/domestic flights",
+    "Tips and laundry",
+    "Maasai village visits (optional)",
+    "Balloon safari (optional)",
+    "Visa fees",
+    "Personal expenses",
+    "Any other extras not mentioned in inclusions",
   ];
-
   if (activePackage === 2) {
     notIncludedItems = [
       "Lunch and dinner",
       "Entrance fees to attractions (unless specified)",
       "Personal expenses",
+      "Tips",
+      "Laundry",
+      "Beverages/Drinks",
+      "Visas",
+      "Items of a personal nature",
+      "Any other extras not detailed in the itinerary",
     ];
   }
 
   if (activePackage === 3) {
-    notIncludedItems = ["Lunch and dinner", "Personal expenses"];
+    notIncludedItems = [
+      "Lunch and dinner",
+      "Entrance fees to attractions (unless specified)",
+      "Personal expenses",
+      "Tips",
+      "Laundry",
+      "Beverages/Drinks",
+      "Visas",
+      "Items of a personal nature",
+      "Any other extras not detailed in the itinerary",
+    ];
   }
 
   if (activePackage === 4) {
     notIncludedItems = [
-      "Air/train fare",
-      "Entry tickets to attractions",
-      "Early check-in and late checkout",
-      "Lunch and dinner at hotels",
-      "Boating and other activities",
+      "Airfare or train tickets to Nairobi",
+      "Personal expenses, tips, and travel insurance",
+      "Expenses arising due to unforeseen circumstances like natural calamities, roadblocks, etc.",
     ];
   }
 
