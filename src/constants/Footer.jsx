@@ -46,7 +46,6 @@ function Footer() {
             <div className="flex flex-col text-lg gap-3">
               <a href="">+918883226229</a>
               <a href="mailto:birdseyetrip@gmail.com">birdseyetrip@gmail.com</a>
-              <p>205. R Street, California</p>
             </div>
           </div>
         </div>
