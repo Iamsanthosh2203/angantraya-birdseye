@@ -35,7 +35,7 @@ function Header() {
 
   const handleDestinationsClick = () => {
     // Use the `window.location` to open the default email client
-    window.location.href = "/destinations"; // Replace with the desired email address
+    window.location.href = "/forms"; // Replace with the desired email address
   };
   const [enquire, setEnquire] = useState(false);
   const [nav, setNav] = useState(false);
@@ -125,9 +125,9 @@ function Header() {
                     : "absolute top-16 h-f w-full bg-white text-black p-4 hidden flex-col gap-3 -translate-y-12 duration-200 -z-10"
                 }
               >
-                <a href="">Book Online</a>
-                <a href="">By Email</a>
-                <a href="">By Phone</a>
+                <button onClick={handleDestinationsClick}>Book Online</button>
+                <button onClick={handleEmailClick}>By Email</button>
+                <button onClick={handleCallClick}>By Phone</button>
               </div>
             </div>
           </div>

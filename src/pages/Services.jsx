@@ -24,14 +24,14 @@ const destinationsData = [
   {
     title: "Corporate Packages",
     description:
-      "Angantraya Birdseye, a leading Destination Management Company and B2B tour company, offers a range of corporate tailor made packages(M.I.C.E) to the needs of businesses of all sizes. Our packages are designed to help your team achieve their goals, whether you're looking to boost productivity, foster teamwork, or reward top performers. Contact us today to learn more about our corporate packages and how we can help you create a memorable and impactful experience for your team.",
+      "We a leading Destination Management Company and B2B tour company, offers a range of corporate tailor made packages(M.I.C.E) to the needs of businesses of all sizes. Our packages are designed to help your team achieve their goals, whether you're looking to boost productivity, foster teamwork, or reward top performers.",
     imageUrl:
       "https://images.unsplash.com/photo-1536607961765-592e80bcc19e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     title: "Adventure Packages",
     description:
-      "Angantraya Birdseye, a leading destination management company and B2B tour company, offers a variety of adventure packages for thrill-seekers of all levels of experience. Our packages are designed to showcase the best of India's natural wonders and cultural experiences, while offering a healthy dose of adrenaline. From trekking in the Himalayas to whitewater rafting in the Ganges to scuba diving in the Andaman Islands, we have an adventure package for everyone. Our team of experienced and knowledgeable guides will ensure that you have a safe and unforgettable experience. Contact us today to learn more about our adventure packages and to book your next trip!",
+      "We a leading destination management company and B2B tour company, offers a variety of adventure packages for thrill-seekers of all levels of experience. Our packages are designed to showcase the best of India's natural wonders and cultural experiences, while offering a healthy dose of adrenaline. From trekking in the Himalayas to whitewater rafting in the Ganges to scuba diving in the Andaman Islands, we have an adventure package for everyone. Our team of experienced and knowledgeable guides will ensure that you have a safe and unforgettable experience.",
     imageUrl:
       "https://plus.unsplash.com/premium_photo-1667516408599-67d72068eaa9?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
@@ -39,7 +39,7 @@ const destinationsData = [
     title: "Honeymoon Packages",
     tittle2: "",
     description:
-      "Angantraya Birdseye packages are designed to create unforgettable experiences, whether you're looking for a romantic getaway on a secluded beach, a luxurious stay in a heritage palace, or an adventure-filled honeymoon exploring India's natural wonders. From the snow-capped peaks of the Himalayas to the pristine beaches of Goa to the lush backwaters of Kerala, we have a honeymoon package that's perfect for you. Our team of experienced travel planners will work with you to create a customized package that meets all of your requirements and ensures that you have a truly unforgettable honeymoon. Contact us today to learn more about our honeymoon packages and to start planning your dream honeymoon!",
+      "Our packages are designed to create unforgettable experiences, whether you're looking for a romantic getaway on a secluded beach, a luxurious stay in a heritage palace, or an adventure-filled honeymoon exploring India's natural wonders. From the snow-capped peaks of the Himalayas to the pristine beaches of Goa to the lush backwaters of Kerala, we have a honeymoon package that's perfect for you. Our team of experienced travel planners will work with you to create a customized package that meets all of your requirements and ensures that you have a truly unforgettable honeymoon.",
     imageUrl:
       "https://images.unsplash.com/photo-1535913989690-f90e1c2d4cfa?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
@@ -74,7 +74,7 @@ function Header() {
 
   const handleDestinationsClick = () => {
     // Use the `window.location` to open the default email client
-    window.location.href = "/destinations"; // Replace with the desired email address
+    window.location.href = "/forms"; // Replace with the desired email address
   };
   const [enquire, setEnquire] = useState(false);
   const [nav, setNav] = useState(false);
@@ -202,9 +202,12 @@ function OurDestinations() {
             <h4 className="font-primary text-4xl font-bold">{item.title}</h4>
             <p className="my-4">{item.description}</p>
             <div className="flex justify-center w-full">
-              <button className="py-4 px-8 font-adanda bg-black text-white my-4">
-                See More
-              </button>
+              <Link
+                to="/forms"
+                className="py-4 px-8 font-adanda bg-black text-white my-4"
+              >
+                Contact Us
+              </Link>
             </div>
           </div>
         </div>

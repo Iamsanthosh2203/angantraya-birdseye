@@ -86,7 +86,7 @@ function Header({ activePackage, setActivePackage }) {
 
   const handleDestinationsClick = () => {
     // Use the `window.location` to open the default email client
-    window.location.href = "/destinations"; // Replace with the desired email address
+    window.location.href = "/forms"; // Replace with the desired email address
   };
   const handleClick = (packageNumber) => {
     setActivePackage(packageNumber);
