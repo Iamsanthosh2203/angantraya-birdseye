@@ -12,7 +12,7 @@ import booking from "../assets/booking.png";
 import cloudy from "../assets/cloudy.png";
 import destination from "../assets/destination.png";
 
-import Reviews from "../constants/Reviews";
+// import Reviews from "../constants/Reviews";
 import Newsletter from "../constants/Newsletter";
 import Footer from "../constants/Footer";
 
@@ -28,7 +28,7 @@ function Home() {
       <Destinations />
       <TravelPoint />
       <Services />
-      <Reviews />
+      {/* <Reviews /> */}
       <Newsletter />
       <Footer />
     </>
